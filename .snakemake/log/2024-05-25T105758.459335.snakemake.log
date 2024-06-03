@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule solve_base in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 42:
+Missing input files for rule solve_base:
+    output: results/DE_20_1.0_pv_base_solved.nc
+    wildcards: country=DE_20, buses=1.0, transmission_limit=pv
+    affected files:
+        resources/DE_20_1.0_pv_base.nc

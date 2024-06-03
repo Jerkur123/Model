@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+solve_base                 2
+solve_contingencies       48
+total                     51
+
+Select jobs to execute...
+
+[Wed May 29 22:01:01 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: resources/DE_20_1.5_base_solved.nc, resources/DE_20_1.5_base_roll_solved.nc
+    jobid: 27
+    reason: Missing output files: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed May 29 22:12:33 2024]
+Error in rule solve_base:
+    jobid: 27
+    input: resources/DE_20_1.5_base.nc
+    output: resources/DE_20_1.5_base_solved.nc, resources/DE_20_1.5_base_roll_solved.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 115:
+Command 'python scripts/solve_base.py resources/DE_20_1.5_base.nc resources/DE_20_1.5_base_solved.nc 130 resources/DE_20_1.5_base_roll_solved.nc 24' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 115, in __rule_solve_base
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-05-29T220100.626481.snakemake.log

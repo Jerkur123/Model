@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+all               1
+solve_base        2
+total             3
+
+Select jobs to execute...
+
+[Fri May 24 13:43:50 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: results/DE_20_1.5_base_solved.nc
+    jobid: 2
+    reason: Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri May 24 13:43:50 2024]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Fri May 24 13:43:50 2024]
+rule solve_base:
+    input: resources/DE_20_1.0_base.nc
+    output: results/DE_20_1.0_base_solved.nc
+    jobid: 1
+    reason: Missing output files: results/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri May 24 13:43:56 2024]
+Error in rule solve_base:
+    jobid: 1
+    input: resources/DE_20_1.0_base.nc
+    output: results/DE_20_1.0_base_solved.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 39:
+Command 'python scripts/solve_base.py resources/DE_20_1.0_base.nc results/DE_20_1.0_base_solved.nc' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 39, in __rule_solve_base
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-05-24T134349.352729.snakemake.log

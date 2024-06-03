@@ -1,0 +1,4 @@
+NameError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 18:
+name 'tl' is not defined
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 18, in <module>
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 18, in <listcomp>

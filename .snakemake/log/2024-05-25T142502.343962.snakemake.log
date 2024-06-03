@@ -1,0 +1,64 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+solve_base                 2
+solve_contingencies       32
+total                     35
+
+Select jobs to execute...
+
+[Sat May 25 14:25:03 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: results/DE_20_1.5_base_solved.nc
+    jobid: 19
+    reason: Missing output files: results/DE_20_1.5_base_solved.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 14:36:05 2024]
+Finished job 19.
+1 of 35 steps (3%) done
+Select jobs to execute...
+
+[Sat May 25 14:36:05 2024]
+rule solve_base:
+    input: resources/DE_20_1.0_base.nc
+    output: results/DE_20_1.0_base_solved.nc
+    jobid: 2
+    reason: Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 14:57:00 2024]
+Finished job 2.
+2 of 35 steps (6%) done
+Select jobs to execute...
+
+[Sat May 25 14:57:00 2024]
+rule solve_contingencies:
+    input: results/DE_20_1.0_base_solved.nc
+    output: results/DE_20_1.0_pv_0.5_180_invroll.nc
+    jobid: 8
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_180_invroll.nc; Input files updated by another job: results/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=invroll
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 14:57:00 2024]
+Error in rule solve_contingencies:
+    jobid: 8
+    input: results/DE_20_1.0_base_solved.nc
+    output: results/DE_20_1.0_pv_0.5_180_invroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 73:
+Command 'python scripts/solve_contingencies.py results/DE_20_1.0_base_solved.nc results/DE_20_1.0_pv_0.5_180_invroll.nc pv 0.5 180 invroll' returned non-zero exit status 2.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 73, in __rule_solve_contingencies
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-05-25T142502.343962.snakemake.log

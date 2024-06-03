@@ -1,0 +1,3 @@
+WildcardError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 35:
+No values given for wildcard 'contingencies'.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 35, in <module>

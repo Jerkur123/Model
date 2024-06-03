@@ -1,0 +1,76 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+solve_contingencies       16
+total                     17
+
+Select jobs to execute...
+
+[Sat May 25 16:18:21 2024]
+rule solve_contingencies:
+    input: results/DE_20_1.0_base_solved.nc
+    output: results/DE_20_1.0_pv_0.5_180_noinv.nc
+    jobid: 5
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_180_noinv.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 16:20:45 2024]
+Finished job 5.
+1 of 17 steps (6%) done
+Select jobs to execute...
+
+[Sat May 25 16:20:45 2024]
+rule solve_contingencies:
+    input: results/DE_20_1.0_base_solved.nc
+    output: results/DE_20_1.0_wind_0.5_180_inv.nc
+    jobid: 8
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_180_inv.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 17:09:51 2024]
+Finished job 8.
+2 of 17 steps (12%) done
+Select jobs to execute...
+
+[Sat May 25 17:09:51 2024]
+rule solve_contingencies:
+    input: results/DE_20_1.0_base_solved.nc
+    output: results/DE_20_1.0_pv_0.25_180_noinv.nc
+    jobid: 3
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_180_noinv.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 17:12:10 2024]
+Finished job 3.
+3 of 17 steps (18%) done
+Select jobs to execute...
+
+[Sat May 25 17:12:10 2024]
+rule solve_contingencies:
+    input: results/DE_20_1.0_base_solved.nc
+    output: results/DE_20_1.0_pv_0.5_180_inv.nc
+    jobid: 4
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_180_inv.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 17:13:03 2024]
+Error in rule solve_contingencies:
+    jobid: 4
+    input: results/DE_20_1.0_base_solved.nc
+    output: results/DE_20_1.0_pv_0.5_180_inv.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 75:
+Command 'python scripts/solve_contingencies.py results/DE_20_1.0_base_solved.nc results/DE_20_1.0_pv_0.5_180_inv.nc pv 0.5 180 inv 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 75, in __rule_solve_contingencies
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake\log\2024-05-25T161820.022961.snakemake.log

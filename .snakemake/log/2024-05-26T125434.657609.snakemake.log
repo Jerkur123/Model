@@ -1,0 +1,13 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules solve_contingencies and solve_rollinghorizons are ambiguous for the file results/DE_20_1.0_pv_0.25_180_invroll.nc.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	solve_contingencies: buses=20,contingency=pv,country=DE,duration=180,model=invroll,reductionto=0.25,transmission_limit=1.0
+	solve_rollinghorizons: buses=20,contingency=pv,country=DE,duration=180,model=inv,reductionto=0.25,transmission_limit=1.0
+Expected input files:
+	solve_contingencies: resources/DE_20_1.0_base_solved.nc
+	solve_rollinghorizons: results/DE_20_1.0_pv_0.25_180_inv.nc
+Expected output files:
+	solve_contingencies: results/DE_20_1.0_pv_0.25_180_invroll.nc
+	solve_rollinghorizons: results/DE_20_1.0_pv_0.25_180_invroll.nc

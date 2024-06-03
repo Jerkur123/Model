@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule solve_contingencies in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 68:
+Missing input files for rule solve_contingencies:
+    output: results/DE_20_1.0_pv_0.25_180_inv_roll.nc
+    wildcards: country=DE_20, buses=1.0, transmission_limit=pv, contingencies=0.25, reductionto=180, duration=inv, model=roll
+    affected files:
+        resources/DE_20_1.0_pv_base_solved.nc

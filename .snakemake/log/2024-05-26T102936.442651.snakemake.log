@@ -1,0 +1,247 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+solve_contingencies       16
+total                     17
+
+Select jobs to execute...
+
+[Sun May 26 10:29:36 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/DE_20_wind_0.5_180_1.0_inv.nc
+    jobid: 8
+    reason: Missing output files: results/DE_20_wind_0.5_180_1.0_inv.nc
+    wildcards: country=DE, buses=20, contingency=wind, reductionto=0.5, duration=180, transmission_limit=1.0, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 8.
+1 of 17 steps (6%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/DE_20_pv_0.5_180_1.0_noinv.nc
+    jobid: 5
+    reason: Missing output files: results/DE_20_pv_0.5_180_1.0_noinv.nc
+    wildcards: country=DE, buses=20, contingency=pv, reductionto=0.5, duration=180, transmission_limit=1.0, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 5.
+2 of 17 steps (12%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/DE_20_pv_0.25_180_1.0_noinv.nc
+    jobid: 3
+    reason: Missing output files: results/DE_20_pv_0.25_180_1.0_noinv.nc
+    wildcards: country=DE, buses=20, contingency=pv, reductionto=0.25, duration=180, transmission_limit=1.0, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 3.
+3 of 17 steps (18%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/DE_20_pv_0.5_180_1.0_inv.nc
+    jobid: 4
+    reason: Missing output files: results/DE_20_pv_0.5_180_1.0_inv.nc
+    wildcards: country=DE, buses=20, contingency=pv, reductionto=0.5, duration=180, transmission_limit=1.0, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 4.
+4 of 17 steps (24%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/DE_20_wind_0.5_180_1.0_noinv.nc
+    jobid: 9
+    reason: Missing output files: results/DE_20_wind_0.5_180_1.0_noinv.nc
+    wildcards: country=DE, buses=20, contingency=wind, reductionto=0.5, duration=180, transmission_limit=1.0, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 9.
+5 of 17 steps (29%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/DE_20_wind_0.25_180_1.0_inv.nc
+    jobid: 6
+    reason: Missing output files: results/DE_20_wind_0.25_180_1.0_inv.nc
+    wildcards: country=DE, buses=20, contingency=wind, reductionto=0.25, duration=180, transmission_limit=1.0, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 6.
+6 of 17 steps (35%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/DE_20_pv_0.25_180_1.0_inv.nc
+    jobid: 1
+    reason: Missing output files: results/DE_20_pv_0.25_180_1.0_inv.nc
+    wildcards: country=DE, buses=20, contingency=pv, reductionto=0.25, duration=180, transmission_limit=1.0, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 1.
+7 of 17 steps (41%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/DE_20_wind_0.25_180_1.0_noinv.nc
+    jobid: 7
+    reason: Missing output files: results/DE_20_wind_0.25_180_1.0_noinv.nc
+    wildcards: country=DE, buses=20, contingency=wind, reductionto=0.25, duration=180, transmission_limit=1.0, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 7.
+8 of 17 steps (47%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/DE_20_wind_0.5_180_1.5_noinv.nc
+    jobid: 18
+    reason: Missing output files: results/DE_20_wind_0.5_180_1.5_noinv.nc
+    wildcards: country=DE, buses=20, contingency=wind, reductionto=0.5, duration=180, transmission_limit=1.5, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 18.
+9 of 17 steps (53%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/DE_20_pv_0.5_180_1.5_inv.nc
+    jobid: 13
+    reason: Missing output files: results/DE_20_pv_0.5_180_1.5_inv.nc
+    wildcards: country=DE, buses=20, contingency=pv, reductionto=0.5, duration=180, transmission_limit=1.5, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 13.
+10 of 17 steps (59%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/DE_20_pv_0.25_180_1.5_noinv.nc
+    jobid: 12
+    reason: Missing output files: results/DE_20_pv_0.25_180_1.5_noinv.nc
+    wildcards: country=DE, buses=20, contingency=pv, reductionto=0.25, duration=180, transmission_limit=1.5, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 12.
+11 of 17 steps (65%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/DE_20_pv_0.25_180_1.5_inv.nc
+    jobid: 10
+    reason: Missing output files: results/DE_20_pv_0.25_180_1.5_inv.nc
+    wildcards: country=DE, buses=20, contingency=pv, reductionto=0.25, duration=180, transmission_limit=1.5, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 10.
+12 of 17 steps (71%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/DE_20_wind_0.5_180_1.5_inv.nc
+    jobid: 17
+    reason: Missing output files: results/DE_20_wind_0.5_180_1.5_inv.nc
+    wildcards: country=DE, buses=20, contingency=wind, reductionto=0.5, duration=180, transmission_limit=1.5, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 17.
+13 of 17 steps (76%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/DE_20_wind_0.25_180_1.5_inv.nc
+    jobid: 15
+    reason: Missing output files: results/DE_20_wind_0.25_180_1.5_inv.nc
+    wildcards: country=DE, buses=20, contingency=wind, reductionto=0.25, duration=180, transmission_limit=1.5, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 15.
+14 of 17 steps (82%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/DE_20_pv_0.5_180_1.5_noinv.nc
+    jobid: 14
+    reason: Missing output files: results/DE_20_pv_0.5_180_1.5_noinv.nc
+    wildcards: country=DE, buses=20, contingency=pv, reductionto=0.5, duration=180, transmission_limit=1.5, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 14.
+15 of 17 steps (88%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/DE_20_wind_0.25_180_1.5_noinv.nc
+    jobid: 16
+    reason: Missing output files: results/DE_20_wind_0.25_180_1.5_noinv.nc
+    wildcards: country=DE, buses=20, contingency=wind, reductionto=0.25, duration=180, transmission_limit=1.5, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 16.
+16 of 17 steps (94%) done
+Select jobs to execute...
+
+[Sun May 26 10:29:37 2024]
+localrule all:
+    input: results/DE_20_pv_0.25_180_1.0_inv.nc, results/DE_20_pv_0.25_180_1.0_noinv.nc, results/DE_20_pv_0.25_180_1.0_inv.nc, results/DE_20_pv_0.25_180_1.0_noinv.nc, results/DE_20_pv_0.5_180_1.0_inv.nc, results/DE_20_pv_0.5_180_1.0_noinv.nc, results/DE_20_pv_0.5_180_1.0_inv.nc, results/DE_20_pv_0.5_180_1.0_noinv.nc, results/DE_20_wind_0.25_180_1.0_inv.nc, results/DE_20_wind_0.25_180_1.0_noinv.nc, results/DE_20_wind_0.25_180_1.0_inv.nc, results/DE_20_wind_0.25_180_1.0_noinv.nc, results/DE_20_wind_0.5_180_1.0_inv.nc, results/DE_20_wind_0.5_180_1.0_noinv.nc, results/DE_20_wind_0.5_180_1.0_inv.nc, results/DE_20_wind_0.5_180_1.0_noinv.nc, results/DE_20_pv_0.25_180_1.5_inv.nc, results/DE_20_pv_0.25_180_1.5_noinv.nc, results/DE_20_pv_0.25_180_1.5_inv.nc, results/DE_20_pv_0.25_180_1.5_noinv.nc, results/DE_20_pv_0.5_180_1.5_inv.nc, results/DE_20_pv_0.5_180_1.5_noinv.nc, results/DE_20_pv_0.5_180_1.5_inv.nc, results/DE_20_pv_0.5_180_1.5_noinv.nc, results/DE_20_wind_0.25_180_1.5_inv.nc, results/DE_20_wind_0.25_180_1.5_noinv.nc, results/DE_20_wind_0.25_180_1.5_inv.nc, results/DE_20_wind_0.25_180_1.5_noinv.nc, results/DE_20_wind_0.5_180_1.5_inv.nc, results/DE_20_wind_0.5_180_1.5_noinv.nc, results/DE_20_wind_0.5_180_1.5_inv.nc, results/DE_20_wind_0.5_180_1.5_noinv.nc
+    jobid: 0
+    reason: Input files updated by another job: results/DE_20_wind_0.25_180_1.5_inv.nc, results/DE_20_wind_0.5_180_1.5_inv.nc, results/DE_20_wind_0.25_180_1.5_noinv.nc, results/DE_20_wind_0.5_180_1.0_noinv.nc, results/DE_20_wind_0.5_180_1.0_inv.nc, results/DE_20_wind_0.25_180_1.0_inv.nc, results/DE_20_pv_0.25_180_1.0_inv.nc, results/DE_20_pv_0.5_180_1.0_noinv.nc, results/DE_20_pv_0.5_180_1.5_inv.nc, results/DE_20_wind_0.25_180_1.0_noinv.nc, results/DE_20_wind_0.5_180_1.5_noinv.nc, results/DE_20_pv_0.25_180_1.0_noinv.nc, results/DE_20_pv_0.25_180_1.5_inv.nc, results/DE_20_pv_0.5_180_1.0_inv.nc, results/DE_20_pv_0.5_180_1.5_noinv.nc, results/DE_20_pv_0.25_180_1.5_noinv.nc
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 10:29:37 2024]
+Finished job 0.
+17 of 17 steps (100%) done
+Complete log: .snakemake\log\2024-05-26T102936.442651.snakemake.log

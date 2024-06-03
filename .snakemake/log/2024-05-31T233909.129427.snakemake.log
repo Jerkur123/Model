@@ -1,0 +1,1031 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve       72
+total               73
+
+Select jobs to execute...
+
+[Fri May 31 23:39:10 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_90_inv.nc, results/DE_20_1.0_pv_0.25_90_invroll.nc
+    jobid: 5
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_90_invroll.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 00:00:03 2024]
+Finished job 5.
+1 of 73 steps (1%) done
+Select jobs to execute...
+
+[Sat Jun  1 00:00:03 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_90_noinv.nc, results/DE_20_1.0_wind_0.25_90_noinvroll.nc
+    jobid: 35
+    reason: Missing output files: results/DE_20_1.0_wind_0.25_90_noinvroll.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 00:08:46 2024]
+Finished job 35.
+2 of 73 steps (3%) done
+Select jobs to execute...
+
+[Sat Jun  1 00:08:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.12_270_noinv.nc, results/DE_20_1.0_pv_0.12_270_noinvroll.nc
+    jobid: 28
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.12, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 00:17:23 2024]
+Finished job 28.
+3 of 73 steps (4%) done
+Select jobs to execute...
+
+[Sat Jun  1 00:17:23 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.38_180_noinv.nc, results/DE_20_1.0_pv_0.38_180_noinvroll.nc
+    jobid: 21
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.38, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 00:26:00 2024]
+Finished job 21.
+4 of 73 steps (5%) done
+Select jobs to execute...
+
+[Sat Jun  1 00:26:00 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.12_270_inv.nc, results/DE_20_1.0_pv_0.12_270_invroll.nc
+    jobid: 10
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.12, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 02:08:41 2024]
+Finished job 10.
+5 of 73 steps (7%) done
+Select jobs to execute...
+
+[Sat Jun  1 02:08:41 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_180_inv.nc, results/DE_20_1.0_wind_0.75_180_invroll.nc
+    jobid: 12
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 03:30:06 2024]
+Finished job 12.
+6 of 73 steps (8%) done
+Select jobs to execute...
+
+[Sat Jun  1 03:30:06 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_270_inv.nc, results/DE_20_1.0_wind_0.75_270_invroll.nc
+    jobid: 13
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 05:29:22 2024]
+Finished job 13.
+7 of 73 steps (10%) done
+Select jobs to execute...
+
+[Sat Jun  1 05:29:22 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_180_noinv.nc, results/DE_20_1.0_wind_0.25_180_noinvroll.nc
+    jobid: 36
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 05:38:46 2024]
+Finished job 36.
+8 of 73 steps (11%) done
+Select jobs to execute...
+
+[Sat Jun  1 05:38:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_90_noinv.nc, results/DE_20_1.0_wind_0.75_90_noinvroll.nc
+    jobid: 29
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 05:47:26 2024]
+Finished job 29.
+9 of 73 steps (12%) done
+Select jobs to execute...
+
+[Sat Jun  1 05:47:26 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.38_270_noinv.nc, results/DE_20_1.0_pv_0.38_270_noinvroll.nc
+    jobid: 22
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.38, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 05:55:59 2024]
+Finished job 22.
+10 of 73 steps (14%) done
+Select jobs to execute...
+
+[Sat Jun  1 05:55:59 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_180_inv.nc, results/DE_20_1.0_wind_0.5_180_invroll.nc
+    jobid: 15
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 07:51:07 2024]
+Finished job 15.
+11 of 73 steps (15%) done
+Select jobs to execute...
+
+[Sat Jun  1 07:51:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_270_inv.nc, results/DE_20_1.0_pv_0.25_270_invroll.nc
+    jobid: 7
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 08:21:05 2024]
+Finished job 7.
+12 of 73 steps (16%) done
+Select jobs to execute...
+
+[Sat Jun  1 08:21:05 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.38_90_inv.nc, results/DE_20_1.0_pv_0.38_90_invroll.nc
+    jobid: 1
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.38, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 08:53:00 2024]
+Finished job 1.
+13 of 73 steps (18%) done
+Select jobs to execute...
+
+[Sat Jun  1 08:53:00 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_270_noinv.nc, results/DE_20_1.0_wind_0.25_270_noinvroll.nc
+    jobid: 37
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 09:01:48 2024]
+Finished job 37.
+14 of 73 steps (19%) done
+Select jobs to execute...
+
+[Sat Jun  1 09:01:48 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_180_noinv.nc, results/DE_20_1.0_wind_0.75_180_noinvroll.nc
+    jobid: 30
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 09:10:33 2024]
+Finished job 30.
+15 of 73 steps (21%) done
+Select jobs to execute...
+
+[Sat Jun  1 09:10:33 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_90_noinv.nc, results/DE_20_1.0_pv_0.25_90_noinvroll.nc
+    jobid: 23
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 09:19:12 2024]
+Finished job 23.
+16 of 73 steps (22%) done
+Select jobs to execute...
+
+[Sat Jun  1 09:19:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_270_inv.nc, results/DE_20_1.0_wind_0.5_270_invroll.nc
+    jobid: 16
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 11:33:27 2024]
+Finished job 16.
+17 of 73 steps (23%) done
+Select jobs to execute...
+
+[Sat Jun  1 11:33:27 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_180_inv.nc, results/DE_20_1.0_pv_0.25_180_invroll.nc
+    jobid: 6
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 13:07:56 2024]
+Finished job 6.
+18 of 73 steps (25%) done
+Select jobs to execute...
+
+[Sat Jun  1 13:07:56 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.38_180_inv.nc, results/DE_20_1.0_pv_0.38_180_invroll.nc
+    jobid: 3
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.38, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 14:01:12 2024]
+Finished job 3.
+19 of 73 steps (26%) done
+Select jobs to execute...
+
+[Sat Jun  1 14:01:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_270_noinv.nc, results/DE_20_1.0_wind_0.75_270_noinvroll.nc
+    jobid: 31
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 14:09:54 2024]
+Finished job 31.
+20 of 73 steps (27%) done
+Select jobs to execute...
+
+[Sat Jun  1 14:09:54 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_180_noinv.nc, results/DE_20_1.0_pv_0.25_180_noinvroll.nc
+    jobid: 24
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 14:18:27 2024]
+Finished job 24.
+21 of 73 steps (29%) done
+Select jobs to execute...
+
+[Sat Jun  1 14:18:27 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_90_inv.nc, results/DE_20_1.0_wind_0.25_90_invroll.nc
+    jobid: 17
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 16:21:56 2024]
+Finished job 17.
+22 of 73 steps (30%) done
+Select jobs to execute...
+
+[Sat Jun  1 16:21:56 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_90_noinv.nc, results/DE_20_1.0_wind_0.5_90_noinvroll.nc
+    jobid: 32
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 16:30:35 2024]
+Finished job 32.
+23 of 73 steps (32%) done
+Select jobs to execute...
+
+[Sat Jun  1 16:30:35 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_270_noinv.nc, results/DE_20_1.0_pv_0.25_270_noinvroll.nc
+    jobid: 25
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 16:39:11 2024]
+Finished job 25.
+24 of 73 steps (33%) done
+Select jobs to execute...
+
+[Sat Jun  1 16:39:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_180_inv.nc, results/DE_20_1.0_wind_0.25_180_invroll.nc
+    jobid: 18
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 17:28:11 2024]
+Finished job 18.
+25 of 73 steps (34%) done
+Select jobs to execute...
+
+[Sat Jun  1 17:28:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_90_inv.nc, results/DE_20_1.0_wind_0.75_90_invroll.nc
+    jobid: 11
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 17:58:11 2024]
+Finished job 11.
+26 of 73 steps (36%) done
+Select jobs to execute...
+
+[Sat Jun  1 17:58:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_90_inv.nc, results/DE_20_1.0_wind_0.5_90_invroll.nc
+    jobid: 14
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 18:35:24 2024]
+Finished job 14.
+27 of 73 steps (37%) done
+Select jobs to execute...
+
+[Sat Jun  1 18:35:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_180_noinv.nc, results/DE_20_1.0_wind_0.5_180_noinvroll.nc
+    jobid: 33
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 18:43:59 2024]
+Finished job 33.
+28 of 73 steps (38%) done
+Select jobs to execute...
+
+[Sat Jun  1 18:43:59 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.12_90_noinv.nc, results/DE_20_1.0_pv_0.12_90_noinvroll.nc
+    jobid: 26
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.12, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 18:52:36 2024]
+Finished job 26.
+29 of 73 steps (40%) done
+Select jobs to execute...
+
+[Sat Jun  1 18:52:36 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_270_inv.nc, results/DE_20_1.0_wind_0.25_270_invroll.nc
+    jobid: 19
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 21:16:32 2024]
+Finished job 19.
+30 of 73 steps (41%) done
+Select jobs to execute...
+
+[Sat Jun  1 21:16:32 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.12_90_inv.nc, results/DE_20_1.0_pv_0.12_90_invroll.nc
+    jobid: 8
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.12, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 21:39:53 2024]
+Finished job 8.
+31 of 73 steps (42%) done
+Select jobs to execute...
+
+[Sat Jun  1 21:39:53 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.38_270_inv.nc, results/DE_20_1.0_pv_0.38_270_invroll.nc
+    jobid: 4
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.38, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 23:47:12 2024]
+Finished job 4.
+32 of 73 steps (44%) done
+Select jobs to execute...
+
+[Sat Jun  1 23:47:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_270_noinv.nc, results/DE_20_1.0_wind_0.5_270_noinvroll.nc
+    jobid: 34
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat Jun  1 23:55:55 2024]
+Finished job 34.
+33 of 73 steps (45%) done
+Select jobs to execute...
+
+[Sat Jun  1 23:55:55 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.12_180_noinv.nc, results/DE_20_1.0_pv_0.12_180_noinvroll.nc
+    jobid: 27
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.12, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 00:04:36 2024]
+Finished job 27.
+34 of 73 steps (47%) done
+Select jobs to execute...
+
+[Sun Jun  2 00:04:36 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.38_90_noinv.nc, results/DE_20_1.0_pv_0.38_90_noinvroll.nc
+    jobid: 20
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.38, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 00:13:16 2024]
+Finished job 20.
+35 of 73 steps (48%) done
+Select jobs to execute...
+
+[Sun Jun  2 00:13:16 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.12_180_inv.nc, results/DE_20_1.0_pv_0.12_180_invroll.nc
+    jobid: 9
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.12, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 01:43:57 2024]
+Finished job 9.
+36 of 73 steps (49%) done
+Select jobs to execute...
+
+[Sun Jun  2 01:43:57 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_270_noinv.nc, results/DE_20_1.5_pv_0.25_270_noinvroll.nc
+    jobid: 62
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 01:52:35 2024]
+Finished job 62.
+37 of 73 steps (51%) done
+Select jobs to execute...
+
+[Sun Jun  2 01:52:35 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_180_inv.nc, results/DE_20_1.5_wind_0.25_180_invroll.nc
+    jobid: 55
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 03:01:00 2024]
+Finished job 55.
+38 of 73 steps (52%) done
+Select jobs to execute...
+
+[Sun Jun  2 03:01:00 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.12_270_inv.nc, results/DE_20_1.5_pv_0.12_270_invroll.nc
+    jobid: 47
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.12, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 04:30:54 2024]
+Finished job 47.
+39 of 73 steps (53%) done
+Select jobs to execute...
+
+[Sun Jun  2 04:30:54 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_90_inv.nc, results/DE_20_1.5_pv_0.25_90_invroll.nc
+    jobid: 42
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 04:48:08 2024]
+Finished job 42.
+40 of 73 steps (55%) done
+Select jobs to execute...
+
+[Sun Jun  2 04:48:08 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_180_noinv.nc, results/DE_20_1.5_wind_0.5_180_noinvroll.nc
+    jobid: 70
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 04:58:07 2024]
+Finished job 70.
+41 of 73 steps (56%) done
+Select jobs to execute...
+
+[Sun Jun  2 04:58:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.12_90_noinv.nc, results/DE_20_1.5_pv_0.12_90_noinvroll.nc
+    jobid: 63
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.12, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 05:08:20 2024]
+Finished job 63.
+42 of 73 steps (58%) done
+Select jobs to execute...
+
+[Sun Jun  2 05:08:20 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_270_inv.nc, results/DE_20_1.5_wind_0.25_270_invroll.nc
+    jobid: 56
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 06:24:09 2024]
+Finished job 56.
+43 of 73 steps (59%) done
+Select jobs to execute...
+
+[Sun Jun  2 06:24:09 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_90_inv.nc, results/DE_20_1.5_wind_0.75_90_invroll.nc
+    jobid: 48
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 07:00:12 2024]
+Finished job 48.
+44 of 73 steps (60%) done
+Select jobs to execute...
+
+[Sun Jun  2 07:00:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_180_inv.nc, results/DE_20_1.5_pv_0.25_180_invroll.nc
+    jobid: 43
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 07:15:46 2024]
+Finished job 43.
+45 of 73 steps (62%) done
+Select jobs to execute...
+
+[Sun Jun  2 07:15:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_270_noinv.nc, results/DE_20_1.5_wind_0.5_270_noinvroll.nc
+    jobid: 71
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 07:24:32 2024]
+Finished job 71.
+46 of 73 steps (63%) done
+Select jobs to execute...
+
+[Sun Jun  2 07:24:32 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.12_180_noinv.nc, results/DE_20_1.5_pv_0.12_180_noinvroll.nc
+    jobid: 64
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.12, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 07:33:50 2024]
+Finished job 64.
+47 of 73 steps (64%) done
+Select jobs to execute...
+
+[Sun Jun  2 07:33:50 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.38_90_noinv.nc, results/DE_20_1.5_pv_0.38_90_noinvroll.nc
+    jobid: 57
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.38, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 07:42:27 2024]
+Finished job 57.
+48 of 73 steps (66%) done
+Select jobs to execute...
+
+[Sun Jun  2 07:42:27 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_180_inv.nc, results/DE_20_1.5_wind_0.75_180_invroll.nc
+    jobid: 49
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 09:06:09 2024]
+Finished job 49.
+49 of 73 steps (67%) done
+Select jobs to execute...
+
+[Sun Jun  2 09:06:09 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_270_inv.nc, results/DE_20_1.5_pv_0.25_270_invroll.nc
+    jobid: 44
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 09:33:16 2024]
+Finished job 44.
+50 of 73 steps (68%) done
+Select jobs to execute...
+
+[Sun Jun  2 09:33:16 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_90_noinv.nc, results/DE_20_1.5_wind_0.25_90_noinvroll.nc
+    jobid: 72
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 09:42:35 2024]
+Finished job 72.
+51 of 73 steps (70%) done
+Select jobs to execute...
+
+[Sun Jun  2 09:42:35 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.12_270_noinv.nc, results/DE_20_1.5_pv_0.12_270_noinvroll.nc
+    jobid: 65
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.12, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 09:51:28 2024]
+Finished job 65.
+52 of 73 steps (71%) done
+Select jobs to execute...
+
+[Sun Jun  2 09:51:28 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.38_180_noinv.nc, results/DE_20_1.5_pv_0.38_180_noinvroll.nc
+    jobid: 58
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.38, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 10:00:18 2024]
+Finished job 58.
+53 of 73 steps (73%) done
+Select jobs to execute...
+
+[Sun Jun  2 10:00:18 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_90_inv.nc, results/DE_20_1.5_wind_0.5_90_invroll.nc
+    jobid: 51
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 11:12:55 2024]
+Finished job 51.
+54 of 73 steps (74%) done
+Select jobs to execute...
+
+[Sun Jun  2 11:12:55 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.38_90_inv.nc, results/DE_20_1.5_pv_0.38_90_invroll.nc
+    jobid: 38
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.38, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 12:13:53 2024]
+Finished job 38.
+55 of 73 steps (75%) done
+Select jobs to execute...
+
+[Sun Jun  2 12:13:53 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.12_180_inv.nc, results/DE_20_1.5_pv_0.12_180_invroll.nc
+    jobid: 46
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.12, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 13:32:07 2024]
+Finished job 46.
+56 of 73 steps (77%) done
+Select jobs to execute...
+
+[Sun Jun  2 13:32:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_90_noinv.nc, results/DE_20_1.5_wind_0.5_90_noinvroll.nc
+    jobid: 69
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 13:40:43 2024]
+Finished job 69.
+57 of 73 steps (78%) done
+Select jobs to execute...
+
+[Sun Jun  2 13:40:43 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_180_noinv.nc, results/DE_20_1.5_wind_0.25_180_noinvroll.nc
+    jobid: 73
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 13:50:28 2024]
+Finished job 73.
+58 of 73 steps (79%) done
+Select jobs to execute...
+
+[Sun Jun  2 13:50:28 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_90_noinv.nc, results/DE_20_1.5_wind_0.75_90_noinvroll.nc
+    jobid: 66
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 13:59:33 2024]
+Finished job 66.
+59 of 73 steps (81%) done
+Select jobs to execute...
+
+[Sun Jun  2 13:59:33 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.38_270_noinv.nc, results/DE_20_1.5_pv_0.38_270_noinvroll.nc
+    jobid: 59
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.38, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 14:08:15 2024]
+Finished job 59.
+60 of 73 steps (82%) done
+Select jobs to execute...
+
+[Sun Jun  2 14:08:15 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_270_noinv.nc, results/DE_20_1.5_wind_0.25_270_noinvroll.nc
+    jobid: 74
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 14:17:32 2024]
+Finished job 74.
+61 of 73 steps (84%) done
+Select jobs to execute...
+
+[Sun Jun  2 14:17:32 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_270_noinv.nc, results/DE_20_1.5_wind_0.75_270_noinvroll.nc
+    jobid: 68
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 14:26:48 2024]
+Finished job 68.
+62 of 73 steps (85%) done
+Select jobs to execute...
+
+[Sun Jun  2 14:26:48 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_180_inv.nc, results/DE_20_1.5_wind_0.5_180_invroll.nc
+    jobid: 52
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 15:12:44 2024]
+Finished job 52.
+63 of 73 steps (86%) done
+Select jobs to execute...
+
+[Sun Jun  2 15:12:44 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_180_noinv.nc, results/DE_20_1.5_pv_0.25_180_noinvroll.nc
+    jobid: 61
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 15:21:27 2024]
+Finished job 61.
+64 of 73 steps (88%) done
+Select jobs to execute...
+
+[Sun Jun  2 15:21:27 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_90_inv.nc, results/DE_20_1.5_wind_0.25_90_invroll.nc
+    jobid: 54
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 16:07:43 2024]
+Finished job 54.
+65 of 73 steps (89%) done
+Select jobs to execute...
+
+[Sun Jun  2 16:07:43 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.12_90_inv.nc, results/DE_20_1.5_pv_0.12_90_invroll.nc
+    jobid: 45
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.12, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 16:24:15 2024]
+Finished job 45.
+66 of 73 steps (90%) done
+Select jobs to execute...
+
+[Sun Jun  2 16:24:15 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.38_180_inv.nc, results/DE_20_1.5_pv_0.38_180_invroll.nc
+    jobid: 40
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.38, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 16:48:59 2024]
+Finished job 40.
+67 of 73 steps (92%) done
+Select jobs to execute...
+
+[Sun Jun  2 16:48:59 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.38_270_inv.nc, results/DE_20_1.5_pv_0.38_270_invroll.nc
+    jobid: 41
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.38, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 17:56:46 2024]
+Finished job 41.
+68 of 73 steps (93%) done
+Select jobs to execute...
+
+[Sun Jun  2 17:56:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_270_inv.nc, results/DE_20_1.5_wind_0.75_270_invroll.nc
+    jobid: 50
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 18:46:21 2024]
+Finished job 50.
+69 of 73 steps (95%) done
+Select jobs to execute...
+
+[Sun Jun  2 18:46:21 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_180_noinv.nc, results/DE_20_1.5_wind_0.75_180_noinvroll.nc
+    jobid: 67
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 18:55:37 2024]
+Finished job 67.
+70 of 73 steps (96%) done
+Select jobs to execute...
+
+[Sun Jun  2 18:55:37 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_90_noinv.nc, results/DE_20_1.5_pv_0.25_90_noinvroll.nc
+    jobid: 60
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 19:05:12 2024]
+Finished job 60.
+71 of 73 steps (97%) done
+Select jobs to execute...
+
+[Sun Jun  2 19:05:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_270_inv.nc, results/DE_20_1.5_wind_0.5_270_invroll.nc
+    jobid: 53
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 19:48:50 2024]
+Finished job 53.
+72 of 73 steps (99%) done
+Select jobs to execute...
+
+[Sun Jun  2 19:48:50 2024]
+localrule all:
+    input: results/DE_20_1.0_pv_0.38_90_invroll.nc, results/DE_20_1.0_pv_0.38_180_invroll.nc, results/DE_20_1.0_pv_0.38_270_invroll.nc, results/DE_20_1.0_pv_0.25_90_invroll.nc, results/DE_20_1.0_pv_0.25_180_invroll.nc, results/DE_20_1.0_pv_0.25_270_invroll.nc, results/DE_20_1.0_pv_0.12_90_invroll.nc, results/DE_20_1.0_pv_0.12_180_invroll.nc, results/DE_20_1.0_pv_0.12_270_invroll.nc, results/DE_20_1.0_wind_0.75_90_invroll.nc, results/DE_20_1.0_wind_0.75_180_invroll.nc, results/DE_20_1.0_wind_0.75_270_invroll.nc, results/DE_20_1.0_wind_0.5_90_invroll.nc, results/DE_20_1.0_wind_0.5_180_invroll.nc, results/DE_20_1.0_wind_0.5_270_invroll.nc, results/DE_20_1.0_wind_0.25_90_invroll.nc, results/DE_20_1.0_wind_0.25_180_invroll.nc, results/DE_20_1.0_wind_0.25_270_invroll.nc, results/DE_20_1.0_pv_0.38_90_noinvroll.nc, results/DE_20_1.0_pv_0.38_180_noinvroll.nc, results/DE_20_1.0_pv_0.38_270_noinvroll.nc, results/DE_20_1.0_pv_0.25_90_noinvroll.nc, results/DE_20_1.0_pv_0.25_180_noinvroll.nc, results/DE_20_1.0_pv_0.25_270_noinvroll.nc, results/DE_20_1.0_pv_0.12_90_noinvroll.nc, results/DE_20_1.0_pv_0.12_180_noinvroll.nc, results/DE_20_1.0_pv_0.12_270_noinvroll.nc, results/DE_20_1.0_wind_0.75_90_noinvroll.nc, results/DE_20_1.0_wind_0.75_180_noinvroll.nc, results/DE_20_1.0_wind_0.75_270_noinvroll.nc, results/DE_20_1.0_wind_0.5_90_noinvroll.nc, results/DE_20_1.0_wind_0.5_180_noinvroll.nc, results/DE_20_1.0_wind_0.5_270_noinvroll.nc, results/DE_20_1.0_wind_0.25_90_noinvroll.nc, results/DE_20_1.0_wind_0.25_180_noinvroll.nc, results/DE_20_1.0_wind_0.25_270_noinvroll.nc, results/DE_20_1.5_pv_0.38_90_invroll.nc, results/DE_20_1.5_pv_0.38_180_invroll.nc, results/DE_20_1.5_pv_0.38_270_invroll.nc, results/DE_20_1.5_pv_0.25_90_invroll.nc, results/DE_20_1.5_pv_0.25_180_invroll.nc, results/DE_20_1.5_pv_0.25_270_invroll.nc, results/DE_20_1.5_pv_0.12_90_invroll.nc, results/DE_20_1.5_pv_0.12_180_invroll.nc, results/DE_20_1.5_pv_0.12_270_invroll.nc, results/DE_20_1.5_wind_0.75_90_invroll.nc, results/DE_20_1.5_wind_0.75_180_invroll.nc, results/DE_20_1.5_wind_0.75_270_invroll.nc, results/DE_20_1.5_wind_0.5_90_invroll.nc, results/DE_20_1.5_wind_0.5_180_invroll.nc, results/DE_20_1.5_wind_0.5_270_invroll.nc, results/DE_20_1.5_wind_0.25_90_invroll.nc, results/DE_20_1.5_wind_0.25_180_invroll.nc, results/DE_20_1.5_wind_0.25_270_invroll.nc, results/DE_20_1.5_pv_0.38_90_noinvroll.nc, results/DE_20_1.5_pv_0.38_180_noinvroll.nc, results/DE_20_1.5_pv_0.38_270_noinvroll.nc, results/DE_20_1.5_pv_0.25_90_noinvroll.nc, results/DE_20_1.5_pv_0.25_180_noinvroll.nc, results/DE_20_1.5_pv_0.25_270_noinvroll.nc, results/DE_20_1.5_pv_0.12_90_noinvroll.nc, results/DE_20_1.5_pv_0.12_180_noinvroll.nc, results/DE_20_1.5_pv_0.12_270_noinvroll.nc, results/DE_20_1.5_wind_0.75_90_noinvroll.nc, results/DE_20_1.5_wind_0.75_180_noinvroll.nc, results/DE_20_1.5_wind_0.75_270_noinvroll.nc, results/DE_20_1.5_wind_0.5_90_noinvroll.nc, results/DE_20_1.5_wind_0.5_180_noinvroll.nc, results/DE_20_1.5_wind_0.5_270_noinvroll.nc, results/DE_20_1.5_wind_0.25_90_noinvroll.nc, results/DE_20_1.5_wind_0.25_180_noinvroll.nc, results/DE_20_1.5_wind_0.25_270_noinvroll.nc
+    jobid: 0
+    reason: Input files updated by another job: results/DE_20_1.5_wind_0.5_180_invroll.nc, results/DE_20_1.5_pv_0.12_180_noinvroll.nc, results/DE_20_1.0_pv_0.12_90_noinvroll.nc, results/DE_20_1.0_wind_0.25_90_noinvroll.nc, results/DE_20_1.0_wind_0.75_270_noinvroll.nc, results/DE_20_1.5_wind_0.75_180_noinvroll.nc, results/DE_20_1.0_pv_0.38_270_noinvroll.nc, results/DE_20_1.0_wind_0.75_180_invroll.nc, results/DE_20_1.5_wind_0.5_270_invroll.nc, results/DE_20_1.5_wind_0.5_180_noinvroll.nc, results/DE_20_1.0_pv_0.12_180_invroll.nc, results/DE_20_1.5_pv_0.12_270_invroll.nc, results/DE_20_1.0_pv_0.25_270_noinvroll.nc, results/DE_20_1.5_pv_0.25_90_invroll.nc, results/DE_20_1.0_pv_0.38_270_invroll.nc, results/DE_20_1.0_wind_0.25_270_invroll.nc, results/DE_20_1.5_wind_0.25_270_noinvroll.nc, results/DE_20_1.0_pv_0.12_270_noinvroll.nc, results/DE_20_1.5_pv_0.25_270_invroll.nc, results/DE_20_1.5_pv_0.38_90_invroll.nc, results/DE_20_1.0_wind_0.5_180_noinvroll.nc, results/DE_20_1.5_wind_0.25_90_invroll.nc, results/DE_20_1.5_wind_0.75_90_invroll.nc, results/DE_20_1.0_pv_0.12_180_noinvroll.nc, results/DE_20_1.0_pv_0.12_270_invroll.nc, results/DE_20_1.0_wind_0.5_90_invroll.nc, results/DE_20_1.5_pv_0.38_90_noinvroll.nc, results/DE_20_1.0_wind_0.5_270_invroll.nc, results/DE_20_1.5_wind_0.25_270_invroll.nc, results/DE_20_1.0_pv_0.38_90_invroll.nc, results/DE_20_1.0_wind_0.75_180_noinvroll.nc, results/DE_20_1.0_pv_0.25_90_noinvroll.nc, results/DE_20_1.5_pv_0.38_270_invroll.nc, results/DE_20_1.5_wind_0.25_180_invroll.nc, results/DE_20_1.5_pv_0.25_180_noinvroll.nc, results/DE_20_1.0_wind_0.25_90_invroll.nc, results/DE_20_1.5_pv_0.12_90_noinvroll.nc, results/DE_20_1.0_pv_0.25_180_noinvroll.nc, results/DE_20_1.0_pv_0.25_180_invroll.nc, results/DE_20_1.0_wind_0.75_90_noinvroll.nc, results/DE_20_1.0_pv_0.25_270_invroll.nc, results/DE_20_1.5_pv_0.38_180_noinvroll.nc, results/DE_20_1.5_pv_0.25_270_noinvroll.nc, results/DE_20_1.5_wind_0.5_270_noinvroll.nc, results/DE_20_1.0_pv_0.12_90_invroll.nc, results/DE_20_1.5_wind_0.75_270_invroll.nc, results/DE_20_1.5_pv_0.12_90_invroll.nc, results/DE_20_1.0_wind_0.75_90_invroll.nc, results/DE_20_1.0_pv_0.38_180_noinvroll.nc, results/DE_20_1.5_wind_0.75_270_noinvroll.nc, results/DE_20_1.5_wind_0.75_180_invroll.nc, results/DE_20_1.0_wind_0.25_180_invroll.nc, results/DE_20_1.5_pv_0.12_180_invroll.nc, results/DE_20_1.0_wind_0.5_270_noinvroll.nc, results/DE_20_1.5_wind_0.5_90_noinvroll.nc, results/DE_20_1.0_pv_0.25_90_invroll.nc, results/DE_20_1.0_wind_0.5_180_invroll.nc, results/DE_20_1.5_wind_0.25_180_noinvroll.nc, results/DE_20_1.5_pv_0.25_90_noinvroll.nc, results/DE_20_1.0_pv_0.38_180_invroll.nc, results/DE_20_1.0_wind_0.25_180_noinvroll.nc, results/DE_20_1.0_wind_0.25_270_noinvroll.nc, results/DE_20_1.5_wind_0.75_90_noinvroll.nc, results/DE_20_1.5_pv_0.12_270_noinvroll.nc, results/DE_20_1.5_pv_0.38_270_noinvroll.nc, results/DE_20_1.0_pv_0.38_90_noinvroll.nc, results/DE_20_1.5_wind_0.5_90_invroll.nc, results/DE_20_1.5_pv_0.38_180_invroll.nc, results/DE_20_1.5_wind_0.25_90_noinvroll.nc, results/DE_20_1.5_pv_0.25_180_invroll.nc, results/DE_20_1.0_wind_0.5_90_noinvroll.nc, results/DE_20_1.0_wind_0.75_270_invroll.nc
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  2 19:48:50 2024]
+Finished job 0.
+73 of 73 steps (100%) done
+Complete log: .snakemake\log\2024-05-31T233909.129427.snakemake.log

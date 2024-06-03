@@ -1,0 +1,3 @@
+TypeError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 21:
+list indices must be integers or slices, not str
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 21, in <module>

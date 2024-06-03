@@ -1,0 +1,65 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+solve_rollinghorizons        3
+total                        4
+
+Select jobs to execute...
+
+[Sun May 26 17:01:16 2024]
+rule solve_rollinghorizons:
+    input: resources/DE_20_1.0_pv_0_180_noinv.nc
+    output: results/DE_20_1.0_pv_0_180_noinvroll.nc
+    jobid: 3
+    reason: Updated input files: resources/DE_20_1.0_pv_0_180_noinv.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 17:01:16 2024]
+Finished job 3.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Sun May 26 17:01:16 2024]
+rule solve_rollinghorizons:
+    input: resources/DE_20_1.5_pv_0_180_noinv.nc
+    output: results/DE_20_1.5_pv_0_180_noinvroll.nc
+    jobid: 7
+    reason: Updated input files: resources/DE_20_1.5_pv_0_180_noinv.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 17:01:16 2024]
+Finished job 7.
+2 of 4 steps (50%) done
+Select jobs to execute...
+
+[Sun May 26 17:01:16 2024]
+rule solve_rollinghorizons:
+    input: resources/DE_20_1.5_pv_0_180_inv.nc
+    output: results/DE_20_1.5_pv_0_180_invroll.nc
+    jobid: 5
+    reason: Updated input files: resources/DE_20_1.5_pv_0_180_inv.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 17:01:16 2024]
+Finished job 5.
+3 of 4 steps (75%) done
+Select jobs to execute...
+
+[Sun May 26 17:01:16 2024]
+localrule all:
+    input: results/DE_20_1.0_pv_0_180_invroll.nc, results/DE_20_1.0_pv_0_180_noinvroll.nc, results/DE_20_1.5_pv_0_180_invroll.nc, results/DE_20_1.5_pv_0_180_noinvroll.nc
+    jobid: 0
+    reason: Input files updated by another job: results/DE_20_1.0_pv_0_180_noinvroll.nc, results/DE_20_1.5_pv_0_180_invroll.nc, results/DE_20_1.5_pv_0_180_noinvroll.nc
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 17:01:16 2024]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake\log\2024-05-26T170115.823191.snakemake.log

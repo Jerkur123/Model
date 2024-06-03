@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+solve_base                 2
+solve_contingencies       32
+total                     35
+
+Select jobs to execute...
+
+[Sat May 25 14:21:00 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: results/DE_20_1.5_base_solved.nc
+    jobid: 19
+    reason: Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake\log\2024-05-25T142058.937676.snakemake.log

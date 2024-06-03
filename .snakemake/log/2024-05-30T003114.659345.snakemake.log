@@ -1,0 +1,468 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+solve_contingencies       48
+total                     49
+
+Select jobs to execute...
+
+[Thu May 30 00:31:15 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_90_noinv.nc, results/DE_20_1.0_wind_0.5_90_noinvroll.nc
+    jobid: 20
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_90_noinvroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 00:40:14 2024]
+Finished job 20.
+1 of 49 steps (2%) done
+Select jobs to execute...
+
+[Thu May 30 00:40:14 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_180_inv.nc, results/DE_20_1.0_wind_0.5_180_invroll.nc
+    jobid: 9
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_180_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 00:56:51 2024]
+Finished job 9.
+2 of 49 steps (4%) done
+Select jobs to execute...
+
+[Thu May 30 00:56:51 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0_180_inv.nc, results/DE_20_1.0_wind_0_180_invroll.nc
+    jobid: 12
+    reason: Missing output files: results/DE_20_1.0_wind_0_180_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 01:12:48 2024]
+Finished job 12.
+3 of 49 steps (6%) done
+Select jobs to execute...
+
+[Thu May 30 01:12:48 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0_270_inv.nc, results/DE_20_1.0_wind_0_270_invroll.nc
+    jobid: 13
+    reason: Missing output files: results/DE_20_1.0_wind_0_270_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 01:27:08 2024]
+Finished job 13.
+4 of 49 steps (8%) done
+Select jobs to execute...
+
+[Thu May 30 01:27:08 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_180_noinv.nc, results/DE_20_1.0_wind_0.5_180_noinvroll.nc
+    jobid: 21
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_180_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 01:36:03 2024]
+Finished job 21.
+5 of 49 steps (10%) done
+Select jobs to execute...
+
+[Thu May 30 01:36:03 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_270_inv.nc, results/DE_20_1.0_wind_0.5_270_invroll.nc
+    jobid: 10
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_270_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 02:24:13 2024]
+Finished job 10.
+6 of 49 steps (12%) done
+Select jobs to execute...
+
+[Thu May 30 02:24:13 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_1.0_270_inv.nc, results/DE_20_1.0_wind_1.0_270_invroll.nc
+    jobid: 7
+    reason: Missing output files: results/DE_20_1.0_wind_1.0_270_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=1.0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 02:41:48 2024]
+Finished job 7.
+7 of 49 steps (14%) done
+Select jobs to execute...
+
+[Thu May 30 02:41:48 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_90_inv.nc, results/DE_20_1.0_pv_0_90_invroll.nc
+    jobid: 1
+    reason: Missing output files: results/DE_20_1.0_pv_0_90_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 03:17:57 2024]
+Finished job 1.
+8 of 49 steps (16%) done
+Select jobs to execute...
+
+[Thu May 30 03:17:57 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_270_noinv.nc, results/DE_20_1.0_wind_0.5_270_noinvroll.nc
+    jobid: 22
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_270_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 03:26:56 2024]
+Finished job 22.
+9 of 49 steps (18%) done
+Select jobs to execute...
+
+[Thu May 30 03:26:56 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_180_noinv.nc, results/DE_20_1.0_pv_0_180_noinvroll.nc
+    jobid: 15
+    reason: Missing output files: results/DE_20_1.0_pv_0_180_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 03:35:48 2024]
+Finished job 15.
+10 of 49 steps (20%) done
+Select jobs to execute...
+
+[Thu May 30 03:35:48 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_1.0_180_inv.nc, results/DE_20_1.0_wind_1.0_180_invroll.nc
+    jobid: 6
+    reason: Missing output files: results/DE_20_1.0_wind_1.0_180_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=1.0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 04:16:31 2024]
+Finished job 6.
+11 of 49 steps (22%) done
+Select jobs to execute...
+
+[Thu May 30 04:16:31 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_180_inv.nc, results/DE_20_1.0_pv_0_180_invroll.nc
+    jobid: 3
+    reason: Missing output files: results/DE_20_1.0_pv_0_180_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 04:29:23 2024]
+Finished job 3.
+12 of 49 steps (24%) done
+Select jobs to execute...
+
+[Thu May 30 04:29:23 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0_90_noinv.nc, results/DE_20_1.0_wind_0_90_noinvroll.nc
+    jobid: 23
+    reason: Missing output files: results/DE_20_1.0_wind_0_90_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 04:38:18 2024]
+Finished job 23.
+13 of 49 steps (27%) done
+Select jobs to execute...
+
+[Thu May 30 04:38:18 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_270_noinv.nc, results/DE_20_1.0_pv_0_270_noinvroll.nc
+    jobid: 16
+    reason: Missing output files: results/DE_20_1.0_pv_0_270_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 04:47:09 2024]
+Finished job 16.
+14 of 49 steps (29%) done
+Select jobs to execute...
+
+[Thu May 30 04:47:09 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0_180_noinv.nc, results/DE_20_1.0_wind_0_180_noinvroll.nc
+    jobid: 24
+    reason: Missing output files: results/DE_20_1.0_wind_0_180_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 04:56:08 2024]
+Finished job 24.
+15 of 49 steps (31%) done
+Select jobs to execute...
+
+[Thu May 30 04:56:08 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_1.0_90_noinv.nc, results/DE_20_1.0_wind_1.0_90_noinvroll.nc
+    jobid: 17
+    reason: Missing output files: results/DE_20_1.0_wind_1.0_90_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=1.0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 05:05:11 2024]
+Finished job 17.
+16 of 49 steps (33%) done
+Select jobs to execute...
+
+[Thu May 30 05:05:11 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0_90_inv.nc, results/DE_20_1.0_wind_0_90_invroll.nc
+    jobid: 11
+    reason: Missing output files: results/DE_20_1.0_wind_0_90_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 05:41:03 2024]
+Finished job 11.
+17 of 49 steps (35%) done
+Select jobs to execute...
+
+[Thu May 30 05:41:03 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_90_noinv.nc, results/DE_20_1.0_pv_0_90_noinvroll.nc
+    jobid: 14
+    reason: Missing output files: results/DE_20_1.0_pv_0_90_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 05:49:57 2024]
+Finished job 14.
+18 of 49 steps (37%) done
+Select jobs to execute...
+
+[Thu May 30 05:49:57 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0_270_noinv.nc, results/DE_20_1.0_wind_0_270_noinvroll.nc
+    jobid: 25
+    reason: Missing output files: results/DE_20_1.0_wind_0_270_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 05:58:57 2024]
+Finished job 25.
+19 of 49 steps (39%) done
+Select jobs to execute...
+
+[Thu May 30 05:58:57 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_1.0_180_noinv.nc, results/DE_20_1.0_wind_1.0_180_noinvroll.nc
+    jobid: 18
+    reason: Missing output files: results/DE_20_1.0_wind_1.0_180_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=1.0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 06:08:03 2024]
+Finished job 18.
+20 of 49 steps (41%) done
+Select jobs to execute...
+
+[Thu May 30 06:08:03 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_90_inv.nc, results/DE_20_1.0_wind_0.5_90_invroll.nc
+    jobid: 8
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_90_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 06:20:40 2024]
+Finished job 8.
+21 of 49 steps (43%) done
+Select jobs to execute...
+
+[Thu May 30 06:20:40 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_270_inv.nc, results/DE_20_1.0_pv_0_270_invroll.nc
+    jobid: 4
+    reason: Missing output files: results/DE_20_1.0_pv_0_270_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 06:33:46 2024]
+Finished job 4.
+22 of 49 steps (45%) done
+Select jobs to execute...
+
+[Thu May 30 06:33:46 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_1.0_270_noinv.nc, results/DE_20_1.0_wind_1.0_270_noinvroll.nc
+    jobid: 19
+    reason: Missing output files: results/DE_20_1.0_wind_1.0_270_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=1.0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 06:43:33 2024]
+Finished job 19.
+23 of 49 steps (47%) done
+Select jobs to execute...
+
+[Thu May 30 06:43:33 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_1.0_90_inv.nc, results/DE_20_1.0_wind_1.0_90_invroll.nc
+    jobid: 5
+    reason: Missing output files: results/DE_20_1.0_wind_1.0_90_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=1.0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 07:01:08 2024]
+Finished job 5.
+24 of 49 steps (49%) done
+Select jobs to execute...
+
+[Thu May 30 07:01:08 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_180_inv.nc, results/DE_20_1.5_pv_0_180_invroll.nc
+    jobid: 28
+    reason: Missing output files: results/DE_20_1.5_pv_0_180_invroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 07:20:20 2024]
+Finished job 28.
+25 of 49 steps (51%) done
+Select jobs to execute...
+
+[Thu May 30 07:20:20 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0_180_noinv.nc, results/DE_20_1.5_wind_0_180_noinvroll.nc
+    jobid: 49
+    reason: Missing output files: results/DE_20_1.5_wind_0_180_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 07:30:03 2024]
+Finished job 49.
+26 of 49 steps (53%) done
+Select jobs to execute...
+
+[Thu May 30 07:30:03 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_1.0_90_noinv.nc, results/DE_20_1.5_wind_1.0_90_noinvroll.nc
+    jobid: 42
+    reason: Missing output files: results/DE_20_1.5_wind_1.0_90_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=1.0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 07:39:29 2024]
+Finished job 42.
+27 of 49 steps (55%) done
+Select jobs to execute...
+
+[Thu May 30 07:39:29 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_180_inv.nc, results/DE_20_1.5_wind_0.5_180_invroll.nc
+    jobid: 34
+    reason: Missing output files: results/DE_20_1.5_wind_0.5_180_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 09:15:53 2024]
+Finished job 34.
+28 of 49 steps (57%) done
+Select jobs to execute...
+
+[Thu May 30 09:15:53 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0_270_noinv.nc, results/DE_20_1.5_wind_0_270_noinvroll.nc
+    jobid: 50
+    reason: Missing output files: results/DE_20_1.5_wind_0_270_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 09:24:55 2024]
+Finished job 50.
+29 of 49 steps (59%) done
+Select jobs to execute...
+
+[Thu May 30 09:24:55 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_1.0_180_noinv.nc, results/DE_20_1.5_wind_1.0_180_noinvroll.nc
+    jobid: 43
+    reason: Missing output files: results/DE_20_1.5_wind_1.0_180_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=1.0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 09:34:23 2024]
+Finished job 43.
+30 of 49 steps (61%) done
+Select jobs to execute...
+
+[Thu May 30 09:34:23 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0_90_noinv.nc, results/DE_20_1.5_wind_0_90_noinvroll.nc
+    jobid: 48
+    reason: Missing output files: results/DE_20_1.5_wind_0_90_noinvroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 09:43:22 2024]
+Finished job 48.
+31 of 49 steps (63%) done
+Select jobs to execute...
+
+[Thu May 30 09:43:22 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_270_inv.nc, results/DE_20_1.5_wind_0.5_270_invroll.nc
+    jobid: 35
+    reason: Missing output files: results/DE_20_1.5_wind_0.5_270_invroll.nc; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 10:28:44 2024]
+Error in rule solve_contingencies:
+    jobid: 35
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_270_inv.nc, results/DE_20_1.5_wind_0.5_270_invroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 141:
+Command 'python scripts/solve_contingencies.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_wind_0.5_270_inv.nc results/DE_20_1.5_wind_0.5_270_invroll.nc wind 0.5 270 inv 24 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 141, in __rule_solve_contingencies
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake\log\2024-05-30T003114.659345.snakemake.log

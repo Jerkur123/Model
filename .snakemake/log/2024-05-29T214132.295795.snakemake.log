@@ -1,0 +1,40 @@
+Building DAG of jobs...
+MissingInputException in rule all in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 85:
+Missing input files for rule all:
+    affected files:
+        results/DE_20_1.0_wind_0.5_90_noinvroll.nc
+        results/DE_20_1.5_wind_1.0_90_invroll.nc
+        results/DE_20_1.5_wind_0.5_180_invroll.nc
+        results/DE_20_1.5_wind_0_90_invroll.nc
+        results/DE_20_1.0_wind_0.5_180_noinvroll.nc
+        results/DE_20_1.5_wind_0.5_270_noinvroll.nc
+        results/DE_20_1.5_wind_1.0_180_invroll.nc
+        results/DE_20_1.5_wind_0.5_270_invroll.nc
+        results/DE_20_1.5_wind_0.5_180_noinvroll.nc
+        results/DE_20_1.0_wind_0_270_invroll.nc
+        results/DE_20_1.0_wind_0_90_noinvroll.nc
+        results/DE_20_1.5_wind_0_180_noinvroll.nc
+        results/DE_20_1.5_wind_1.0_270_noinvroll.nc
+        results/DE_20_1.0_wind_0.5_270_noinvroll.nc
+        results/DE_20_1.5_wind_1.0_180_noinvroll.nc
+        results/DE_20_1.0_wind_0.5_270_invroll.nc
+        results/DE_20_1.0_wind_0_270_noinvroll.nc
+        results/DE_20_1.5_wind_0.5_90_invroll.nc
+        results/DE_20_1.0_wind_1.0_90_invroll.nc
+        results/DE_20_1.0_wind_1.0_270_noinvroll.nc
+        results/DE_20_1.5_wind_1.0_270_invroll.nc
+        results/DE_20_1.5_wind_1.0_90_noinvroll.nc
+        results/DE_20_1.5_wind_0_270_invroll.nc
+        results/DE_20_1.5_wind_0_90_noinvroll.nc
+        results/DE_20_1.0_wind_0_90_invroll.nc
+        results/DE_20_1.0_wind_0_180_invroll.nc
+        results/DE_20_1.0_wind_0_180_noinvroll.nc
+        results/DE_20_1.5_wind_0.5_90_noinvroll.nc
+        results/DE_20_1.0_wind_1.0_90_noinvroll.nc
+        results/DE_20_1.0_wind_1.0_180_invroll.nc
+        results/DE_20_1.0_wind_1.0_270_invroll.nc
+        results/DE_20_1.0_wind_1.0_180_noinvroll.nc
+        results/DE_20_1.5_wind_0_180_invroll.nc
+        results/DE_20_1.5_wind_0_270_noinvroll.nc
+        results/DE_20_1.0_wind_0.5_180_invroll.nc
+        results/DE_20_1.0_wind_0.5_90_invroll.nc

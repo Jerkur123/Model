@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule all in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 8:
+Missing input files for rule all:
+    affected files:
+        results/DE_20_1.5_output.csv
+        results/DE_20_1.0_output.csv

@@ -1,0 +1,37 @@
+co2_price: 130 # €/t
+
+countries: ['DE']
+
+buses: 20
+
+transmission_limit:
+ - 1.0
+ - 1.5
+
+contingencies: 
+ - pv:
+   - reductionto: 0.25
+   - duration: 180
+ - wind:
+   - reductionto: 0.5
+   - duration: 180
+
+cut_start: '2013-02-01 00:00:00'
+
+models:
+ - inv
+ - noinv
+
+horizon: 24 #in number of days*8 because the of the 3H time resolution
+
+sens_analysis:
+ - enabled: true
+ - deviation_reductionto: 0.5 # %
+ - deviation_duration: 0.5
+
+H2_cost_sens_analysis:
+ - enabled: false
+ - deviation: 0.2 # %
+
+
+

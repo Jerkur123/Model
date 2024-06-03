@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+solve_contingencies          4
+solve_rollinghorizons        4
+total                        9
+
+Select jobs to execute...
+
+[Sun May 26 16:29:43 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_180_inv.nc
+    jobid: 2
+    reason: Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 16:30:13 2024]
+Error in rule solve_contingencies:
+    jobid: 2
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_180_inv.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 130:
+Command 'python scripts/solve_contingencies.py resources/DE_20_1.0_base_solved.nc resources/DE_20_1.0_pv_0_180_inv.nc pv 0 180 inv 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 130, in __rule_solve_contingencies
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake\log\2024-05-26T162942.530777.snakemake.log

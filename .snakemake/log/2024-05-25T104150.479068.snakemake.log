@@ -1,0 +1,3 @@
+KeyError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 21:
+'duration'
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 21, in <module>

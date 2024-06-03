@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+solve_contingencies       48
+total                     49
+
+Select jobs to execute...
+
+[Wed May 29 23:58:15 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_90_noinv.nc, results/DE_20_1.0_wind_0.5_90_noinvroll.nc
+    jobid: 20
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_90_noinvroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu May 30 00:00:42 2024]
+Error in rule solve_contingencies:
+    jobid: 20
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_90_noinv.nc, results/DE_20_1.0_wind_0.5_90_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 135:
+Command 'python scripts/solve_contingencies.py resources/DE_20_1.0_base_solved.nc resources/DE_20_1.0_wind_0.5_90_noinv.nc results/DE_20_1.0_wind_0.5_90_noinvroll.nc wind 0.5 90 noinv 2013-02-01 00:00:00 24' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 135, in __rule_solve_contingencies
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-05-29T235814.112680.snakemake.log

@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+all               1
+solve_base        4
+total             5
+
+Select jobs to execute...
+
+[Sat May 25 13:25:47 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: results/DE_20_1.5_0.25_base_solved.nc
+    jobid: 3
+    reason: Missing output files: results/DE_20_1.5_0.25_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, reductionto=0.25
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 13:25:47 2024]
+Error in rule solve_base:
+    jobid: 3
+    input: resources/DE_20_1.5_base.nc
+    output: results/DE_20_1.5_0.25_base_solved.nc
+
+RuleException:
+NameError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 49:
+name 'wildcard' is not defined
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 49, in __rule_solve_base
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-05-25T132546.744995.snakemake.log

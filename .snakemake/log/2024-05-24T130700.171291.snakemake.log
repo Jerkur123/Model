@@ -1,0 +1,4 @@
+NameError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 10:
+name 'input_file_exists' is not defined
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 10, in <module>
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 10, in <listcomp>

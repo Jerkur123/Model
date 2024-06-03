@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+all               1
+solve_base        1
+total             2
+
+Select jobs to execute...
+
+[Sat May 25 12:32:31 2024]
+rule solve_base:
+    input: resources/DE_20_1.0_base.nc
+    output: results/DE_20_1.0_base_solved.nc
+    jobid: 1
+    reason: Missing output files: results/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 12:58:40 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Sat May 25 12:58:40 2024]
+localrule all:
+    input: results/DE_20_1.0_base_solved.nc, results/DE_20_1.5_base_solved.nc
+    jobid: 0
+    reason: Input files updated by another job: results/DE_20_1.0_base_solved.nc
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sat May 25 12:58:40 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake\log\2024-05-25T123230.250792.snakemake.log

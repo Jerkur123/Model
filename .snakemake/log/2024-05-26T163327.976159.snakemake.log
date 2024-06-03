@@ -1,0 +1,52 @@
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+solve_contingencies          1
+solve_rollinghorizons        1
+total                        3
+
+Select jobs to execute...
+
+[Sun May 26 16:33:28 2024]
+rule solve_contingencies:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_180_inv.nc
+    jobid: 2
+    reason: Forced execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 16:33:28 2024]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Sun May 26 16:33:28 2024]
+rule solve_rollinghorizons:
+    input: resources/DE_20_1.0_pv_0_180_inv.nc
+    output: results/DE_20_1.0_pv_0_180_invroll.nc
+    jobid: 1
+    reason: Input files updated by another job: resources/DE_20_1.0_pv_0_180_inv.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 16:33:28 2024]
+Finished job 1.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Sun May 26 16:33:28 2024]
+localrule all:
+    input: results/DE_20_1.0_pv_0_180_invroll.nc, results/DE_20_1.0_pv_0_180_noinvroll.nc, results/DE_20_1.5_pv_0_180_invroll.nc, results/DE_20_1.5_pv_0_180_noinvroll.nc
+    jobid: 0
+    reason: Input files updated by another job: results/DE_20_1.0_pv_0_180_invroll.nc
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun May 26 16:33:28 2024]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake\log\2024-05-26T163327.976159.snakemake.log
