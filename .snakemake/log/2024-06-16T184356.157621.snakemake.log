@@ -1,0 +1,99 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+dynamic_solve        36
+gen_table            36
+inst_cap_base         2
+inst_cap_table       36
+solve_base            2
+syst_cost            36
+total               149
+
+Select jobs to execute...
+
+[Sun Jun 16 18:43:57 2024]
+rule solve_base:
+    input: resources/DE_20_1.0_base.nc
+    output: resources/DE_20_1.0_base_solved.nc, resources/DE_20_1.0_base_roll_solved.nc
+    jobid: 3
+    reason: Missing output files: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 18:43:57 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: resources/DE_20_1.5_base_solved.nc, resources/DE_20_1.5_base_roll_solved.nc
+    jobid: 40
+    reason: Missing output files: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 18:44:27 2024]
+Finished job 3.
+1 of 149 steps (1%) done
+Select jobs to execute...
+
+[Sun Jun 16 18:44:27 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.5_90_noinv.nc, resources/DE_20_1.0_pv_0.5_90_noinvroll.nc
+    jobid: 33
+    reason: Missing output files: resources/DE_20_1.0_pv_0.5_90_noinv.nc, resources/DE_20_1.0_pv_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 18:44:27 2024]
+rule inst_cap_base:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/data/DE/cap_DE_20_1.0_base.csv
+    jobid: 111
+    reason: Missing output files: results/data/DE/cap_DE_20_1.0_base.csv; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Sun Jun 16 18:44:27 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_90_noinv.nc, resources/DE_20_1.0_pv_0.25_90_noinvroll.nc
+    jobid: 27
+    reason: Missing output files: resources/DE_20_1.0_pv_0.25_90_noinv.nc, resources/DE_20_1.0_pv_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 18:44:27 2024]
+Error in rule dynamic_solve:
+    jobid: 33
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.5_90_noinv.nc, resources/DE_20_1.0_pv_0.5_90_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 205:
+Command 'python scripts/solve_pv.py resources/DE_20_1.0_base_solved.nc resources/DE_20_1.0_pv_0.5_90_noinv.nc resources/DE_20_1.0_pv_0.5_90_noinvroll.nc pv 0.5 90 noinv 52 DE' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 205, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 18:44:27 2024]
+Error in rule dynamic_solve:
+    jobid: 27
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_90_noinv.nc, resources/DE_20_1.0_pv_0.25_90_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 205:
+Command 'python scripts/solve_pv.py resources/DE_20_1.0_base_solved.nc resources/DE_20_1.0_pv_0.25_90_noinv.nc resources/DE_20_1.0_pv_0.25_90_noinvroll.nc pv 0.25 90 noinv 52 DE' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 205, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 18:44:28 2024]
+Finished job 40.
+2 of 149 steps (1%) done
+[Sun Jun 16 18:44:33 2024]
+Finished job 111.
+3 of 149 steps (2%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-16T184356.157621.snakemake.log

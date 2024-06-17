@@ -1,0 +1,80 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve      166
+total              167
+
+Select jobs to execute...
+
+[Sun Jun 16 23:07:34 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_180_noinv.nc, results/DE_20_1.5_dispatchcut_0_180_noinvroll.nc
+    jobid: 202
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0_180_noinvroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Sun Jun 16 23:07:34 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.75_270_inv.nc, results/DE_20_1.5_drought_0.75_270_invroll.nc
+    jobid: 146
+    reason: Missing output files: results/DE_20_1.5_drought_0.75_270_invroll.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 23:07:34 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_90_noinv.nc, results/DE_20_1.5_wind_0.25_90_noinvroll.nc
+    jobid: 174
+    reason: Missing output files: results/DE_20_1.5_wind_0.25_90_noinvroll.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 23:07:34 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_90_noinv.nc, results/DE_20_1.5_dispatchcut_0_90_noinvroll.nc
+    jobid: 201
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0_90_noinvroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 23:07:40 2024]
+Error in rule dynamic_solve:
+    jobid: 202
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_180_noinv.nc, results/DE_20_1.5_dispatchcut_0_180_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 202:
+Command 'python scripts/solve_dispatchcut.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_dispatchcut_0_180_noinv.nc results/DE_20_1.5_dispatchcut_0_180_noinvroll.nc dispatchcut 0 180 noinv 52 DE EQ0.95c 1.5 20' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 202, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 23:07:40 2024]
+Error in rule dynamic_solve:
+    jobid: 201
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_90_noinv.nc, results/DE_20_1.5_dispatchcut_0_90_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 202:
+Command 'python scripts/solve_dispatchcut.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_dispatchcut_0_90_noinv.nc results/DE_20_1.5_dispatchcut_0_90_noinvroll.nc dispatchcut 0 90 noinv 52 DE EQ0.95c 1.5 20' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 202, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 23:07:56 2024]
+Finished job 174.
+1 of 167 steps (1%) done
+[Sun Jun 16 23:08:02 2024]
+Finished job 146.
+2 of 167 steps (1%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-16T230732.563239.snakemake.log

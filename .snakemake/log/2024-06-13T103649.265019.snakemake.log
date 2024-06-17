@@ -1,0 +1,1028 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+gen_table       72
+total           73
+
+Select jobs to execute...
+
+[Thu Jun 13 10:36:52 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.25_90_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_inv.csv
+    jobid: 150
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 10:36:52 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_90_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_90_inv.csv
+    jobid: 147
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 10:36:52 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.25_180_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_noinv.csv
+    jobid: 211
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 10:36:52 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_180_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_180_inv.csv
+    jobid: 148
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:01 2024]
+Finished job 150.
+1 of 73 steps (1%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:01 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.25_90_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.25_90_noinv.csv
+    jobid: 204
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:01 2024]
+Finished job 148.
+2 of 73 steps (3%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:01 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.75_90_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.75_90_inv.csv
+    jobid: 162
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:01 2024]
+Finished job 147.
+3 of 73 steps (4%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:01 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.25_90_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.25_90_noinv.csv
+    jobid: 210
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:01 2024]
+Finished job 211.
+4 of 73 steps (5%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:01 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.5_180_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_180_inv.csv
+    jobid: 154
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:09 2024]
+Finished job 162.
+5 of 73 steps (7%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:09 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.5_180_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.5_180_noinv.csv
+    jobid: 208
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:09 2024]
+Finished job 204.
+6 of 73 steps (8%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:09 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0_180_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0_180_inv.csv
+    jobid: 184
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:09 2024]
+Finished job 210.
+7 of 73 steps (10%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:09 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0_90_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0_90_noinv.csv
+    jobid: 201
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:09 2024]
+Finished job 154.
+8 of 73 steps (11%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:09 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.5_270_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.5_270_noinv.csv
+    jobid: 209
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:17 2024]
+Finished job 208.
+9 of 73 steps (12%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:17 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.5_90_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_90_inv.csv
+    jobid: 153
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:17 2024]
+Finished job 184.
+10 of 73 steps (14%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:17 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_270_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_270_inv.csv
+    jobid: 149
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:18 2024]
+Finished job 201.
+11 of 73 steps (15%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:18 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.25_180_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_180_inv.csv
+    jobid: 151
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:18 2024]
+Finished job 209.
+12 of 73 steps (16%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:18 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.5_90_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.5_90_noinv.csv
+    jobid: 207
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:26 2024]
+Finished job 153.
+13 of 73 steps (18%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:26 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.5_270_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_inv.csv
+    jobid: 155
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:26 2024]
+Finished job 149.
+14 of 73 steps (19%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:26 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.25_90_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_inv.csv
+    jobid: 156
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:26 2024]
+Finished job 151.
+15 of 73 steps (21%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:26 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.5_270_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_270_inv.csv
+    jobid: 161
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:26 2024]
+Finished job 207.
+16 of 73 steps (22%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:26 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.5_90_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.5_90_noinv.csv
+    jobid: 213
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:34 2024]
+Finished job 156.
+17 of 73 steps (23%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:34 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.25_270_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_270_inv.csv
+    jobid: 158
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:34 2024]
+Finished job 155.
+18 of 73 steps (25%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:34 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.25_180_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_180_inv.csv
+    jobid: 157
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:35 2024]
+Finished job 161.
+19 of 73 steps (26%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:35 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.75_90_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinv.csv
+    jobid: 216
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:36 2024]
+Finished job 213.
+20 of 73 steps (27%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:36 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0_180_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0_180_noinv.csv
+    jobid: 202
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:43 2024]
+Finished job 158.
+21 of 73 steps (29%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:43 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.25_270_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_270_inv.csv
+    jobid: 152
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:43 2024]
+Finished job 157.
+22 of 73 steps (30%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:43 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.75_180_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.75_180_inv.csv
+    jobid: 163
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:44 2024]
+Finished job 216.
+23 of 73 steps (32%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:44 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.25_270_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.25_270_noinv.csv
+    jobid: 212
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:45 2024]
+Finished job 202.
+24 of 73 steps (33%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:45 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.25_180_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.25_180_inv.csv
+    jobid: 187
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:52 2024]
+Finished job 163.
+25 of 73 steps (34%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:52 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.75_270_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.75_270_inv.csv
+    jobid: 164
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:52 2024]
+Finished job 152.
+26 of 73 steps (36%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:52 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.5_180_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.5_180_noinv.csv
+    jobid: 214
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:53 2024]
+Finished job 212.
+27 of 73 steps (37%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:53 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_180_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_180_noinv.csv
+    jobid: 166
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:37:54 2024]
+Finished job 187.
+28 of 73 steps (38%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:37:54 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.5_180_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_inv.csv
+    jobid: 160
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:01 2024]
+Finished job 164.
+29 of 73 steps (40%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:01 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.5_90_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_90_inv.csv
+    jobid: 159
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:01 2024]
+Finished job 214.
+30 of 73 steps (41%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:01 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.25_270_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_270_noinv.csv
+    jobid: 176
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:02 2024]
+Finished job 166.
+31 of 73 steps (42%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:02 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.5_270_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.5_270_noinv.csv
+    jobid: 215
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:03 2024]
+Finished job 160.
+32 of 73 steps (44%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:03 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.25_270_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_270_noinv.csv
+    jobid: 170
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:10 2024]
+Finished job 159.
+33 of 73 steps (45%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:10 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.25_180_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_180_noinv.csv
+    jobid: 175
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:10 2024]
+Finished job 176.
+34 of 73 steps (47%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:10 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_270_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinv.csv
+    jobid: 167
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:11 2024]
+Finished job 215.
+35 of 73 steps (48%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:11 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0_270_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0_270_inv.csv
+    jobid: 185
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:12 2024]
+Finished job 170.
+36 of 73 steps (49%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:12 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_90_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_90_noinv.csv
+    jobid: 165
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:18 2024]
+Finished job 175.
+37 of 73 steps (51%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:18 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.25_270_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.25_270_noinv.csv
+    jobid: 206
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:19 2024]
+Finished job 167.
+38 of 73 steps (52%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:19 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.25_90_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.25_90_inv.csv
+    jobid: 186
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:20 2024]
+Finished job 185.
+39 of 73 steps (53%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:20 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.25_90_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinv.csv
+    jobid: 174
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:20 2024]
+Finished job 165.
+40 of 73 steps (55%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:20 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.5_180_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.5_180_inv.csv
+    jobid: 196
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:27 2024]
+Finished job 186.
+41 of 73 steps (56%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:27 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0_270_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0_270_noinv.csv
+    jobid: 203
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:27 2024]
+Finished job 206.
+42 of 73 steps (58%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:27 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.25_90_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.25_90_inv.csv
+    jobid: 192
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:28 2024]
+Finished job 174.
+43 of 73 steps (59%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:28 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.75_270_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_270_noinv.csv
+    jobid: 218
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:29 2024]
+Finished job 196.
+44 of 73 steps (60%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:29 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.75_180_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_180_noinv.csv
+    jobid: 217
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:36 2024]
+Finished job 192.
+45 of 73 steps (62%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:36 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.5_180_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.5_180_inv.csv
+    jobid: 190
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:36 2024]
+Finished job 203.
+46 of 73 steps (63%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:36 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.25_270_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.25_270_inv.csv
+    jobid: 194
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:37 2024]
+Finished job 218.
+47 of 73 steps (64%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:37 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.25_180_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.25_180_noinv.csv
+    jobid: 205
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:38 2024]
+Finished job 217.
+48 of 73 steps (66%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:38 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.75_180_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.75_180_noinv.csv
+    jobid: 181
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:45 2024]
+Finished job 190.
+49 of 73 steps (67%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:45 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.75_90_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_inv.csv
+    jobid: 198
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:45 2024]
+Finished job 194.
+50 of 73 steps (68%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:45 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.5_90_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.5_90_inv.csv
+    jobid: 195
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:46 2024]
+Finished job 205.
+51 of 73 steps (70%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:46 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.5_90_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.5_90_inv.csv
+    jobid: 189
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:46 2024]
+Finished job 181.
+52 of 73 steps (71%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:46 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0_90_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0_90_inv.csv
+    jobid: 183
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:54 2024]
+Finished job 195.
+53 of 73 steps (73%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:54 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.5_270_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.5_270_inv.csv
+    jobid: 191
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:54 2024]
+Finished job 198.
+54 of 73 steps (74%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:54 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.75_270_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_270_inv.csv
+    jobid: 200
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:55 2024]
+Finished job 189.
+55 of 73 steps (75%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:55 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.25_180_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_180_noinv.csv
+    jobid: 169
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:38:55 2024]
+Finished job 183.
+56 of 73 steps (77%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:38:55 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.5_180_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_180_noinv.csv
+    jobid: 172
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:02 2024]
+Finished job 191.
+57 of 73 steps (78%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:02 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.5_270_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.5_270_inv.csv
+    jobid: 197
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:03 2024]
+Finished job 200.
+58 of 73 steps (79%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:03 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.5_90_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_90_noinv.csv
+    jobid: 171
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:03 2024]
+Finished job 169.
+59 of 73 steps (81%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:03 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.5_270_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_270_noinv.csv
+    jobid: 179
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:04 2024]
+Finished job 172.
+60 of 73 steps (82%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:04 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.25_90_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_noinv.csv
+    jobid: 168
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:11 2024]
+Finished job 197.
+61 of 73 steps (84%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:11 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.5_180_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_noinv.csv
+    jobid: 178
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:11 2024]
+Finished job 171.
+62 of 73 steps (85%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:11 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.5_90_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_90_noinv.csv
+    jobid: 177
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:12 2024]
+Finished job 179.
+63 of 73 steps (86%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:12 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.5_270_noinvroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_noinv.csv
+    jobid: 173
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:12 2024]
+Finished job 168.
+64 of 73 steps (88%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:12 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.75_90_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.75_90_noinv.csv
+    jobid: 180
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:20 2024]
+Finished job 178.
+65 of 73 steps (89%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:20 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_pv_0.25_270_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.5_pv_0.25_270_inv.csv
+    jobid: 188
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:20 2024]
+Finished job 177.
+66 of 73 steps (90%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:20 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.25_180_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_inv.csv
+    jobid: 193
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:21 2024]
+Finished job 173.
+67 of 73 steps (92%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:21 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_wind_0.75_270_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.75_270_noinv.csv
+    jobid: 182
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:21 2024]
+Finished job 180.
+68 of 73 steps (93%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:21 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.75_180_invroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_180_inv.csv
+    jobid: 199
+    reason: Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:29 2024]
+Finished job 188.
+69 of 73 steps (95%) done
+[Thu Jun 13 10:39:29 2024]
+Finished job 193.
+70 of 73 steps (96%) done
+[Thu Jun 13 10:39:29 2024]
+Finished job 182.
+71 of 73 steps (97%) done
+[Thu Jun 13 10:39:30 2024]
+Finished job 199.
+72 of 73 steps (99%) done
+Select jobs to execute...
+
+[Thu Jun 13 10:39:30 2024]
+localrule all:
+    input: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_180_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_270_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_180_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_270_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_90_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_180_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_270_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_90_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_180_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_270_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_90_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_180_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_270_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_90_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_180_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_270_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_90_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_180_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_270_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_90_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_180_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_270_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_90_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_180_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_270_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_90_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_180_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_270_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_90_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_180_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_270_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_90_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_180_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_270_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_90_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_180_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_270_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_180_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_270_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_90_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_180_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_180_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_270_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_90_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_270_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_90_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_180_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_270_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_90_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_180_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_270_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_90_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_180_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_270_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_90_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_180_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_270_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_90_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_270_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_90_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_180_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_270_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_180_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_270_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_270_noinv.csv
+    jobid: 0
+    reason: Input files updated by another job: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_90_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_180_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_180_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_270_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_180_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_180_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_90_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_180_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_270_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_90_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_270_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_180_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_270_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_270_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_270_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_90_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_270_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_90_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_90_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_180_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_90_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_180_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_270_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_180_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_270_noinv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_270_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_90_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_180_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_270_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_180_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_180_inv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_90_inv.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_270_inv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_90_noinv.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_90_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_inv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_180_noinv.csv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 10:39:30 2024]
+Finished job 0.
+73 of 73 steps (100%) done
+Complete log: .snakemake\log\2024-06-13T103649.265019.snakemake.log

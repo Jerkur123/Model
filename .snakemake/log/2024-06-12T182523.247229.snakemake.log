@@ -1,0 +1,95 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve       72
+total               73
+
+Select jobs to execute...
+
+[Wed Jun 12 18:25:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/model/DE_20_1.5_pv_0.25_270_noinv.nc, results/DE_20_1.5_pv_0.25_270_noinvroll.nc
+    jobid: 62
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_270_noinvroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 18:25:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/model/DE_20_1.5_pv_0.25_90_inv.nc, results/DE_20_1.5_pv_0.25_90_invroll.nc
+    jobid: 42
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_90_invroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 18:25:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/model/DE_20_1.5_wind_0.75_180_inv.nc, results/DE_20_1.5_wind_0.75_180_invroll.nc
+    jobid: 55
+    reason: Missing output files: results/DE_20_1.5_wind_0.75_180_invroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Wed Jun 12 18:25:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/model/DE_20_1.5_pv_0.5_270_inv.nc, results/DE_20_1.5_pv_0.5_270_invroll.nc
+    jobid: 47
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_270_invroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 18:25:31 2024]
+Error in rule dynamic_solve:
+    jobid: 42
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/model/DE_20_1.5_pv_0.25_90_inv.nc, results/DE_20_1.5_pv_0.25_90_invroll.nc
+
+[Wed Jun 12 18:25:31 2024]
+Error in rule dynamic_solve:
+    jobid: 47
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/model/DE_20_1.5_pv_0.5_270_inv.nc, results/DE_20_1.5_pv_0.5_270_invroll.nc
+
+[Wed Jun 12 18:25:31 2024]
+[Wed Jun 12 18:25:31 2024]
+Error in rule dynamic_solve:
+    jobid: 55
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/model/DE_20_1.5_wind_0.75_180_inv.nc, results/DE_20_1.5_wind_0.75_180_invroll.nc
+
+Error in rule dynamic_solve:
+    jobid: 62
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/model/DE_20_1.5_pv_0.25_270_noinv.nc, results/DE_20_1.5_pv_0.25_270_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 144:
+Command 'python scripts/solve_pv.py resources/DE_20_1.5_base_solved.nc resources/model/DE_20_1.5_pv_0.25_90_inv.nc results/DE_20_1.5_pv_0.25_90_invroll.nc pv 0.25 90 inv 52 DE 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 144, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 144:
+Command 'python scripts/solve_pv.py resources/DE_20_1.5_base_solved.nc resources/model/DE_20_1.5_pv_0.5_270_inv.nc results/DE_20_1.5_pv_0.5_270_invroll.nc pv 0.5 270 inv 52 DE 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 144, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Terminating processes on user request, this might take some time.
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 152:
+Command 'python scripts/solve_wind.py resources/DE_20_1.5_base_solved.nc resources/model/DE_20_1.5_wind_0.75_180_inv.nc results/DE_20_1.5_wind_0.75_180_invroll.nc wind 0.75 180 inv 52 DE 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 152, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 144:
+Command 'python scripts/solve_pv.py resources/DE_20_1.5_base_solved.nc resources/model/DE_20_1.5_pv_0.25_270_noinv.nc results/DE_20_1.5_pv_0.25_270_noinvroll.nc pv 0.25 270 noinv 52 DE 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 144, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Complete log: .snakemake\log\2024-06-12T182523.247229.snakemake.log

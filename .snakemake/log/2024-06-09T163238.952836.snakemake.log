@@ -1,0 +1,2036 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve      144
+total              145
+
+Select jobs to execute...
+
+[Sun Jun  9 16:32:40 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.5_90_inv.nc, results/ES_8_1.5_drought_0.5_90_invroll.nc
+    jobid: 105
+    reason: Missing output files: results/ES_8_1.5_drought_0.5_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Sun Jun  9 16:32:40 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.25_180_noinv.nc, results/ES_8_1.5_noexim_0.25_180_noinvroll.nc
+    jobid: 133
+    reason: Missing output files: results/ES_8_1.5_noexim_0.25_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Sun Jun  9 16:32:40 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.75_270_inv.nc, results/ES_8_1.5_drought_0.75_270_invroll.nc
+    jobid: 104
+    reason: Missing output files: results/ES_8_1.5_drought_0.75_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Sun Jun  9 16:32:40 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.5_270_inv.nc, results/ES_8_1.5_pv_0.5_270_invroll.nc
+    jobid: 77
+    reason: Missing output files: results/ES_8_1.5_pv_0.5_270_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:02 2024]
+Finished job 133.
+1 of 145 steps (1%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:02 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.25_90_inv.nc, results/ES_8_1.5_pv_0.25_90_invroll.nc
+    jobid: 78
+    reason: Missing output files: results/ES_8_1.5_pv_0.25_90_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:04 2024]
+Finished job 77.
+2 of 145 steps (1%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:04 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.25_270_noinv.nc, results/ES_8_1.5_noexim_0.25_270_noinvroll.nc
+    jobid: 134
+    reason: Missing output files: results/ES_8_1.5_noexim_0.25_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:04 2024]
+Finished job 105.
+3 of 145 steps (2%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:04 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.5_180_inv.nc, results/ES_8_1.5_drought_0.5_180_invroll.nc
+    jobid: 106
+    reason: Missing output files: results/ES_8_1.5_drought_0.5_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:04 2024]
+Finished job 104.
+4 of 145 steps (3%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:04 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.25_180_inv.nc, results/ES_8_1.5_pv_0.25_180_invroll.nc
+    jobid: 79
+    reason: Missing output files: results/ES_8_1.5_pv_0.25_180_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:25 2024]
+Finished job 134.
+5 of 145 steps (3%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:25 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0_90_noinv.nc, results/ES_8_1.5_noexim_0_90_noinvroll.nc
+    jobid: 135
+    reason: Missing output files: results/ES_8_1.5_noexim_0_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:26 2024]
+Finished job 78.
+6 of 145 steps (4%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:26 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.5_270_inv.nc, results/ES_8_1.5_drought_0.5_270_invroll.nc
+    jobid: 107
+    reason: Missing output files: results/ES_8_1.5_drought_0.5_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:27 2024]
+Finished job 79.
+7 of 145 steps (5%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:27 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.25_270_inv.nc, results/ES_8_1.5_pv_0.25_270_invroll.nc
+    jobid: 80
+    reason: Missing output files: results/ES_8_1.5_pv_0.25_270_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:27 2024]
+Finished job 106.
+8 of 145 steps (6%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:27 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0_180_noinv.nc, results/ES_8_1.5_noexim_0_180_noinvroll.nc
+    jobid: 136
+    reason: Missing output files: results/ES_8_1.5_noexim_0_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:47 2024]
+Finished job 135.
+9 of 145 steps (6%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:47 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.25_90_inv.nc, results/ES_8_1.5_drought_0.25_90_invroll.nc
+    jobid: 108
+    reason: Missing output files: results/ES_8_1.5_drought_0.25_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:49 2024]
+Finished job 136.
+10 of 145 steps (7%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:49 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.75_270_inv.nc, results/ES_8_1.5_wind_0.75_270_invroll.nc
+    jobid: 86
+    reason: Missing output files: results/ES_8_1.5_wind_0.75_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:49 2024]
+Finished job 107.
+11 of 145 steps (8%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:49 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0_270_noinv.nc, results/ES_8_1.5_noexim_0_270_noinvroll.nc
+    jobid: 137
+    reason: Missing output files: results/ES_8_1.5_noexim_0_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:33:50 2024]
+Finished job 80.
+12 of 145 steps (8%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:33:50 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.25_180_inv.nc, results/ES_8_1.5_drought_0.25_180_invroll.nc
+    jobid: 109
+    reason: Missing output files: results/ES_8_1.5_drought_0.25_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:11 2024]
+Finished job 108.
+13 of 145 steps (9%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:11 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0_90_inv.nc, results/ES_8_1.5_pv_0_90_invroll.nc
+    jobid: 81
+    reason: Missing output files: results/ES_8_1.5_pv_0_90_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:11 2024]
+Finished job 137.
+14 of 145 steps (10%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:11 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.75_90_noinv.nc, results/ES_8_1.5_drought_0.75_90_noinvroll.nc
+    jobid: 138
+    reason: Missing output files: results/ES_8_1.5_drought_0.75_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:13 2024]
+Finished job 86.
+15 of 145 steps (10%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:13 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.25_270_inv.nc, results/ES_8_1.5_drought_0.25_270_invroll.nc
+    jobid: 110
+    reason: Missing output files: results/ES_8_1.5_drought_0.25_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:14 2024]
+Finished job 109.
+16 of 145 steps (11%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:14 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0_180_inv.nc, results/ES_8_1.5_pv_0_180_invroll.nc
+    jobid: 82
+    reason: Missing output files: results/ES_8_1.5_pv_0_180_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:33 2024]
+Finished job 138.
+17 of 145 steps (12%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:33 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.75_180_noinv.nc, results/ES_8_1.5_drought_0.75_180_noinvroll.nc
+    jobid: 139
+    reason: Missing output files: results/ES_8_1.5_drought_0.75_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:35 2024]
+Finished job 81.
+18 of 145 steps (12%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:35 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.5_90_noinv.nc, results/ES_8_1.5_pv_0.5_90_noinvroll.nc
+    jobid: 111
+    reason: Missing output files: results/ES_8_1.5_pv_0.5_90_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:36 2024]
+Finished job 110.
+19 of 145 steps (13%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:36 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0_270_inv.nc, results/ES_8_1.5_pv_0_270_invroll.nc
+    jobid: 83
+    reason: Missing output files: results/ES_8_1.5_pv_0_270_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:37 2024]
+Finished job 82.
+20 of 145 steps (14%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:37 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.75_270_noinv.nc, results/ES_8_1.5_drought_0.75_270_noinvroll.nc
+    jobid: 140
+    reason: Missing output files: results/ES_8_1.5_drought_0.75_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:55 2024]
+Finished job 139.
+21 of 145 steps (14%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:55 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.5_180_noinv.nc, results/ES_8_1.5_pv_0.5_180_noinvroll.nc
+    jobid: 112
+    reason: Missing output files: results/ES_8_1.5_pv_0.5_180_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:57 2024]
+Finished job 111.
+22 of 145 steps (15%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:57 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.75_90_inv.nc, results/ES_8_1.5_wind_0.75_90_invroll.nc
+    jobid: 84
+    reason: Missing output files: results/ES_8_1.5_wind_0.75_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:34:59 2024]
+Finished job 140.
+23 of 145 steps (16%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:34:59 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.5_90_noinv.nc, results/ES_8_1.5_drought_0.5_90_noinvroll.nc
+    jobid: 141
+    reason: Missing output files: results/ES_8_1.5_drought_0.5_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:00 2024]
+Finished job 83.
+24 of 145 steps (17%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:00 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.5_270_noinv.nc, results/ES_8_1.5_pv_0.5_270_noinvroll.nc
+    jobid: 113
+    reason: Missing output files: results/ES_8_1.5_pv_0.5_270_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:17 2024]
+Finished job 112.
+25 of 145 steps (17%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:17 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.75_180_inv.nc, results/ES_8_1.5_wind_0.75_180_invroll.nc
+    jobid: 85
+    reason: Missing output files: results/ES_8_1.5_wind_0.75_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:20 2024]
+Finished job 84.
+26 of 145 steps (18%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:20 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.5_180_noinv.nc, results/ES_8_1.5_drought_0.5_180_noinvroll.nc
+    jobid: 142
+    reason: Missing output files: results/ES_8_1.5_drought_0.5_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:21 2024]
+Finished job 141.
+27 of 145 steps (19%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:21 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.25_90_noinv.nc, results/ES_8_1.5_pv_0.25_90_noinvroll.nc
+    jobid: 114
+    reason: Missing output files: results/ES_8_1.5_pv_0.25_90_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:22 2024]
+Finished job 113.
+28 of 145 steps (19%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:22 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.5_90_inv.nc, results/ES_8_1.5_wind_0.5_90_invroll.nc
+    jobid: 87
+    reason: Missing output files: results/ES_8_1.5_wind_0.5_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:41 2024]
+Finished job 85.
+29 of 145 steps (20%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:41 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.5_270_noinv.nc, results/ES_8_1.5_drought_0.5_270_noinvroll.nc
+    jobid: 143
+    reason: Missing output files: results/ES_8_1.5_drought_0.5_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:42 2024]
+Finished job 142.
+30 of 145 steps (21%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:42 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.25_180_noinv.nc, results/ES_8_1.5_pv_0.25_180_noinvroll.nc
+    jobid: 115
+    reason: Missing output files: results/ES_8_1.5_pv_0.25_180_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:42 2024]
+Finished job 114.
+31 of 145 steps (21%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:42 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.5_180_inv.nc, results/ES_8_1.5_wind_0.5_180_invroll.nc
+    jobid: 88
+    reason: Missing output files: results/ES_8_1.5_wind_0.5_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:35:45 2024]
+Finished job 87.
+32 of 145 steps (22%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:35:45 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.25_90_noinv.nc, results/ES_8_1.5_drought_0.25_90_noinvroll.nc
+    jobid: 144
+    reason: Missing output files: results/ES_8_1.5_drought_0.25_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:03 2024]
+Finished job 143.
+33 of 145 steps (23%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:03 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.25_270_noinv.nc, results/ES_8_1.5_pv_0.25_270_noinvroll.nc
+    jobid: 116
+    reason: Missing output files: results/ES_8_1.5_pv_0.25_270_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:04 2024]
+Finished job 115.
+34 of 145 steps (23%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:04 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.5_270_inv.nc, results/ES_8_1.5_wind_0.5_270_invroll.nc
+    jobid: 89
+    reason: Missing output files: results/ES_8_1.5_wind_0.5_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:06 2024]
+Finished job 88.
+35 of 145 steps (24%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:06 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.25_180_noinv.nc, results/ES_8_1.5_drought_0.25_180_noinvroll.nc
+    jobid: 145
+    reason: Missing output files: results/ES_8_1.5_drought_0.25_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:07 2024]
+Finished job 144.
+36 of 145 steps (25%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:07 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0_90_noinv.nc, results/ES_8_1.5_pv_0_90_noinvroll.nc
+    jobid: 117
+    reason: Missing output files: results/ES_8_1.5_pv_0_90_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:25 2024]
+Finished job 116.
+37 of 145 steps (26%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:25 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.25_270_noinv.nc, results/ES_8_1.5_drought_0.25_270_noinvroll.nc
+    jobid: 146
+    reason: Missing output files: results/ES_8_1.5_drought_0.25_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:27 2024]
+Finished job 89.
+38 of 145 steps (26%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:27 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.25_90_inv.nc, results/ES_8_1.5_wind_0.25_90_invroll.nc
+    jobid: 90
+    reason: Missing output files: results/ES_8_1.5_wind_0.25_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:28 2024]
+Finished job 145.
+39 of 145 steps (27%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:28 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0_180_noinv.nc, results/ES_8_1.5_pv_0_180_noinvroll.nc
+    jobid: 118
+    reason: Missing output files: results/ES_8_1.5_pv_0_180_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:29 2024]
+Finished job 117.
+40 of 145 steps (28%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:29 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.25_180_inv.nc, results/ES_8_1.5_wind_0.25_180_invroll.nc
+    jobid: 91
+    reason: Missing output files: results/ES_8_1.5_wind_0.25_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:47 2024]
+Finished job 146.
+41 of 145 steps (28%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:47 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0_270_noinv.nc, results/ES_8_1.5_pv_0_270_noinvroll.nc
+    jobid: 119
+    reason: Missing output files: results/ES_8_1.5_pv_0_270_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:50 2024]
+Finished job 118.
+42 of 145 steps (29%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:50 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.25_270_inv.nc, results/ES_8_1.5_wind_0.25_270_invroll.nc
+    jobid: 92
+    reason: Missing output files: results/ES_8_1.5_wind_0.25_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:51 2024]
+Finished job 90.
+43 of 145 steps (30%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:51 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.75_90_noinv.nc, results/ES_8_1.5_wind_0.75_90_noinvroll.nc
+    jobid: 120
+    reason: Missing output files: results/ES_8_1.5_wind_0.75_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:36:53 2024]
+Finished job 91.
+44 of 145 steps (30%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:36:53 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.5_90_inv.nc, results/ES_8_1.5_noexim_0.5_90_invroll.nc
+    jobid: 93
+    reason: Missing output files: results/ES_8_1.5_noexim_0.5_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:10 2024]
+Finished job 119.
+45 of 145 steps (31%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:10 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.75_180_noinv.nc, results/ES_8_1.5_wind_0.75_180_noinvroll.nc
+    jobid: 121
+    reason: Missing output files: results/ES_8_1.5_wind_0.75_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:14 2024]
+Finished job 120.
+46 of 145 steps (32%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:14 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.5_180_inv.nc, results/ES_8_1.5_noexim_0.5_180_invroll.nc
+    jobid: 94
+    reason: Missing output files: results/ES_8_1.5_noexim_0.5_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:14 2024]
+Finished job 92.
+47 of 145 steps (32%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:14 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.75_270_noinv.nc, results/ES_8_1.5_wind_0.75_270_noinvroll.nc
+    jobid: 122
+    reason: Missing output files: results/ES_8_1.5_wind_0.75_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:17 2024]
+Finished job 93.
+48 of 145 steps (33%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:17 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.5_270_inv.nc, results/ES_8_1.5_noexim_0.5_270_invroll.nc
+    jobid: 95
+    reason: Missing output files: results/ES_8_1.5_noexim_0.5_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:33 2024]
+Finished job 121.
+49 of 145 steps (34%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:33 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.5_90_noinv.nc, results/ES_8_1.5_wind_0.5_90_noinvroll.nc
+    jobid: 123
+    reason: Missing output files: results/ES_8_1.5_wind_0.5_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:36 2024]
+Finished job 122.
+50 of 145 steps (34%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:36 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.25_90_noinv.nc, results/ES_8_1.5_noexim_0.25_90_noinvroll.nc
+    jobid: 132
+    reason: Missing output files: results/ES_8_1.5_noexim_0.25_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:37 2024]
+Finished job 94.
+51 of 145 steps (35%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:37 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.25_90_inv.nc, results/ES_8_1.5_noexim_0.25_90_invroll.nc
+    jobid: 96
+    reason: Missing output files: results/ES_8_1.5_noexim_0.25_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:41 2024]
+Finished job 95.
+52 of 145 steps (36%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:41 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.5_180_noinv.nc, results/ES_8_1.5_wind_0.5_180_noinvroll.nc
+    jobid: 124
+    reason: Missing output files: results/ES_8_1.5_wind_0.5_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:55 2024]
+Finished job 123.
+53 of 145 steps (37%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:55 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.25_180_inv.nc, results/ES_8_1.5_noexim_0.25_180_invroll.nc
+    jobid: 97
+    reason: Missing output files: results/ES_8_1.5_noexim_0.25_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:37:59 2024]
+Finished job 132.
+54 of 145 steps (37%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:37:59 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.5_270_noinv.nc, results/ES_8_1.5_wind_0.5_270_noinvroll.nc
+    jobid: 125
+    reason: Missing output files: results/ES_8_1.5_wind_0.5_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:01 2024]
+Finished job 96.
+55 of 145 steps (38%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:01 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.25_270_inv.nc, results/ES_8_1.5_noexim_0.25_270_invroll.nc
+    jobid: 98
+    reason: Missing output files: results/ES_8_1.5_noexim_0.25_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:03 2024]
+Finished job 124.
+56 of 145 steps (39%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:03 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.25_90_noinv.nc, results/ES_8_1.5_wind_0.25_90_noinvroll.nc
+    jobid: 126
+    reason: Missing output files: results/ES_8_1.5_wind_0.25_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:20 2024]
+Finished job 97.
+57 of 145 steps (39%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:20 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0_90_inv.nc, results/ES_8_1.5_noexim_0_90_invroll.nc
+    jobid: 99
+    reason: Missing output files: results/ES_8_1.5_noexim_0_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:21 2024]
+Finished job 125.
+58 of 145 steps (40%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:21 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.25_180_noinv.nc, results/ES_8_1.5_wind_0.25_180_noinvroll.nc
+    jobid: 127
+    reason: Missing output files: results/ES_8_1.5_wind_0.25_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:25 2024]
+Finished job 98.
+59 of 145 steps (41%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:25 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0_180_inv.nc, results/ES_8_1.5_noexim_0_180_invroll.nc
+    jobid: 100
+    reason: Missing output files: results/ES_8_1.5_noexim_0_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:26 2024]
+Finished job 126.
+60 of 145 steps (41%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:26 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_wind_0.25_270_noinv.nc, results/ES_8_1.5_wind_0.25_270_noinvroll.nc
+    jobid: 128
+    reason: Missing output files: results/ES_8_1.5_wind_0.25_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:43 2024]
+Finished job 127.
+61 of 145 steps (42%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:43 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0_270_inv.nc, results/ES_8_1.5_noexim_0_270_invroll.nc
+    jobid: 101
+    reason: Missing output files: results/ES_8_1.5_noexim_0_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:43 2024]
+Finished job 99.
+62 of 145 steps (43%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:43 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.5_90_noinv.nc, results/ES_8_1.5_noexim_0.5_90_noinvroll.nc
+    jobid: 129
+    reason: Missing output files: results/ES_8_1.5_noexim_0.5_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:48 2024]
+Finished job 128.
+63 of 145 steps (43%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:48 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.75_90_inv.nc, results/ES_8_1.5_drought_0.75_90_invroll.nc
+    jobid: 102
+    reason: Missing output files: results/ES_8_1.5_drought_0.75_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:38:48 2024]
+Finished job 100.
+64 of 145 steps (44%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:38:48 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.5_90_inv.nc, results/ES_8_1.5_pv_0.5_90_invroll.nc
+    jobid: 74
+    reason: Missing output files: results/ES_8_1.5_pv_0.5_90_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:06 2024]
+Finished job 129.
+65 of 145 steps (45%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:06 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.5_180_noinv.nc, results/ES_8_1.5_noexim_0.5_180_noinvroll.nc
+    jobid: 130
+    reason: Missing output files: results/ES_8_1.5_noexim_0.5_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:07 2024]
+Finished job 101.
+66 of 145 steps (46%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:07 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_drought_0.75_180_inv.nc, results/ES_8_1.5_drought_0.75_180_invroll.nc
+    jobid: 103
+    reason: Missing output files: results/ES_8_1.5_drought_0.75_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:12 2024]
+Finished job 102.
+67 of 145 steps (46%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:12 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_pv_0.5_180_inv.nc, results/ES_8_1.5_pv_0.5_180_invroll.nc
+    jobid: 76
+    reason: Missing output files: results/ES_8_1.5_pv_0.5_180_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:12 2024]
+Finished job 74.
+68 of 145 steps (47%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:12 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.5_base_solved.nc
+    output: resources/ES_8_1.5_noexim_0.5_270_noinv.nc, results/ES_8_1.5_noexim_0.5_270_noinvroll.nc
+    jobid: 131
+    reason: Missing output files: results/ES_8_1.5_noexim_0.5_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:28 2024]
+Finished job 130.
+69 of 145 steps (48%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:28 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.25_90_inv.nc, results/ES_8_1.0_pv_0.25_90_invroll.nc
+    jobid: 5
+    reason: Missing output files: results/ES_8_1.0_pv_0.25_90_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:31 2024]
+Finished job 103.
+70 of 145 steps (48%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:31 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0_90_noinv.nc, results/ES_8_1.0_noexim_0_90_noinvroll.nc
+    jobid: 62
+    reason: Missing output files: results/ES_8_1.0_noexim_0_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:34 2024]
+Finished job 131.
+71 of 145 steps (49%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:34 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.25_270_noinv.nc, results/ES_8_1.0_wind_0.25_270_noinvroll.nc
+    jobid: 55
+    reason: Missing output files: results/ES_8_1.0_wind_0.25_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:36 2024]
+Finished job 76.
+72 of 145 steps (50%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:36 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.75_180_noinv.nc, results/ES_8_1.0_wind_0.75_180_noinvroll.nc
+    jobid: 48
+    reason: Missing output files: results/ES_8_1.0_wind_0.75_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:53 2024]
+Finished job 5.
+73 of 145 steps (50%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:53 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.25_180_noinv.nc, results/ES_8_1.0_pv_0.25_180_noinvroll.nc
+    jobid: 42
+    reason: Missing output files: results/ES_8_1.0_pv_0.25_180_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:53 2024]
+Finished job 62.
+74 of 145 steps (51%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:53 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.25_90_inv.nc, results/ES_8_1.0_drought_0.25_90_invroll.nc
+    jobid: 35
+    reason: Missing output files: results/ES_8_1.0_drought_0.25_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:56 2024]
+Finished job 55.
+75 of 145 steps (52%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:56 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0_270_inv.nc, results/ES_8_1.0_noexim_0_270_invroll.nc
+    jobid: 28
+    reason: Missing output files: results/ES_8_1.0_noexim_0_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:39:58 2024]
+Finished job 48.
+76 of 145 steps (52%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:39:58 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.5_180_inv.nc, results/ES_8_1.0_noexim_0.5_180_invroll.nc
+    jobid: 21
+    reason: Missing output files: results/ES_8_1.0_noexim_0.5_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:40:15 2024]
+Finished job 42.
+77 of 145 steps (53%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:40:15 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0_270_inv.nc, results/ES_8_1.0_pv_0_270_invroll.nc
+    jobid: 10
+    reason: Missing output files: results/ES_8_1.0_pv_0_270_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:40:17 2024]
+Finished job 35.
+78 of 145 steps (54%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:40:17 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.5_270_noinv.nc, results/ES_8_1.0_drought_0.5_270_noinvroll.nc
+    jobid: 70
+    reason: Missing output files: results/ES_8_1.0_drought_0.5_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:40:20 2024]
+Finished job 28.
+79 of 145 steps (54%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:40:20 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.75_180_inv.nc, results/ES_8_1.0_wind_0.75_180_invroll.nc
+    jobid: 12
+    reason: Missing output files: results/ES_8_1.0_wind_0.75_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:40:22 2024]
+Finished job 21.
+80 of 145 steps (55%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:40:22 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0_180_noinv.nc, results/ES_8_1.0_noexim_0_180_noinvroll.nc
+    jobid: 63
+    reason: Missing output files: results/ES_8_1.0_noexim_0_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:40:39 2024]
+Finished job 10.
+81 of 145 steps (56%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:40:39 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.75_270_inv.nc, results/ES_8_1.0_wind_0.75_270_invroll.nc
+    jobid: 13
+    reason: Missing output files: results/ES_8_1.0_wind_0.75_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:40:39 2024]
+Finished job 70.
+82 of 145 steps (57%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:40:39 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.5_90_noinv.nc, results/ES_8_1.0_noexim_0.5_90_noinvroll.nc
+    jobid: 56
+    reason: Missing output files: results/ES_8_1.0_noexim_0.5_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:40:44 2024]
+Finished job 12.
+83 of 145 steps (57%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:40:44 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.75_270_noinv.nc, results/ES_8_1.0_wind_0.75_270_noinvroll.nc
+    jobid: 49
+    reason: Missing output files: results/ES_8_1.0_wind_0.75_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:40:45 2024]
+Finished job 63.
+84 of 145 steps (58%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:40:45 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.25_270_noinv.nc, results/ES_8_1.0_pv_0.25_270_noinvroll.nc
+    jobid: 43
+    reason: Missing output files: results/ES_8_1.0_pv_0.25_270_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:02 2024]
+Finished job 56.
+85 of 145 steps (59%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:02 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.25_180_inv.nc, results/ES_8_1.0_drought_0.25_180_invroll.nc
+    jobid: 36
+    reason: Missing output files: results/ES_8_1.0_drought_0.25_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:03 2024]
+Finished job 13.
+86 of 145 steps (59%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:03 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.75_90_inv.nc, results/ES_8_1.0_drought_0.75_90_invroll.nc
+    jobid: 29
+    reason: Missing output files: results/ES_8_1.0_drought_0.75_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:07 2024]
+Finished job 49.
+87 of 145 steps (60%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:07 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.5_270_inv.nc, results/ES_8_1.0_noexim_0.5_270_invroll.nc
+    jobid: 22
+    reason: Missing output files: results/ES_8_1.0_noexim_0.5_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:08 2024]
+Finished job 43.
+88 of 145 steps (61%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:08 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.5_180_inv.nc, results/ES_8_1.0_wind_0.5_180_invroll.nc
+    jobid: 15
+    reason: Missing output files: results/ES_8_1.0_wind_0.5_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:26 2024]
+Finished job 36.
+89 of 145 steps (61%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:26 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.25_90_noinv.nc, results/ES_8_1.0_drought_0.25_90_noinvroll.nc
+    jobid: 71
+    reason: Missing output files: results/ES_8_1.0_drought_0.25_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:28 2024]
+Finished job 29.
+90 of 145 steps (62%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:28 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.25_270_inv.nc, results/ES_8_1.0_pv_0.25_270_invroll.nc
+    jobid: 7
+    reason: Missing output files: results/ES_8_1.0_pv_0.25_270_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:31 2024]
+Finished job 22.
+91 of 145 steps (63%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:31 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0_270_noinv.nc, results/ES_8_1.0_noexim_0_270_noinvroll.nc
+    jobid: 64
+    reason: Missing output files: results/ES_8_1.0_noexim_0_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:32 2024]
+Finished job 15.
+92 of 145 steps (63%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:32 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.5_90_inv.nc, results/ES_8_1.0_pv_0.5_90_invroll.nc
+    jobid: 1
+    reason: Missing output files: results/ES_8_1.0_pv_0.5_90_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:48 2024]
+Finished job 71.
+93 of 145 steps (64%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:48 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.5_180_noinv.nc, results/ES_8_1.0_noexim_0.5_180_noinvroll.nc
+    jobid: 57
+    reason: Missing output files: results/ES_8_1.0_noexim_0.5_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:52 2024]
+Finished job 7.
+94 of 145 steps (65%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:52 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.5_180_noinv.nc, results/ES_8_1.0_drought_0.5_180_noinvroll.nc
+    jobid: 69
+    reason: Missing output files: results/ES_8_1.0_drought_0.5_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:53 2024]
+Finished job 64.
+95 of 145 steps (66%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:53 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.5_90_noinv.nc, results/ES_8_1.0_wind_0.5_90_noinvroll.nc
+    jobid: 50
+    reason: Missing output files: results/ES_8_1.0_wind_0.5_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:41:56 2024]
+Finished job 1.
+96 of 145 steps (66%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:41:56 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0_90_noinv.nc, results/ES_8_1.0_pv_0_90_noinvroll.nc
+    jobid: 44
+    reason: Missing output files: results/ES_8_1.0_pv_0_90_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:11 2024]
+Finished job 57.
+97 of 145 steps (67%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:11 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.25_270_inv.nc, results/ES_8_1.0_drought_0.25_270_invroll.nc
+    jobid: 37
+    reason: Missing output files: results/ES_8_1.0_drought_0.25_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:14 2024]
+Finished job 69.
+98 of 145 steps (68%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:14 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.75_180_inv.nc, results/ES_8_1.0_drought_0.75_180_invroll.nc
+    jobid: 30
+    reason: Missing output files: results/ES_8_1.0_drought_0.75_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:15 2024]
+Finished job 50.
+99 of 145 steps (68%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:15 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.25_90_inv.nc, results/ES_8_1.0_noexim_0.25_90_invroll.nc
+    jobid: 23
+    reason: Missing output files: results/ES_8_1.0_noexim_0.25_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:18 2024]
+Finished job 44.
+100 of 145 steps (69%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:18 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.5_270_inv.nc, results/ES_8_1.0_wind_0.5_270_invroll.nc
+    jobid: 16
+    reason: Missing output files: results/ES_8_1.0_wind_0.5_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:35 2024]
+Finished job 37.
+101 of 145 steps (70%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:35 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.25_180_noinv.nc, results/ES_8_1.0_drought_0.25_180_noinvroll.nc
+    jobid: 72
+    reason: Missing output files: results/ES_8_1.0_drought_0.25_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:39 2024]
+Finished job 30.
+102 of 145 steps (70%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:39 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.25_180_inv.nc, results/ES_8_1.0_pv_0.25_180_invroll.nc
+    jobid: 6
+    reason: Missing output files: results/ES_8_1.0_pv_0.25_180_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:39 2024]
+Finished job 23.
+103 of 145 steps (71%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:39 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.75_90_noinv.nc, results/ES_8_1.0_drought_0.75_90_noinvroll.nc
+    jobid: 65
+    reason: Missing output files: results/ES_8_1.0_drought_0.75_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:43 2024]
+Finished job 16.
+104 of 145 steps (72%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:43 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.5_270_noinv.nc, results/ES_8_1.0_noexim_0.5_270_noinvroll.nc
+    jobid: 58
+    reason: Missing output files: results/ES_8_1.0_noexim_0.5_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:42:58 2024]
+Finished job 72.
+105 of 145 steps (72%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:42:58 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.5_180_inv.nc, results/ES_8_1.0_pv_0.5_180_invroll.nc
+    jobid: 3
+    reason: Missing output files: results/ES_8_1.0_pv_0.5_180_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:02 2024]
+Finished job 65.
+106 of 145 steps (73%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:02 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.5_180_noinv.nc, results/ES_8_1.0_wind_0.5_180_noinvroll.nc
+    jobid: 51
+    reason: Missing output files: results/ES_8_1.0_wind_0.5_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:03 2024]
+Finished job 6.
+107 of 145 steps (74%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:03 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0_180_noinv.nc, results/ES_8_1.0_pv_0_180_noinvroll.nc
+    jobid: 45
+    reason: Missing output files: results/ES_8_1.0_pv_0_180_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:06 2024]
+Finished job 58.
+108 of 145 steps (74%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:06 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.5_90_noinv.nc, results/ES_8_1.0_pv_0.5_90_noinvroll.nc
+    jobid: 38
+    reason: Missing output files: results/ES_8_1.0_pv_0.5_90_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:23 2024]
+Finished job 3.
+109 of 145 steps (75%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:23 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.75_270_inv.nc, results/ES_8_1.0_drought_0.75_270_invroll.nc
+    jobid: 31
+    reason: Missing output files: results/ES_8_1.0_drought_0.75_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:24 2024]
+Finished job 51.
+110 of 145 steps (76%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:24 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.25_180_inv.nc, results/ES_8_1.0_noexim_0.25_180_invroll.nc
+    jobid: 24
+    reason: Missing output files: results/ES_8_1.0_noexim_0.25_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:25 2024]
+Finished job 45.
+111 of 145 steps (77%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:25 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.25_90_inv.nc, results/ES_8_1.0_wind_0.25_90_invroll.nc
+    jobid: 17
+    reason: Missing output files: results/ES_8_1.0_wind_0.25_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:29 2024]
+Finished job 38.
+112 of 145 steps (77%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:29 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.25_270_noinv.nc, results/ES_8_1.0_drought_0.25_270_noinvroll.nc
+    jobid: 73
+    reason: Missing output files: results/ES_8_1.0_drought_0.25_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:47 2024]
+Finished job 31.
+113 of 145 steps (78%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:47 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.75_180_noinv.nc, results/ES_8_1.0_drought_0.75_180_noinvroll.nc
+    jobid: 66
+    reason: Missing output files: results/ES_8_1.0_drought_0.75_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:48 2024]
+Finished job 24.
+114 of 145 steps (79%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:48 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.25_90_noinv.nc, results/ES_8_1.0_noexim_0.25_90_noinvroll.nc
+    jobid: 59
+    reason: Missing output files: results/ES_8_1.0_noexim_0.25_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:49 2024]
+Finished job 17.
+115 of 145 steps (79%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:49 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.5_270_noinv.nc, results/ES_8_1.0_wind_0.5_270_noinvroll.nc
+    jobid: 52
+    reason: Missing output files: results/ES_8_1.0_wind_0.5_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:43:52 2024]
+Finished job 73.
+116 of 145 steps (80%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:43:52 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0_270_noinv.nc, results/ES_8_1.0_pv_0_270_noinvroll.nc
+    jobid: 46
+    reason: Missing output files: results/ES_8_1.0_pv_0_270_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:09 2024]
+Finished job 66.
+117 of 145 steps (81%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:09 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.5_180_noinv.nc, results/ES_8_1.0_pv_0.5_180_noinvroll.nc
+    jobid: 39
+    reason: Missing output files: results/ES_8_1.0_pv_0.5_180_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:09 2024]
+Finished job 59.
+118 of 145 steps (81%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:09 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.5_90_inv.nc, results/ES_8_1.0_drought_0.5_90_invroll.nc
+    jobid: 32
+    reason: Missing output files: results/ES_8_1.0_drought_0.5_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:11 2024]
+Finished job 52.
+119 of 145 steps (82%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:11 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.25_270_inv.nc, results/ES_8_1.0_noexim_0.25_270_invroll.nc
+    jobid: 25
+    reason: Missing output files: results/ES_8_1.0_noexim_0.25_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:14 2024]
+Finished job 46.
+120 of 145 steps (83%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:14 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.25_180_inv.nc, results/ES_8_1.0_wind_0.25_180_invroll.nc
+    jobid: 18
+    reason: Missing output files: results/ES_8_1.0_wind_0.25_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:31 2024]
+Finished job 39.
+121 of 145 steps (83%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:31 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.75_90_inv.nc, results/ES_8_1.0_wind_0.75_90_invroll.nc
+    jobid: 11
+    reason: Missing output files: results/ES_8_1.0_wind_0.75_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:33 2024]
+Finished job 32.
+122 of 145 steps (84%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:33 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.75_270_noinv.nc, results/ES_8_1.0_drought_0.75_270_noinvroll.nc
+    jobid: 67
+    reason: Missing output files: results/ES_8_1.0_drought_0.75_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:34 2024]
+Finished job 25.
+123 of 145 steps (85%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:34 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.75_90_noinv.nc, results/ES_8_1.0_wind_0.75_90_noinvroll.nc
+    jobid: 47
+    reason: Missing output files: results/ES_8_1.0_wind_0.75_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:38 2024]
+Finished job 18.
+124 of 145 steps (86%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:38 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.5_270_noinv.nc, results/ES_8_1.0_pv_0.5_270_noinvroll.nc
+    jobid: 40
+    reason: Missing output files: results/ES_8_1.0_pv_0.5_270_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:55 2024]
+Finished job 11.
+125 of 145 steps (86%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:55 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.5_90_inv.nc, results/ES_8_1.0_noexim_0.5_90_invroll.nc
+    jobid: 20
+    reason: Missing output files: results/ES_8_1.0_noexim_0.5_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:55 2024]
+Finished job 67.
+126 of 145 steps (87%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:55 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.5_180_inv.nc, results/ES_8_1.0_drought_0.5_180_invroll.nc
+    jobid: 33
+    reason: Missing output files: results/ES_8_1.0_drought_0.5_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:44:56 2024]
+Finished job 47.
+127 of 145 steps (88%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:44:56 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0_180_inv.nc, results/ES_8_1.0_pv_0_180_invroll.nc
+    jobid: 9
+    reason: Missing output files: results/ES_8_1.0_pv_0_180_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:00 2024]
+Finished job 40.
+128 of 145 steps (88%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:00 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0_90_inv.nc, results/ES_8_1.0_noexim_0_90_invroll.nc
+    jobid: 26
+    reason: Missing output files: results/ES_8_1.0_noexim_0_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:19 2024]
+Finished job 20.
+129 of 145 steps (89%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:19 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.25_270_inv.nc, results/ES_8_1.0_wind_0.25_270_invroll.nc
+    jobid: 19
+    reason: Missing output files: results/ES_8_1.0_wind_0.25_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:19 2024]
+Finished job 33.
+130 of 145 steps (90%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:19 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.5_90_noinv.nc, results/ES_8_1.0_drought_0.5_90_noinvroll.nc
+    jobid: 68
+    reason: Missing output files: results/ES_8_1.0_drought_0.5_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:20 2024]
+Finished job 9.
+131 of 145 steps (90%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:20 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0_90_inv.nc, results/ES_8_1.0_pv_0_90_invroll.nc
+    jobid: 8
+    reason: Missing output files: results/ES_8_1.0_pv_0_90_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:25 2024]
+Finished job 26.
+132 of 145 steps (91%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:25 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.25_270_noinv.nc, results/ES_8_1.0_noexim_0.25_270_noinvroll.nc
+    jobid: 61
+    reason: Missing output files: results/ES_8_1.0_noexim_0.25_270_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:42 2024]
+Finished job 68.
+133 of 145 steps (92%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:42 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.5_270_inv.nc, results/ES_8_1.0_pv_0.5_270_invroll.nc
+    jobid: 4
+    reason: Missing output files: results/ES_8_1.0_pv_0.5_270_invroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:44 2024]
+Finished job 19.
+134 of 145 steps (92%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:44 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.25_180_noinv.nc, results/ES_8_1.0_wind_0.25_180_noinvroll.nc
+    jobid: 54
+    reason: Missing output files: results/ES_8_1.0_wind_0.25_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:44 2024]
+Finished job 8.
+135 of 145 steps (93%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:44 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_pv_0.25_90_noinv.nc, results/ES_8_1.0_pv_0.25_90_noinvroll.nc
+    jobid: 41
+    reason: Missing output files: results/ES_8_1.0_pv_0.25_90_noinvroll.nc; Code has changed since last execution
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:45:48 2024]
+Finished job 61.
+136 of 145 steps (94%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:45:48 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.5_90_inv.nc, results/ES_8_1.0_wind_0.5_90_invroll.nc
+    jobid: 14
+    reason: Missing output files: results/ES_8_1.0_wind_0.5_90_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:46:06 2024]
+Finished job 54.
+137 of 145 steps (94%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:46:06 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_drought_0.5_270_inv.nc, results/ES_8_1.0_drought_0.5_270_invroll.nc
+    jobid: 34
+    reason: Missing output files: results/ES_8_1.0_drought_0.5_270_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:46:06 2024]
+Finished job 4.
+138 of 145 steps (95%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:46:06 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0_180_inv.nc, results/ES_8_1.0_noexim_0_180_invroll.nc
+    jobid: 27
+    reason: Missing output files: results/ES_8_1.0_noexim_0_180_invroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:46:06 2024]
+Finished job 41.
+139 of 145 steps (96%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:46:06 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_noexim_0.25_180_noinv.nc, results/ES_8_1.0_noexim_0.25_180_noinvroll.nc
+    jobid: 60
+    reason: Missing output files: results/ES_8_1.0_noexim_0.25_180_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:46:12 2024]
+Finished job 14.
+140 of 145 steps (97%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:46:12 2024]
+rule dynamic_solve:
+    input: resources/ES_8_1.0_base_solved.nc
+    output: resources/ES_8_1.0_wind_0.25_90_noinv.nc, results/ES_8_1.0_wind_0.25_90_noinvroll.nc
+    jobid: 53
+    reason: Missing output files: results/ES_8_1.0_wind_0.25_90_noinvroll.nc
+    wildcards: country=ES, buses=8, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:46:29 2024]
+Finished job 60.
+141 of 145 steps (97%) done
+[Sun Jun  9 16:46:29 2024]
+Finished job 27.
+142 of 145 steps (98%) done
+[Sun Jun  9 16:46:30 2024]
+Finished job 34.
+143 of 145 steps (99%) done
+[Sun Jun  9 16:46:34 2024]
+Finished job 53.
+144 of 145 steps (99%) done
+Select jobs to execute...
+
+[Sun Jun  9 16:46:34 2024]
+localrule all:
+    input: results/ES_8_1.0_pv_0.5_90_invroll.nc, results/ES_8_1.0_pv_0.5_180_invroll.nc, results/ES_8_1.0_pv_0.5_270_invroll.nc, results/ES_8_1.0_pv_0.25_90_invroll.nc, results/ES_8_1.0_pv_0.25_180_invroll.nc, results/ES_8_1.0_pv_0.25_270_invroll.nc, results/ES_8_1.0_pv_0_90_invroll.nc, results/ES_8_1.0_pv_0_180_invroll.nc, results/ES_8_1.0_pv_0_270_invroll.nc, results/ES_8_1.0_wind_0.75_90_invroll.nc, results/ES_8_1.0_wind_0.75_180_invroll.nc, results/ES_8_1.0_wind_0.75_270_invroll.nc, results/ES_8_1.0_wind_0.5_90_invroll.nc, results/ES_8_1.0_wind_0.5_180_invroll.nc, results/ES_8_1.0_wind_0.5_270_invroll.nc, results/ES_8_1.0_wind_0.25_90_invroll.nc, results/ES_8_1.0_wind_0.25_180_invroll.nc, results/ES_8_1.0_wind_0.25_270_invroll.nc, results/ES_8_1.0_noexim_0.5_90_invroll.nc, results/ES_8_1.0_noexim_0.5_180_invroll.nc, results/ES_8_1.0_noexim_0.5_270_invroll.nc, results/ES_8_1.0_noexim_0.25_90_invroll.nc, results/ES_8_1.0_noexim_0.25_180_invroll.nc, results/ES_8_1.0_noexim_0.25_270_invroll.nc, results/ES_8_1.0_noexim_0_90_invroll.nc, results/ES_8_1.0_noexim_0_180_invroll.nc, results/ES_8_1.0_noexim_0_270_invroll.nc, results/ES_8_1.0_drought_0.75_90_invroll.nc, results/ES_8_1.0_drought_0.75_180_invroll.nc, results/ES_8_1.0_drought_0.75_270_invroll.nc, results/ES_8_1.0_drought_0.5_90_invroll.nc, results/ES_8_1.0_drought_0.5_180_invroll.nc, results/ES_8_1.0_drought_0.5_270_invroll.nc, results/ES_8_1.0_drought_0.25_90_invroll.nc, results/ES_8_1.0_drought_0.25_180_invroll.nc, results/ES_8_1.0_drought_0.25_270_invroll.nc, results/ES_8_1.0_pv_0.5_90_noinvroll.nc, results/ES_8_1.0_pv_0.5_180_noinvroll.nc, results/ES_8_1.0_pv_0.5_270_noinvroll.nc, results/ES_8_1.0_pv_0.25_90_noinvroll.nc, results/ES_8_1.0_pv_0.25_180_noinvroll.nc, results/ES_8_1.0_pv_0.25_270_noinvroll.nc, results/ES_8_1.0_pv_0_90_noinvroll.nc, results/ES_8_1.0_pv_0_180_noinvroll.nc, results/ES_8_1.0_pv_0_270_noinvroll.nc, results/ES_8_1.0_wind_0.75_90_noinvroll.nc, results/ES_8_1.0_wind_0.75_180_noinvroll.nc, results/ES_8_1.0_wind_0.75_270_noinvroll.nc, results/ES_8_1.0_wind_0.5_90_noinvroll.nc, results/ES_8_1.0_wind_0.5_180_noinvroll.nc, results/ES_8_1.0_wind_0.5_270_noinvroll.nc, results/ES_8_1.0_wind_0.25_90_noinvroll.nc, results/ES_8_1.0_wind_0.25_180_noinvroll.nc, results/ES_8_1.0_wind_0.25_270_noinvroll.nc, results/ES_8_1.0_noexim_0.5_90_noinvroll.nc, results/ES_8_1.0_noexim_0.5_180_noinvroll.nc, results/ES_8_1.0_noexim_0.5_270_noinvroll.nc, results/ES_8_1.0_noexim_0.25_90_noinvroll.nc, results/ES_8_1.0_noexim_0.25_180_noinvroll.nc, results/ES_8_1.0_noexim_0.25_270_noinvroll.nc, results/ES_8_1.0_noexim_0_90_noinvroll.nc, results/ES_8_1.0_noexim_0_180_noinvroll.nc, results/ES_8_1.0_noexim_0_270_noinvroll.nc, results/ES_8_1.0_drought_0.75_90_noinvroll.nc, results/ES_8_1.0_drought_0.75_180_noinvroll.nc, results/ES_8_1.0_drought_0.75_270_noinvroll.nc, results/ES_8_1.0_drought_0.5_90_noinvroll.nc, results/ES_8_1.0_drought_0.5_180_noinvroll.nc, results/ES_8_1.0_drought_0.5_270_noinvroll.nc, results/ES_8_1.0_drought_0.25_90_noinvroll.nc, results/ES_8_1.0_drought_0.25_180_noinvroll.nc, results/ES_8_1.0_drought_0.25_270_noinvroll.nc, results/ES_8_1.5_pv_0.5_90_invroll.nc, results/ES_8_1.5_pv_0.5_180_invroll.nc, results/ES_8_1.5_pv_0.5_270_invroll.nc, results/ES_8_1.5_pv_0.25_90_invroll.nc, results/ES_8_1.5_pv_0.25_180_invroll.nc, results/ES_8_1.5_pv_0.25_270_invroll.nc, results/ES_8_1.5_pv_0_90_invroll.nc, results/ES_8_1.5_pv_0_180_invroll.nc, results/ES_8_1.5_pv_0_270_invroll.nc, results/ES_8_1.5_wind_0.75_90_invroll.nc, results/ES_8_1.5_wind_0.75_180_invroll.nc, results/ES_8_1.5_wind_0.75_270_invroll.nc, results/ES_8_1.5_wind_0.5_90_invroll.nc, results/ES_8_1.5_wind_0.5_180_invroll.nc, results/ES_8_1.5_wind_0.5_270_invroll.nc, results/ES_8_1.5_wind_0.25_90_invroll.nc, results/ES_8_1.5_wind_0.25_180_invroll.nc, results/ES_8_1.5_wind_0.25_270_invroll.nc, results/ES_8_1.5_noexim_0.5_90_invroll.nc, results/ES_8_1.5_noexim_0.5_180_invroll.nc, results/ES_8_1.5_noexim_0.5_270_invroll.nc, results/ES_8_1.5_noexim_0.25_90_invroll.nc, results/ES_8_1.5_noexim_0.25_180_invroll.nc, results/ES_8_1.5_noexim_0.25_270_invroll.nc, results/ES_8_1.5_noexim_0_90_invroll.nc, results/ES_8_1.5_noexim_0_180_invroll.nc, results/ES_8_1.5_noexim_0_270_invroll.nc, results/ES_8_1.5_drought_0.75_90_invroll.nc, results/ES_8_1.5_drought_0.75_180_invroll.nc, results/ES_8_1.5_drought_0.75_270_invroll.nc, results/ES_8_1.5_drought_0.5_90_invroll.nc, results/ES_8_1.5_drought_0.5_180_invroll.nc, results/ES_8_1.5_drought_0.5_270_invroll.nc, results/ES_8_1.5_drought_0.25_90_invroll.nc, results/ES_8_1.5_drought_0.25_180_invroll.nc, results/ES_8_1.5_drought_0.25_270_invroll.nc, results/ES_8_1.5_pv_0.5_90_noinvroll.nc, results/ES_8_1.5_pv_0.5_180_noinvroll.nc, results/ES_8_1.5_pv_0.5_270_noinvroll.nc, results/ES_8_1.5_pv_0.25_90_noinvroll.nc, results/ES_8_1.5_pv_0.25_180_noinvroll.nc, results/ES_8_1.5_pv_0.25_270_noinvroll.nc, results/ES_8_1.5_pv_0_90_noinvroll.nc, results/ES_8_1.5_pv_0_180_noinvroll.nc, results/ES_8_1.5_pv_0_270_noinvroll.nc, results/ES_8_1.5_wind_0.75_90_noinvroll.nc, results/ES_8_1.5_wind_0.75_180_noinvroll.nc, results/ES_8_1.5_wind_0.75_270_noinvroll.nc, results/ES_8_1.5_wind_0.5_90_noinvroll.nc, results/ES_8_1.5_wind_0.5_180_noinvroll.nc, results/ES_8_1.5_wind_0.5_270_noinvroll.nc, results/ES_8_1.5_wind_0.25_90_noinvroll.nc, results/ES_8_1.5_wind_0.25_180_noinvroll.nc, results/ES_8_1.5_wind_0.25_270_noinvroll.nc, results/ES_8_1.5_noexim_0.5_90_noinvroll.nc, results/ES_8_1.5_noexim_0.5_180_noinvroll.nc, results/ES_8_1.5_noexim_0.5_270_noinvroll.nc, results/ES_8_1.5_noexim_0.25_90_noinvroll.nc, results/ES_8_1.5_noexim_0.25_180_noinvroll.nc, results/ES_8_1.5_noexim_0.25_270_noinvroll.nc, results/ES_8_1.5_noexim_0_90_noinvroll.nc, results/ES_8_1.5_noexim_0_180_noinvroll.nc, results/ES_8_1.5_noexim_0_270_noinvroll.nc, results/ES_8_1.5_drought_0.75_90_noinvroll.nc, results/ES_8_1.5_drought_0.75_180_noinvroll.nc, results/ES_8_1.5_drought_0.75_270_noinvroll.nc, results/ES_8_1.5_drought_0.5_90_noinvroll.nc, results/ES_8_1.5_drought_0.5_180_noinvroll.nc, results/ES_8_1.5_drought_0.5_270_noinvroll.nc, results/ES_8_1.5_drought_0.25_90_noinvroll.nc, results/ES_8_1.5_drought_0.25_180_noinvroll.nc, results/ES_8_1.5_drought_0.25_270_noinvroll.nc
+    jobid: 0
+    reason: Input files updated by another job: results/ES_8_1.0_wind_0.25_180_invroll.nc, results/ES_8_1.5_noexim_0.5_270_invroll.nc, results/ES_8_1.5_wind_0.5_270_invroll.nc, results/ES_8_1.0_pv_0_270_invroll.nc, results/ES_8_1.0_wind_0.25_270_noinvroll.nc, results/ES_8_1.5_drought_0.5_270_noinvroll.nc, results/ES_8_1.5_wind_0.75_90_invroll.nc, results/ES_8_1.0_noexim_0.25_270_invroll.nc, results/ES_8_1.5_pv_0.25_180_noinvroll.nc, results/ES_8_1.5_pv_0.25_90_invroll.nc, results/ES_8_1.0_noexim_0.25_180_noinvroll.nc, results/ES_8_1.0_drought_0.75_180_invroll.nc, results/ES_8_1.0_drought_0.75_90_noinvroll.nc, results/ES_8_1.0_wind_0.25_270_invroll.nc, results/ES_8_1.5_drought_0.25_90_invroll.nc, results/ES_8_1.5_noexim_0.25_90_noinvroll.nc, results/ES_8_1.5_noexim_0_90_noinvroll.nc, results/ES_8_1.0_wind_0.75_90_invroll.nc, results/ES_8_1.5_pv_0_270_invroll.nc, results/ES_8_1.5_wind_0.5_90_invroll.nc, results/ES_8_1.5_drought_0.75_90_noinvroll.nc, results/ES_8_1.5_pv_0_90_invroll.nc, results/ES_8_1.5_wind_0.75_180_noinvroll.nc, results/ES_8_1.5_drought_0.25_90_noinvroll.nc, results/ES_8_1.0_drought_0.5_90_noinvroll.nc, results/ES_8_1.5_drought_0.25_180_noinvroll.nc, results/ES_8_1.5_noexim_0.5_180_invroll.nc, results/ES_8_1.0_noexim_0.5_270_noinvroll.nc, results/ES_8_1.5_noexim_0_270_noinvroll.nc, results/ES_8_1.5_wind_0.75_270_noinvroll.nc, results/ES_8_1.0_noexim_0_270_invroll.nc, results/ES_8_1.5_noexim_0_90_invroll.nc, results/ES_8_1.0_drought_0.75_90_invroll.nc, results/ES_8_1.0_wind_0.5_180_invroll.nc, results/ES_8_1.0_wind_0.25_90_invroll.nc, results/ES_8_1.0_pv_0_180_invroll.nc, results/ES_8_1.0_drought_0.5_270_noinvroll.nc, results/ES_8_1.0_pv_0.25_180_invroll.nc, results/ES_8_1.5_pv_0.25_270_invroll.nc, results/ES_8_1.5_drought_0.5_180_invroll.nc, results/ES_8_1.5_noexim_0_180_noinvroll.nc, results/ES_8_1.5_pv_0.5_180_invroll.nc, results/ES_8_1.5_pv_0.25_90_noinvroll.nc, results/ES_8_1.0_pv_0.5_90_invroll.nc, results/ES_8_1.5_wind_0.5_180_invroll.nc, results/ES_8_1.0_drought_0.75_270_noinvroll.nc, results/ES_8_1.5_pv_0.5_270_noinvroll.nc, results/ES_8_1.0_noexim_0_180_noinvroll.nc, results/ES_8_1.0_drought_0.25_180_noinvroll.nc, results/ES_8_1.0_wind_0.75_180_noinvroll.nc, results/ES_8_1.0_wind_0.75_270_noinvroll.nc, results/ES_8_1.5_wind_0.5_180_noinvroll.nc, results/ES_8_1.5_noexim_0.5_270_noinvroll.nc, results/ES_8_1.5_drought_0.25_270_noinvroll.nc, results/ES_8_1.5_noexim_0.25_270_noinvroll.nc, results/ES_8_1.0_pv_0_180_noinvroll.nc, results/ES_8_1.0_noexim_0.25_180_invroll.nc, results/ES_8_1.5_wind_0.25_270_noinvroll.nc, results/ES_8_1.5_drought_0.75_90_invroll.nc, results/ES_8_1.0_noexim_0_270_noinvroll.nc, results/ES_8_1.0_noexim_0.5_180_invroll.nc, results/ES_8_1.0_drought_0.25_90_noinvroll.nc, results/ES_8_1.0_pv_0_90_invroll.nc, results/ES_8_1.0_drought_0.5_180_noinvroll.nc, results/ES_8_1.5_noexim_0.5_90_noinvroll.nc, results/ES_8_1.5_pv_0.5_90_invroll.nc, results/ES_8_1.5_wind_0.25_180_noinvroll.nc, results/ES_8_1.0_wind_0.75_270_invroll.nc, results/ES_8_1.5_pv_0_180_noinvroll.nc, results/ES_8_1.0_wind_0.5_180_noinvroll.nc, results/ES_8_1.0_wind_0.25_90_noinvroll.nc, results/ES_8_1.0_noexim_0.5_180_noinvroll.nc, results/ES_8_1.5_drought_0.75_180_invroll.nc, results/ES_8_1.0_noexim_0_90_noinvroll.nc, results/ES_8_1.5_pv_0.5_180_noinvroll.nc, results/ES_8_1.5_drought_0.25_270_invroll.nc, results/ES_8_1.5_wind_0.75_90_noinvroll.nc, results/ES_8_1.5_noexim_0_180_invroll.nc, results/ES_8_1.5_wind_0.25_90_noinvroll.nc, results/ES_8_1.0_pv_0.5_270_invroll.nc, results/ES_8_1.0_pv_0.25_90_invroll.nc, results/ES_8_1.0_drought_0.5_180_invroll.nc, results/ES_8_1.0_noexim_0.25_90_noinvroll.nc, results/ES_8_1.0_pv_0.25_270_noinvroll.nc, results/ES_8_1.5_pv_0.25_180_invroll.nc, results/ES_8_1.5_noexim_0.5_180_noinvroll.nc, results/ES_8_1.5_wind_0.25_90_invroll.nc, results/ES_8_1.5_noexim_0.25_180_invroll.nc, results/ES_8_1.5_wind_0.5_90_noinvroll.nc, results/ES_8_1.0_wind_0.5_90_invroll.nc, results/ES_8_1.0_noexim_0.5_90_invroll.nc, results/ES_8_1.0_drought_0.5_270_invroll.nc, results/ES_8_1.0_noexim_0.25_90_invroll.nc, results/ES_8_1.5_pv_0.5_270_invroll.nc, results/ES_8_1.0_wind_0.25_180_noinvroll.nc, results/ES_8_1.5_wind_0.75_180_invroll.nc, results/ES_8_1.5_noexim_0.25_180_noinvroll.nc, results/ES_8_1.5_noexim_0_270_invroll.nc, results/ES_8_1.5_drought_0.25_180_invroll.nc, results/ES_8_1.5_noexim_0.25_270_invroll.nc, results/ES_8_1.0_wind_0.75_90_noinvroll.nc, results/ES_8_1.5_drought_0.75_270_noinvroll.nc, results/ES_8_1.5_drought_0.5_270_invroll.nc, results/ES_8_1.0_pv_0.5_180_noinvroll.nc, results/ES_8_1.5_pv_0_180_invroll.nc, results/ES_8_1.0_drought_0.25_270_invroll.nc, results/ES_8_1.5_drought_0.75_180_noinvroll.nc, results/ES_8_1.5_noexim_0.25_90_invroll.nc, results/ES_8_1.5_pv_0_90_noinvroll.nc, results/ES_8_1.0_pv_0.5_180_invroll.nc, results/ES_8_1.5_wind_0.5_270_noinvroll.nc, results/ES_8_1.0_pv_0.5_90_noinvroll.nc, results/ES_8_1.0_drought_0.75_180_noinvroll.nc, results/ES_8_1.0_pv_0.25_90_noinvroll.nc, results/ES_8_1.0_noexim_0_180_invroll.nc, results/ES_8_1.0_drought_0.75_270_invroll.nc, results/ES_8_1.0_noexim_0.25_270_noinvroll.nc, results/ES_8_1.0_noexim_0_90_invroll.nc, results/ES_8_1.5_pv_0.25_270_noinvroll.nc, results/ES_8_1.0_noexim_0.5_270_invroll.nc, results/ES_8_1.0_wind_0.5_270_invroll.nc, results/ES_8_1.0_drought_0.5_90_invroll.nc, results/ES_8_1.0_drought_0.25_90_invroll.nc, results/ES_8_1.5_wind_0.75_270_invroll.nc, results/ES_8_1.5_drought_0.75_270_invroll.nc, results/ES_8_1.0_wind_0.5_270_noinvroll.nc, results/ES_8_1.0_pv_0.5_270_noinvroll.nc, results/ES_8_1.0_pv_0.25_180_noinvroll.nc, results/ES_8_1.0_pv_0_90_noinvroll.nc, results/ES_8_1.0_drought_0.25_180_invroll.nc, results/ES_8_1.5_drought_0.5_180_noinvroll.nc, results/ES_8_1.5_pv_0_270_noinvroll.nc, results/ES_8_1.5_wind_0.25_180_invroll.nc, results/ES_8_1.0_drought_0.25_270_noinvroll.nc, results/ES_8_1.5_wind_0.25_270_invroll.nc, results/ES_8_1.5_noexim_0.5_90_invroll.nc, results/ES_8_1.0_pv_0.25_270_invroll.nc, results/ES_8_1.0_noexim_0.5_90_noinvroll.nc, results/ES_8_1.5_pv_0.5_90_noinvroll.nc, results/ES_8_1.0_wind_0.5_90_noinvroll.nc, results/ES_8_1.5_drought_0.5_90_noinvroll.nc, results/ES_8_1.0_wind_0.75_180_invroll.nc, results/ES_8_1.5_drought_0.5_90_invroll.nc, results/ES_8_1.0_pv_0_270_noinvroll.nc
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 16:46:34 2024]
+Finished job 0.
+145 of 145 steps (100%) done
+Complete log: .snakemake\log\2024-06-09T163238.952836.snakemake.log

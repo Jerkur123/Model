@@ -1,0 +1,84 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+inst_cap_base          2
+inv_cap_country        2
+total                  5
+
+Select jobs to execute...
+
+[Thu Jun 13 12:38:16 2024]
+rule inst_cap_base:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: results/data/DE/cap_DE_20_1.0_base.csv
+    jobid: 220
+    reason: Missing output files: results/data/DE/cap_DE_20_1.0_base.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 12:38:16 2024]
+rule inst_cap_base:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: results/data/DE/cap_DE_20_1.5_base.csv
+    jobid: 222
+    reason: Missing output files: results/data/DE/cap_DE_20_1.5_base.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 12:38:23 2024]
+Finished job 220.
+1 of 5 steps (20%) done
+[Thu Jun 13 12:38:23 2024]
+Finished job 222.
+2 of 5 steps (40%) done
+Select jobs to execute...
+
+[Thu Jun 13 12:38:23 2024]
+rule inv_cap_country:
+    input: results/data/DE/cap_DE_20_1.0_base.csv
+    output: results/data/DE/inv_cap_DE_20_1.0_summary.csv
+    jobid: 219
+    reason: Missing output files: results/data/DE/inv_cap_DE_20_1.0_summary.csv; Input files updated by another job: results/data/DE/cap_DE_20_1.0_base.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 12:38:23 2024]
+rule inv_cap_country:
+    input: results/data/DE/cap_DE_20_1.5_base.csv
+    output: results/data/DE/inv_cap_DE_20_1.5_summary.csv
+    jobid: 221
+    reason: Missing output files: results/data/DE/inv_cap_DE_20_1.5_summary.csv; Input files updated by another job: results/data/DE/cap_DE_20_1.5_base.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 12:38:23 2024]
+Error in rule inv_cap_country:
+    jobid: 219
+    input: results/data/DE/cap_DE_20_1.0_base.csv
+    output: results/data/DE/inv_cap_DE_20_1.0_summary.csv
+    shell:
+        
+        touch results/data/DE/inv_cap_DE_20_1.0_summary.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 13 12:38:23 2024]
+Error in rule inv_cap_country:
+    jobid: 221
+    input: results/data/DE/cap_DE_20_1.5_base.csv
+    output: results/data/DE/inv_cap_DE_20_1.5_summary.csv
+    shell:
+        
+        touch results/data/DE/inv_cap_DE_20_1.5_summary.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-13T123814.988026.snakemake.log

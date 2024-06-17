@@ -1,0 +1,554 @@
+Building DAG of jobs...
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve       36
+solve_base           2
+total               39
+
+Select jobs to execute...
+
+[Sun Jun  9 10:59:24 2024]
+rule solve_base:
+    input: resources/GB_13_1.5_base.nc
+    output: resources/GB_13_1.5_base_solved.nc, resources/GB_13_1.5_base_roll_solved.nc
+    jobid: 21
+    reason: Missing output files: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 10:59:24 2024]
+rule solve_base:
+    input: resources/GB_13_1.0_base.nc
+    output: resources/GB_13_1.0_base_solved.nc, resources/GB_13_1.0_base_roll_solved.nc
+    jobid: 2
+    reason: Missing output files: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 10:59:48 2024]
+Finished job 2.
+1 of 39 steps (3%) done
+Select jobs to execute...
+
+[Sun Jun  9 10:59:48 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.25_90_inv.nc, results/GB_13_1.0_pv_0.25_90_invroll.nc
+    jobid: 5
+    reason: Missing output files: results/GB_13_1.0_pv_0.25_90_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 10:59:48 2024]
+Finished job 21.
+2 of 39 steps (5%) done
+Select jobs to execute...
+
+[Sun Jun  9 10:59:48 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.25_270_noinv.nc, results/GB_13_1.5_pv_0.25_270_noinvroll.nc
+    jobid: 35
+    reason: Missing output files: results/GB_13_1.5_pv_0.25_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:00:08 2024]
+Finished job 35.
+3 of 39 steps (8%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:00:08 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_90_inv.nc, results/GB_13_1.5_pv_0_90_invroll.nc
+    jobid: 27
+    reason: Missing output files: results/GB_13_1.5_pv_0_90_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:00:09 2024]
+Finished job 5.
+4 of 39 steps (10%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:00:09 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.5_180_inv.nc, results/GB_13_1.5_pv_0.5_180_invroll.nc
+    jobid: 22
+    reason: Missing output files: results/GB_13_1.5_pv_0.5_180_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:00:30 2024]
+Finished job 27.
+5 of 39 steps (13%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:00:30 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_90_noinv.nc, results/GB_13_1.5_pv_0_90_noinvroll.nc
+    jobid: 36
+    reason: Missing output files: results/GB_13_1.5_pv_0_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:00:31 2024]
+Finished job 22.
+6 of 39 steps (15%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:00:31 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_180_inv.nc, results/GB_13_1.5_pv_0_180_invroll.nc
+    jobid: 28
+    reason: Missing output files: results/GB_13_1.5_pv_0_180_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:00:50 2024]
+Finished job 36.
+7 of 39 steps (18%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:00:50 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_180_noinv.nc, results/GB_13_1.5_pv_0_180_noinvroll.nc
+    jobid: 37
+    reason: Missing output files: results/GB_13_1.5_pv_0_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:00:53 2024]
+Finished job 28.
+8 of 39 steps (21%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:00:53 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_270_inv.nc, results/GB_13_1.5_pv_0_270_invroll.nc
+    jobid: 29
+    reason: Missing output files: results/GB_13_1.5_pv_0_270_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:01:11 2024]
+Finished job 37.
+9 of 39 steps (23%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:01:11 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.5_270_inv.nc, results/GB_13_1.5_pv_0.5_270_invroll.nc
+    jobid: 23
+    reason: Missing output files: results/GB_13_1.5_pv_0.5_270_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:01:15 2024]
+Finished job 29.
+10 of 39 steps (26%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:01:15 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_270_noinv.nc, results/GB_13_1.5_pv_0_270_noinvroll.nc
+    jobid: 38
+    reason: Missing output files: results/GB_13_1.5_pv_0_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:01:33 2024]
+Finished job 23.
+11 of 39 steps (28%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:01:33 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.5_90_noinv.nc, results/GB_13_1.5_pv_0.5_90_noinvroll.nc
+    jobid: 30
+    reason: Missing output files: results/GB_13_1.5_pv_0.5_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:01:36 2024]
+Finished job 38.
+12 of 39 steps (31%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:01:36 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.25_90_inv.nc, results/GB_13_1.5_pv_0.25_90_invroll.nc
+    jobid: 24
+    reason: Missing output files: results/GB_13_1.5_pv_0.25_90_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:01:53 2024]
+Finished job 30.
+13 of 39 steps (33%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:01:53 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.5_180_noinv.nc, results/GB_13_1.5_pv_0.5_180_noinvroll.nc
+    jobid: 31
+    reason: Missing output files: results/GB_13_1.5_pv_0.5_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:01:58 2024]
+Finished job 24.
+14 of 39 steps (36%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:01:58 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.25_180_inv.nc, results/GB_13_1.5_pv_0.25_180_invroll.nc
+    jobid: 25
+    reason: Missing output files: results/GB_13_1.5_pv_0.25_180_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:02:14 2024]
+Finished job 31.
+15 of 39 steps (38%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:02:14 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.25_90_noinv.nc, results/GB_13_1.5_pv_0.25_90_noinvroll.nc
+    jobid: 33
+    reason: Missing output files: results/GB_13_1.5_pv_0.25_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:02:20 2024]
+Finished job 25.
+16 of 39 steps (41%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:02:20 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.25_270_inv.nc, results/GB_13_1.5_pv_0.25_270_invroll.nc
+    jobid: 26
+    reason: Missing output files: results/GB_13_1.5_pv_0.25_270_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:02:35 2024]
+Finished job 33.
+17 of 39 steps (44%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:02:35 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.25_180_noinv.nc, results/GB_13_1.5_pv_0.25_180_noinvroll.nc
+    jobid: 34
+    reason: Missing output files: results/GB_13_1.5_pv_0.25_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:02:42 2024]
+Finished job 26.
+18 of 39 steps (46%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:02:42 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.5_270_noinv.nc, results/GB_13_1.5_pv_0.5_270_noinvroll.nc
+    jobid: 32
+    reason: Missing output files: results/GB_13_1.5_pv_0.5_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:02:55 2024]
+Finished job 34.
+19 of 39 steps (49%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:02:55 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.5_90_inv.nc, results/GB_13_1.5_pv_0.5_90_invroll.nc
+    jobid: 20
+    reason: Missing output files: results/GB_13_1.5_pv_0.5_90_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:03:03 2024]
+Finished job 32.
+20 of 39 steps (51%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:03:03 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.25_180_noinv.nc, results/GB_13_1.0_pv_0.25_180_noinvroll.nc
+    jobid: 15
+    reason: Missing output files: results/GB_13_1.0_pv_0.25_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:03:17 2024]
+Finished job 20.
+21 of 39 steps (54%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:03:17 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.25_270_inv.nc, results/GB_13_1.0_pv_0.25_270_invroll.nc
+    jobid: 7
+    reason: Missing output files: results/GB_13_1.0_pv_0.25_270_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:03:23 2024]
+Finished job 15.
+22 of 39 steps (56%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:03:23 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.5_90_inv.nc, results/GB_13_1.0_pv_0.5_90_invroll.nc
+    jobid: 1
+    reason: Missing output files: results/GB_13_1.0_pv_0.5_90_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:03:39 2024]
+Finished job 7.
+23 of 39 steps (59%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:03:39 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0_90_noinv.nc, results/GB_13_1.0_pv_0_90_noinvroll.nc
+    jobid: 17
+    reason: Missing output files: results/GB_13_1.0_pv_0_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:03:46 2024]
+Finished job 1.
+24 of 39 steps (62%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:03:46 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0_270_noinv.nc, results/GB_13_1.0_pv_0_270_noinvroll.nc
+    jobid: 19
+    reason: Missing output files: results/GB_13_1.0_pv_0_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:04:00 2024]
+Finished job 17.
+25 of 39 steps (64%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:04:00 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0_180_noinv.nc, results/GB_13_1.0_pv_0_180_noinvroll.nc
+    jobid: 18
+    reason: Missing output files: results/GB_13_1.0_pv_0_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:04:06 2024]
+Finished job 19.
+26 of 39 steps (67%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:04:06 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0_90_inv.nc, results/GB_13_1.0_pv_0_90_invroll.nc
+    jobid: 8
+    reason: Missing output files: results/GB_13_1.0_pv_0_90_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:04:21 2024]
+Finished job 18.
+27 of 39 steps (69%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:04:21 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.5_270_inv.nc, results/GB_13_1.0_pv_0.5_270_invroll.nc
+    jobid: 4
+    reason: Missing output files: results/GB_13_1.0_pv_0.5_270_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:04:28 2024]
+Finished job 8.
+28 of 39 steps (72%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:04:28 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0_270_inv.nc, results/GB_13_1.0_pv_0_270_invroll.nc
+    jobid: 10
+    reason: Missing output files: results/GB_13_1.0_pv_0_270_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:04:43 2024]
+Finished job 4.
+29 of 39 steps (74%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:04:43 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.5_180_noinv.nc, results/GB_13_1.0_pv_0.5_180_noinvroll.nc
+    jobid: 12
+    reason: Missing output files: results/GB_13_1.0_pv_0.5_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:04:50 2024]
+Finished job 10.
+30 of 39 steps (77%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:04:50 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.5_270_noinv.nc, results/GB_13_1.0_pv_0.5_270_noinvroll.nc
+    jobid: 13
+    reason: Missing output files: results/GB_13_1.0_pv_0.5_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:05:04 2024]
+Finished job 12.
+31 of 39 steps (79%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:05:04 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.25_270_noinv.nc, results/GB_13_1.0_pv_0.25_270_noinvroll.nc
+    jobid: 16
+    reason: Missing output files: results/GB_13_1.0_pv_0.25_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:05:11 2024]
+Finished job 13.
+32 of 39 steps (82%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:05:11 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.25_180_inv.nc, results/GB_13_1.0_pv_0.25_180_invroll.nc
+    jobid: 6
+    reason: Missing output files: results/GB_13_1.0_pv_0.25_180_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:05:24 2024]
+Finished job 16.
+33 of 39 steps (85%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:05:24 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.5_180_inv.nc, results/GB_13_1.0_pv_0.5_180_invroll.nc
+    jobid: 3
+    reason: Missing output files: results/GB_13_1.0_pv_0.5_180_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:05:33 2024]
+Finished job 6.
+34 of 39 steps (87%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:05:33 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.5_90_noinv.nc, results/GB_13_1.0_pv_0.5_90_noinvroll.nc
+    jobid: 11
+    reason: Missing output files: results/GB_13_1.0_pv_0.5_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:05:46 2024]
+Finished job 3.
+35 of 39 steps (90%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:05:46 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0.25_90_noinv.nc, results/GB_13_1.0_pv_0.25_90_noinvroll.nc
+    jobid: 14
+    reason: Missing output files: results/GB_13_1.0_pv_0.25_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:05:53 2024]
+Finished job 11.
+36 of 39 steps (92%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:05:53 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_pv_0_180_inv.nc, results/GB_13_1.0_pv_0_180_invroll.nc
+    jobid: 9
+    reason: Missing output files: results/GB_13_1.0_pv_0_180_invroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:06:07 2024]
+Finished job 14.
+37 of 39 steps (95%) done
+[Sun Jun  9 11:06:15 2024]
+Finished job 9.
+38 of 39 steps (97%) done
+Select jobs to execute...
+
+[Sun Jun  9 11:06:15 2024]
+localrule all:
+    input: results/GB_13_1.0_pv_0.5_90_invroll.nc, results/GB_13_1.0_pv_0.5_180_invroll.nc, results/GB_13_1.0_pv_0.5_270_invroll.nc, results/GB_13_1.0_pv_0.25_90_invroll.nc, results/GB_13_1.0_pv_0.25_180_invroll.nc, results/GB_13_1.0_pv_0.25_270_invroll.nc, results/GB_13_1.0_pv_0_90_invroll.nc, results/GB_13_1.0_pv_0_180_invroll.nc, results/GB_13_1.0_pv_0_270_invroll.nc, results/GB_13_1.0_pv_0.5_90_noinvroll.nc, results/GB_13_1.0_pv_0.5_180_noinvroll.nc, results/GB_13_1.0_pv_0.5_270_noinvroll.nc, results/GB_13_1.0_pv_0.25_90_noinvroll.nc, results/GB_13_1.0_pv_0.25_180_noinvroll.nc, results/GB_13_1.0_pv_0.25_270_noinvroll.nc, results/GB_13_1.0_pv_0_90_noinvroll.nc, results/GB_13_1.0_pv_0_180_noinvroll.nc, results/GB_13_1.0_pv_0_270_noinvroll.nc, results/GB_13_1.5_pv_0.5_90_invroll.nc, results/GB_13_1.5_pv_0.5_180_invroll.nc, results/GB_13_1.5_pv_0.5_270_invroll.nc, results/GB_13_1.5_pv_0.25_90_invroll.nc, results/GB_13_1.5_pv_0.25_180_invroll.nc, results/GB_13_1.5_pv_0.25_270_invroll.nc, results/GB_13_1.5_pv_0_90_invroll.nc, results/GB_13_1.5_pv_0_180_invroll.nc, results/GB_13_1.5_pv_0_270_invroll.nc, results/GB_13_1.5_pv_0.5_90_noinvroll.nc, results/GB_13_1.5_pv_0.5_180_noinvroll.nc, results/GB_13_1.5_pv_0.5_270_noinvroll.nc, results/GB_13_1.5_pv_0.25_90_noinvroll.nc, results/GB_13_1.5_pv_0.25_180_noinvroll.nc, results/GB_13_1.5_pv_0.25_270_noinvroll.nc, results/GB_13_1.5_pv_0_90_noinvroll.nc, results/GB_13_1.5_pv_0_180_noinvroll.nc, results/GB_13_1.5_pv_0_270_noinvroll.nc
+    jobid: 0
+    reason: Input files updated by another job: results/GB_13_1.5_pv_0_90_noinvroll.nc, results/GB_13_1.0_pv_0.25_180_invroll.nc, results/GB_13_1.5_pv_0.25_180_invroll.nc, results/GB_13_1.0_pv_0.25_270_invroll.nc, results/GB_13_1.5_pv_0.5_270_noinvroll.nc, results/GB_13_1.5_pv_0.5_90_noinvroll.nc, results/GB_13_1.0_pv_0.25_90_noinvroll.nc, results/GB_13_1.0_pv_0.5_180_noinvroll.nc, results/GB_13_1.0_pv_0.5_180_invroll.nc, results/GB_13_1.0_pv_0_180_invroll.nc, results/GB_13_1.5_pv_0.5_180_invroll.nc, results/GB_13_1.0_pv_0_90_noinvroll.nc, results/GB_13_1.0_pv_0_90_invroll.nc, results/GB_13_1.5_pv_0.5_90_invroll.nc, results/GB_13_1.5_pv_0_270_noinvroll.nc, results/GB_13_1.5_pv_0.5_180_noinvroll.nc, results/GB_13_1.0_pv_0.25_270_noinvroll.nc, results/GB_13_1.0_pv_0_270_invroll.nc, results/GB_13_1.5_pv_0_90_invroll.nc, results/GB_13_1.5_pv_0_180_invroll.nc, results/GB_13_1.5_pv_0_180_noinvroll.nc, results/GB_13_1.0_pv_0_180_noinvroll.nc, results/GB_13_1.0_pv_0_270_noinvroll.nc, results/GB_13_1.5_pv_0.5_270_invroll.nc, results/GB_13_1.5_pv_0.25_90_noinvroll.nc, results/GB_13_1.0_pv_0.25_180_noinvroll.nc, results/GB_13_1.5_pv_0_270_invroll.nc, results/GB_13_1.0_pv_0.25_90_invroll.nc, results/GB_13_1.5_pv_0.25_180_noinvroll.nc, results/GB_13_1.5_pv_0.25_270_noinvroll.nc, results/GB_13_1.0_pv_0.5_270_noinvroll.nc, results/GB_13_1.0_pv_0.5_90_noinvroll.nc, results/GB_13_1.0_pv_0.5_90_invroll.nc, results/GB_13_1.5_pv_0.25_270_invroll.nc, results/GB_13_1.5_pv_0.25_90_invroll.nc, results/GB_13_1.0_pv_0.5_270_invroll.nc
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun  9 11:06:15 2024]
+Finished job 0.
+39 of 39 steps (100%) done
+Complete log: .snakemake\log\2024-06-09T105923.906896.snakemake.log

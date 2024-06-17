@@ -1,0 +1,2970 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve      540
+solve_base           6
+total              547
+
+Select jobs to execute...
+
+[Wed Jun 12 15:45:32 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: resources/DE_20_1.5_base_solved.nc, resources/DE_20_1.5_base_roll_solved.nc
+    jobid: 93
+    reason: Missing output files: resources/DE_20_1.5_base_solved.nc; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Wed Jun 12 15:45:32 2024]
+rule solve_base:
+    input: resources/DE_20_1.0_base.nc
+    output: resources/DE_20_1.0_base_solved.nc, resources/DE_20_1.0_base_roll_solved.nc
+    jobid: 2
+    reason: Missing output files: resources/DE_20_1.0_base_solved.nc; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Wed Jun 12 15:45:32 2024]
+rule solve_base:
+    input: resources/GB_13_1.5_base.nc
+    output: resources/GB_13_1.5_base_solved.nc, resources/GB_13_1.5_base_roll_solved.nc
+    jobid: 275
+    reason: Missing output files: resources/GB_13_1.5_base_solved.nc; Params have changed since last execution
+    wildcards: country=GB, buses=13, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:45:32 2024]
+rule solve_base:
+    input: resources/GB_13_1.0_base.nc
+    output: resources/GB_13_1.0_base_solved.nc, resources/GB_13_1.0_base_roll_solved.nc
+    jobid: 184
+    reason: Missing output files: resources/GB_13_1.0_base_solved.nc; Params have changed since last execution
+    wildcards: country=GB, buses=13, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:46:03 2024]
+Finished job 184.
+1 of 547 steps (0.2%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:46:03 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.0_base_solved.nc
+    output: resources/GB_13_1.0_dispatchcut_0.5_180_noinv.nc, results/GB_13_1.0_dispatchcut_0.5_180_noinvroll.nc
+    jobid: 272
+    reason: Missing output files: results/GB_13_1.0_dispatchcut_0.5_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.0_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:46:06 2024]
+Finished job 275.
+2 of 547 steps (0.4%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:46:06 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.5_270_noinv.nc, results/GB_13_1.5_pv_0.5_270_noinvroll.nc
+    jobid: 328
+    reason: Missing output files: results/GB_13_1.5_pv_0.5_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:46:12 2024]
+Finished job 2.
+3 of 547 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:46:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_180_noinv.nc, results/DE_20_1.0_pv_0_180_noinvroll.nc
+    jobid: 48
+    reason: Missing output files: results/DE_20_1.0_pv_0_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:46:12 2024]
+Finished job 93.
+4 of 547 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:46:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_90_inv.nc, results/DE_20_1.5_pv_0_90_invroll.nc
+    jobid: 92
+    reason: Missing output files: results/DE_20_1.5_pv_0_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:46:30 2024]
+Finished job 272.
+5 of 547 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:46:30 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_180_inv.nc, results/DE_20_1.5_pv_0_180_invroll.nc
+    jobid: 94
+    reason: Missing output files: results/DE_20_1.5_pv_0_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:46:30 2024]
+Finished job 328.
+6 of 547 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:46:30 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_270_inv.nc, results/DE_20_1.5_pv_0_270_invroll.nc
+    jobid: 95
+    reason: Missing output files: results/DE_20_1.5_pv_0_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:46:37 2024]
+Finished job 48.
+7 of 547 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:46:37 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_90_inv.nc, results/DE_20_1.5_pv_0.25_90_invroll.nc
+    jobid: 96
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:46:40 2024]
+Finished job 92.
+8 of 547 steps (1%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:46:40 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_180_inv.nc, results/DE_20_1.5_pv_0.25_180_invroll.nc
+    jobid: 97
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:47:03 2024]
+Finished job 94.
+9 of 547 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:47:03 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_270_inv.nc, results/DE_20_1.5_pv_0.25_270_invroll.nc
+    jobid: 98
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:47:04 2024]
+Finished job 95.
+10 of 547 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:47:04 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_270_inv.nc, results/DE_20_1.5_wind_0.25_270_invroll.nc
+    jobid: 104
+    reason: Missing output files: results/DE_20_1.5_wind_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:47:14 2024]
+Finished job 96.
+11 of 547 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:47:14 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_90_inv.nc, results/DE_20_1.5_pv_0.5_90_invroll.nc
+    jobid: 99
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:47:18 2024]
+Finished job 97.
+12 of 547 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:47:18 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_180_inv.nc, results/DE_20_1.5_pv_0.5_180_invroll.nc
+    jobid: 100
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:47:36 2024]
+Finished job 98.
+13 of 547 steps (2%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:47:36 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_270_inv.nc, results/DE_20_1.5_pv_0.5_270_invroll.nc
+    jobid: 101
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:47:38 2024]
+Finished job 104.
+14 of 547 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:47:38 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_90_inv.nc, results/DE_20_1.5_wind_0.25_90_invroll.nc
+    jobid: 102
+    reason: Missing output files: results/DE_20_1.5_wind_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:47:52 2024]
+Finished job 99.
+15 of 547 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:47:52 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_180_inv.nc, results/DE_20_1.5_wind_0.25_180_invroll.nc
+    jobid: 103
+    reason: Missing output files: results/DE_20_1.5_wind_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:47:54 2024]
+Finished job 100.
+16 of 547 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:47:54 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.25_180_noinv.nc, results/DE_20_1.5_noexim_0.25_180_noinvroll.nc
+    jobid: 160
+    reason: Missing output files: results/DE_20_1.5_noexim_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:48:11 2024]
+Finished job 101.
+17 of 547 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:48:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_90_inv.nc, results/DE_20_1.5_wind_0.5_90_invroll.nc
+    jobid: 105
+    reason: Missing output files: results/DE_20_1.5_wind_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:48:11 2024]
+Finished job 102.
+18 of 547 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:48:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.25_270_noinv.nc, results/DE_20_1.5_noexim_0.25_270_noinvroll.nc
+    jobid: 161
+    reason: Missing output files: results/DE_20_1.5_noexim_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:48:22 2024]
+Finished job 160.
+19 of 547 steps (3%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:48:22 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_180_inv.nc, results/DE_20_1.5_wind_0.5_180_invroll.nc
+    jobid: 106
+    reason: Missing output files: results/DE_20_1.5_wind_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:48:26 2024]
+Finished job 103.
+20 of 547 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:48:26 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_90_noinv.nc, results/DE_20_1.5_noexim_0.5_90_noinvroll.nc
+    jobid: 162
+    reason: Missing output files: results/DE_20_1.5_noexim_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:48:38 2024]
+Finished job 161.
+21 of 547 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:48:38 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_270_inv.nc, results/DE_20_1.5_wind_0.5_270_invroll.nc
+    jobid: 107
+    reason: Missing output files: results/DE_20_1.5_wind_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:48:43 2024]
+Finished job 105.
+22 of 547 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:48:43 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_180_noinv.nc, results/DE_20_1.5_noexim_0.5_180_noinvroll.nc
+    jobid: 163
+    reason: Missing output files: results/DE_20_1.5_noexim_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:48:54 2024]
+Finished job 162.
+23 of 547 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:48:54 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_90_inv.nc, results/DE_20_1.5_wind_0.75_90_invroll.nc
+    jobid: 108
+    reason: Missing output files: results/DE_20_1.5_wind_0.75_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:48:56 2024]
+Finished job 106.
+24 of 547 steps (4%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:48:56 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_270_noinv.nc, results/DE_20_1.5_noexim_0.5_270_noinvroll.nc
+    jobid: 164
+    reason: Missing output files: results/DE_20_1.5_noexim_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:49:10 2024]
+Finished job 163.
+25 of 547 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:49:10 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_180_inv.nc, results/DE_20_1.5_wind_0.75_180_invroll.nc
+    jobid: 109
+    reason: Missing output files: results/DE_20_1.5_wind_0.75_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:49:12 2024]
+Finished job 107.
+26 of 547 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:49:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.25_90_noinv.nc, results/DE_20_1.5_drought_0.25_90_noinvroll.nc
+    jobid: 165
+    reason: Missing output files: results/DE_20_1.5_drought_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:49:25 2024]
+Finished job 164.
+27 of 547 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:49:25 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_270_inv.nc, results/DE_20_1.5_wind_0.75_270_invroll.nc
+    jobid: 110
+    reason: Missing output files: results/DE_20_1.5_wind_0.75_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:49:29 2024]
+Finished job 108.
+28 of 547 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:49:29 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.25_180_noinv.nc, results/DE_20_1.5_drought_0.25_180_noinvroll.nc
+    jobid: 166
+    reason: Missing output files: results/DE_20_1.5_drought_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:49:42 2024]
+Finished job 165.
+29 of 547 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:49:42 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0_90_inv.nc, results/DE_20_1.5_noexim_0_90_invroll.nc
+    jobid: 111
+    reason: Missing output files: results/DE_20_1.5_noexim_0_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:49:46 2024]
+Finished job 109.
+30 of 547 steps (5%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:49:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.25_270_noinv.nc, results/DE_20_1.5_drought_0.25_270_noinvroll.nc
+    jobid: 167
+    reason: Missing output files: results/DE_20_1.5_drought_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:49:56 2024]
+Finished job 166.
+31 of 547 steps (6%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:49:56 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0_180_inv.nc, results/DE_20_1.5_noexim_0_180_invroll.nc
+    jobid: 112
+    reason: Missing output files: results/DE_20_1.5_noexim_0_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:49:59 2024]
+Finished job 110.
+32 of 547 steps (6%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:49:59 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.5_90_noinv.nc, results/DE_20_1.5_drought_0.5_90_noinvroll.nc
+    jobid: 168
+    reason: Missing output files: results/DE_20_1.5_drought_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:50:12 2024]
+Finished job 167.
+33 of 547 steps (6%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:50:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0_270_inv.nc, results/DE_20_1.5_noexim_0_270_invroll.nc
+    jobid: 113
+    reason: Missing output files: results/DE_20_1.5_noexim_0_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:50:13 2024]
+Finished job 111.
+34 of 547 steps (6%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:50:13 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.5_180_noinv.nc, results/DE_20_1.5_drought_0.5_180_noinvroll.nc
+    jobid: 169
+    reason: Missing output files: results/DE_20_1.5_drought_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:50:25 2024]
+Finished job 168.
+35 of 547 steps (6%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:50:25 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.25_90_inv.nc, results/DE_20_1.5_noexim_0.25_90_invroll.nc
+    jobid: 114
+    reason: Missing output files: results/DE_20_1.5_noexim_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:50:26 2024]
+Finished job 112.
+36 of 547 steps (7%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:50:27 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.5_270_noinv.nc, results/DE_20_1.5_drought_0.5_270_noinvroll.nc
+    jobid: 170
+    reason: Missing output files: results/DE_20_1.5_drought_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:50:39 2024]
+Finished job 169.
+37 of 547 steps (7%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:50:39 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.25_180_inv.nc, results/DE_20_1.5_noexim_0.25_180_invroll.nc
+    jobid: 115
+    reason: Missing output files: results/DE_20_1.5_noexim_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:50:41 2024]
+Finished job 113.
+38 of 547 steps (7%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:50:41 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.75_90_noinv.nc, results/DE_20_1.5_drought_0.75_90_noinvroll.nc
+    jobid: 171
+    reason: Missing output files: results/DE_20_1.5_drought_0.75_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:50:53 2024]
+Finished job 170.
+39 of 547 steps (7%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:50:53 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.25_270_inv.nc, results/DE_20_1.5_noexim_0.25_270_invroll.nc
+    jobid: 116
+    reason: Missing output files: results/DE_20_1.5_noexim_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:50:57 2024]
+Finished job 114.
+40 of 547 steps (7%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:50:57 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.75_180_noinv.nc, results/DE_20_1.5_drought_0.75_180_noinvroll.nc
+    jobid: 172
+    reason: Missing output files: results/DE_20_1.5_drought_0.75_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:51:08 2024]
+Finished job 171.
+41 of 547 steps (7%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:51:08 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_90_inv.nc, results/DE_20_1.5_noexim_0.5_90_invroll.nc
+    jobid: 117
+    reason: Missing output files: results/DE_20_1.5_noexim_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:51:12 2024]
+Finished job 115.
+42 of 547 steps (8%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:51:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.75_270_noinv.nc, results/DE_20_1.5_drought_0.75_270_noinvroll.nc
+    jobid: 173
+    reason: Missing output files: results/DE_20_1.5_drought_0.75_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:51:24 2024]
+Finished job 172.
+43 of 547 steps (8%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:51:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_180_inv.nc, results/DE_20_1.5_noexim_0.5_180_invroll.nc
+    jobid: 118
+    reason: Missing output files: results/DE_20_1.5_noexim_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:51:25 2024]
+Finished job 116.
+44 of 547 steps (8%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:51:25 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_90_noinv.nc, results/DE_20_1.5_dispatchcut_0_90_noinvroll.nc
+    jobid: 174
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:51:38 2024]
+Finished job 173.
+45 of 547 steps (8%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:51:38 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_270_inv.nc, results/DE_20_1.5_noexim_0.5_270_invroll.nc
+    jobid: 119
+    reason: Missing output files: results/DE_20_1.5_noexim_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:51:41 2024]
+Finished job 117.
+46 of 547 steps (8%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:51:41 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_180_noinv.nc, results/DE_20_1.5_dispatchcut_0_180_noinvroll.nc
+    jobid: 175
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:51:51 2024]
+Finished job 174.
+47 of 547 steps (9%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:51:51 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.25_90_inv.nc, results/DE_20_1.5_drought_0.25_90_invroll.nc
+    jobid: 120
+    reason: Missing output files: results/DE_20_1.5_drought_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:51:56 2024]
+Finished job 118.
+48 of 547 steps (9%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:51:56 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_270_noinv.nc, results/DE_20_1.5_dispatchcut_0_270_noinvroll.nc
+    jobid: 176
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:52:07 2024]
+Finished job 175.
+49 of 547 steps (9%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:52:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.25_180_inv.nc, results/DE_20_1.5_drought_0.25_180_invroll.nc
+    jobid: 121
+    reason: Missing output files: results/DE_20_1.5_drought_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:52:11 2024]
+Finished job 119.
+50 of 547 steps (9%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:52:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.25_90_noinv.nc, results/DE_20_1.5_dispatchcut_0.25_90_noinvroll.nc
+    jobid: 177
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:52:22 2024]
+Finished job 176.
+51 of 547 steps (9%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:52:23 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.25_270_inv.nc, results/DE_20_1.5_drought_0.25_270_invroll.nc
+    jobid: 122
+    reason: Missing output files: results/DE_20_1.5_drought_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:52:25 2024]
+Finished job 120.
+52 of 547 steps (10%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:52:25 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.25_180_noinv.nc, results/DE_20_1.5_dispatchcut_0.25_180_noinvroll.nc
+    jobid: 178
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:52:37 2024]
+Finished job 177.
+53 of 547 steps (10%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:52:37 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.5_90_inv.nc, results/DE_20_1.5_drought_0.5_90_invroll.nc
+    jobid: 123
+    reason: Missing output files: results/DE_20_1.5_drought_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:52:40 2024]
+Finished job 121.
+54 of 547 steps (10%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:52:40 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.25_270_noinv.nc, results/DE_20_1.5_dispatchcut_0.25_270_noinvroll.nc
+    jobid: 179
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:52:52 2024]
+Finished job 178.
+55 of 547 steps (10%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:52:52 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.5_180_inv.nc, results/DE_20_1.5_drought_0.5_180_invroll.nc
+    jobid: 124
+    reason: Missing output files: results/DE_20_1.5_drought_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:52:55 2024]
+Finished job 122.
+56 of 547 steps (10%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:52:56 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.5_90_noinv.nc, results/DE_20_1.5_dispatchcut_0.5_90_noinvroll.nc
+    jobid: 180
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:53:07 2024]
+Finished job 179.
+57 of 547 steps (10%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:53:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.25_180_inv.nc, results/DE_20_1.5_dispatchcut_0.25_180_invroll.nc
+    jobid: 133
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:53:10 2024]
+Finished job 123.
+58 of 547 steps (11%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:53:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.25_270_inv.nc, results/DE_20_1.5_dispatchcut_0.25_270_invroll.nc
+    jobid: 134
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:53:22 2024]
+Finished job 180.
+59 of 547 steps (11%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:53:22 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.5_90_inv.nc, results/DE_20_1.5_dispatchcut_0.5_90_invroll.nc
+    jobid: 135
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:53:25 2024]
+Finished job 124.
+60 of 547 steps (11%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:53:25 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.5_180_inv.nc, results/DE_20_1.5_dispatchcut_0.5_180_invroll.nc
+    jobid: 136
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:53:38 2024]
+Finished job 133.
+61 of 547 steps (11%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:53:38 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.5_270_inv.nc, results/DE_20_1.5_dispatchcut_0.5_270_invroll.nc
+    jobid: 137
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:53:40 2024]
+Finished job 134.
+62 of 547 steps (11%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:53:40 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_90_noinv.nc, results/DE_20_1.5_pv_0_90_noinvroll.nc
+    jobid: 138
+    reason: Missing output files: results/DE_20_1.5_pv_0_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:53:53 2024]
+Finished job 135.
+63 of 547 steps (12%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:53:53 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_180_noinv.nc, results/DE_20_1.5_pv_0_180_noinvroll.nc
+    jobid: 139
+    reason: Missing output files: results/DE_20_1.5_pv_0_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:53:54 2024]
+Finished job 136.
+64 of 547 steps (12%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:53:54 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_270_noinv.nc, results/DE_20_1.5_pv_0_270_noinvroll.nc
+    jobid: 140
+    reason: Missing output files: results/DE_20_1.5_pv_0_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:06 2024]
+Finished job 138.
+65 of 547 steps (12%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:06 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.25_90_inv.nc, results/DE_20_1.5_dispatchcut_0.25_90_invroll.nc
+    jobid: 132
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:07 2024]
+Finished job 137.
+66 of 547 steps (12%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_90_noinv.nc, results/DE_20_1.5_pv_0.25_90_noinvroll.nc
+    jobid: 141
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:18 2024]
+Finished job 139.
+67 of 547 steps (12%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:18 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_180_noinv.nc, results/DE_20_1.5_pv_0.25_180_noinvroll.nc
+    jobid: 142
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:20 2024]
+Finished job 140.
+68 of 547 steps (12%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:20 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_270_noinv.nc, results/DE_20_1.5_pv_0.25_270_noinvroll.nc
+    jobid: 143
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:33 2024]
+Finished job 141.
+69 of 547 steps (13%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:33 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_90_noinv.nc, results/DE_20_1.5_pv_0.5_90_noinvroll.nc
+    jobid: 144
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:35 2024]
+Finished job 132.
+70 of 547 steps (13%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:35 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_180_noinv.nc, results/DE_20_1.5_pv_0.5_180_noinvroll.nc
+    jobid: 145
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:45 2024]
+Finished job 142.
+71 of 547 steps (13%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:45 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_270_noinv.nc, results/DE_20_1.5_pv_0.5_270_noinvroll.nc
+    jobid: 146
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:46 2024]
+Finished job 143.
+72 of 547 steps (13%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_90_noinv.nc, results/DE_20_1.5_wind_0.25_90_noinvroll.nc
+    jobid: 147
+    reason: Missing output files: results/DE_20_1.5_wind_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:54:58 2024]
+Finished job 144.
+73 of 547 steps (13%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:54:58 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_180_noinv.nc, results/DE_20_1.5_wind_0.25_180_noinvroll.nc
+    jobid: 148
+    reason: Missing output files: results/DE_20_1.5_wind_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:01 2024]
+Finished job 145.
+74 of 547 steps (14%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:01 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.25_270_noinv.nc, results/DE_20_1.5_wind_0.25_270_noinvroll.nc
+    jobid: 149
+    reason: Missing output files: results/DE_20_1.5_wind_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:11 2024]
+Finished job 146.
+75 of 547 steps (14%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_90_noinv.nc, results/DE_20_1.5_wind_0.5_90_noinvroll.nc
+    jobid: 150
+    reason: Missing output files: results/DE_20_1.5_wind_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:12 2024]
+Finished job 147.
+76 of 547 steps (14%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_180_noinv.nc, results/DE_20_1.5_wind_0.5_180_noinvroll.nc
+    jobid: 151
+    reason: Missing output files: results/DE_20_1.5_wind_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:24 2024]
+Finished job 148.
+77 of 547 steps (14%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_270_noinv.nc, results/DE_20_1.5_wind_0.5_270_noinvroll.nc
+    jobid: 152
+    reason: Missing output files: results/DE_20_1.5_wind_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:26 2024]
+Finished job 149.
+78 of 547 steps (14%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:26 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_90_noinv.nc, results/DE_20_1.5_wind_0.75_90_noinvroll.nc
+    jobid: 153
+    reason: Missing output files: results/DE_20_1.5_wind_0.75_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:36 2024]
+Finished job 150.
+79 of 547 steps (14%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:36 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.5_270_inv.nc, results/DE_20_1.5_drought_0.5_270_invroll.nc
+    jobid: 125
+    reason: Missing output files: results/DE_20_1.5_drought_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:38 2024]
+Finished job 151.
+80 of 547 steps (15%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:38 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.5_180_noinv.nc, results/DE_20_1.5_dispatchcut_0.5_180_noinvroll.nc
+    jobid: 181
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:51 2024]
+Finished job 152.
+81 of 547 steps (15%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:51 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_180_noinv.nc, results/DE_20_1.5_wind_0.75_180_noinvroll.nc
+    jobid: 154
+    reason: Missing output files: results/DE_20_1.5_wind_0.75_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:55:53 2024]
+Finished job 153.
+82 of 547 steps (15%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:55:53 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.75_90_inv.nc, results/DE_20_1.5_drought_0.75_90_invroll.nc
+    jobid: 126
+    reason: Missing output files: results/DE_20_1.5_drought_0.75_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:56:04 2024]
+Finished job 181.
+83 of 547 steps (15%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:56:04 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.5_270_noinv.nc, results/DE_20_1.5_dispatchcut_0.5_270_noinvroll.nc
+    jobid: 182
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:56:08 2024]
+Finished job 125.
+84 of 547 steps (15%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:56:08 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_270_noinv.nc, results/DE_20_1.5_wind_0.75_270_noinvroll.nc
+    jobid: 155
+    reason: Missing output files: results/DE_20_1.5_wind_0.75_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:56:18 2024]
+Finished job 154.
+85 of 547 steps (16%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:56:18 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.75_180_inv.nc, results/DE_20_1.5_drought_0.75_180_invroll.nc
+    jobid: 127
+    reason: Missing output files: results/DE_20_1.5_drought_0.75_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:56:24 2024]
+Finished job 126.
+86 of 547 steps (16%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:56:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0_90_noinv.nc, results/DE_20_1.5_noexim_0_90_noinvroll.nc
+    jobid: 156
+    reason: Missing output files: results/DE_20_1.5_noexim_0_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:56:32 2024]
+Finished job 182.
+87 of 547 steps (16%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:56:32 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.75_270_inv.nc, results/DE_20_1.5_drought_0.75_270_invroll.nc
+    jobid: 128
+    reason: Missing output files: results/DE_20_1.5_drought_0.75_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=drought, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:56:36 2024]
+Finished job 155.
+88 of 547 steps (16%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:56:36 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0_180_noinv.nc, results/DE_20_1.5_noexim_0_180_noinvroll.nc
+    jobid: 157
+    reason: Missing output files: results/DE_20_1.5_noexim_0_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:56:51 2024]
+Finished job 127.
+89 of 547 steps (16%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:56:51 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_90_inv.nc, results/DE_20_1.5_dispatchcut_0_90_invroll.nc
+    jobid: 129
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:56:51 2024]
+Finished job 156.
+90 of 547 steps (16%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:56:51 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0_270_noinv.nc, results/DE_20_1.5_noexim_0_270_noinvroll.nc
+    jobid: 158
+    reason: Missing output files: results/DE_20_1.5_noexim_0_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:02 2024]
+Finished job 157.
+91 of 547 steps (17%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:02 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_180_inv.nc, results/DE_20_1.5_dispatchcut_0_180_invroll.nc
+    jobid: 130
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:06 2024]
+Finished job 128.
+92 of 547 steps (17%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:06 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.25_90_noinv.nc, results/DE_20_1.5_noexim_0.25_90_noinvroll.nc
+    jobid: 159
+    reason: Missing output files: results/DE_20_1.5_noexim_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=noexim, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:17 2024]
+Finished job 158.
+93 of 547 steps (17%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:17 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0_270_inv.nc, results/DE_20_1.5_dispatchcut_0_270_invroll.nc
+    jobid: 131
+    reason: Missing output files: results/DE_20_1.5_dispatchcut_0_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:20 2024]
+Finished job 129.
+94 of 547 steps (17%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:20 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.5_90_noinv.nc, results/DE_20_1.0_drought_0.5_90_noinvroll.nc
+    jobid: 77
+    reason: Missing output files: results/DE_20_1.0_drought_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:32 2024]
+Finished job 130.
+95 of 547 steps (17%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:32 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0_180_inv.nc, results/DE_20_1.0_noexim_0_180_invroll.nc
+    jobid: 21
+    reason: Missing output files: results/DE_20_1.0_noexim_0_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:32 2024]
+Finished job 159.
+96 of 547 steps (18%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:32 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_270_noinv.nc, results/DE_20_1.0_pv_0_270_noinvroll.nc
+    jobid: 49
+    reason: Missing output files: results/DE_20_1.0_pv_0_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:46 2024]
+Finished job 77.
+97 of 547 steps (18%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.5_180_noinv.nc, results/DE_20_1.0_drought_0.5_180_noinvroll.nc
+    jobid: 78
+    reason: Missing output files: results/DE_20_1.0_drought_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:46 2024]
+Finished job 131.
+98 of 547 steps (18%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0_270_inv.nc, results/DE_20_1.0_noexim_0_270_invroll.nc
+    jobid: 22
+    reason: Missing output files: results/DE_20_1.0_noexim_0_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:57:57 2024]
+Finished job 49.
+99 of 547 steps (18%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:57:57 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_90_noinv.nc, results/DE_20_1.0_pv_0.25_90_noinvroll.nc
+    jobid: 50
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:00 2024]
+Finished job 21.
+100 of 547 steps (18%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:00 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.5_270_noinv.nc, results/DE_20_1.0_drought_0.5_270_noinvroll.nc
+    jobid: 79
+    reason: Missing output files: results/DE_20_1.0_drought_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:11 2024]
+Finished job 78.
+101 of 547 steps (18%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:11 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.25_90_inv.nc, results/DE_20_1.0_noexim_0.25_90_invroll.nc
+    jobid: 23
+    reason: Missing output files: results/DE_20_1.0_noexim_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:14 2024]
+Finished job 22.
+102 of 547 steps (19%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:14 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_180_noinv.nc, results/DE_20_1.0_pv_0.25_180_noinvroll.nc
+    jobid: 51
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:24 2024]
+Finished job 50.
+103 of 547 steps (19%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:24 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.75_90_noinv.nc, results/DE_20_1.0_drought_0.75_90_noinvroll.nc
+    jobid: 80
+    reason: Missing output files: results/DE_20_1.0_drought_0.75_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:26 2024]
+Finished job 79.
+104 of 547 steps (19%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:26 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.25_180_inv.nc, results/DE_20_1.0_noexim_0.25_180_invroll.nc
+    jobid: 24
+    reason: Missing output files: results/DE_20_1.0_noexim_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:40 2024]
+Finished job 51.
+105 of 547 steps (19%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:40 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_270_noinv.nc, results/DE_20_1.0_pv_0.25_270_noinvroll.nc
+    jobid: 52
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:42 2024]
+Finished job 23.
+106 of 547 steps (19%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:42 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.75_180_noinv.nc, results/DE_20_1.0_drought_0.75_180_noinvroll.nc
+    jobid: 81
+    reason: Missing output files: results/DE_20_1.0_drought_0.75_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:51 2024]
+Finished job 80.
+107 of 547 steps (20%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:51 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.25_270_inv.nc, results/DE_20_1.0_noexim_0.25_270_invroll.nc
+    jobid: 25
+    reason: Missing output files: results/DE_20_1.0_noexim_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:58:57 2024]
+Finished job 24.
+108 of 547 steps (20%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:58:57 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.5_90_noinv.nc, results/DE_20_1.0_pv_0.5_90_noinvroll.nc
+    jobid: 53
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:59:08 2024]
+Finished job 52.
+109 of 547 steps (20%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:59:08 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.75_270_noinv.nc, results/DE_20_1.0_drought_0.75_270_noinvroll.nc
+    jobid: 82
+    reason: Missing output files: results/DE_20_1.0_drought_0.75_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:59:09 2024]
+Finished job 81.
+110 of 547 steps (20%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:59:09 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.5_90_inv.nc, results/DE_20_1.0_noexim_0.5_90_invroll.nc
+    jobid: 26
+    reason: Missing output files: results/DE_20_1.0_noexim_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:59:22 2024]
+Finished job 25.
+111 of 547 steps (20%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:59:22 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.5_180_noinv.nc, results/DE_20_1.0_pv_0.5_180_noinvroll.nc
+    jobid: 54
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:59:23 2024]
+Finished job 53.
+112 of 547 steps (20%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:59:23 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0_90_noinv.nc, results/DE_20_1.0_dispatchcut_0_90_noinvroll.nc
+    jobid: 83
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:59:34 2024]
+Finished job 82.
+113 of 547 steps (21%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:59:34 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.5_180_inv.nc, results/DE_20_1.0_noexim_0.5_180_invroll.nc
+    jobid: 27
+    reason: Missing output files: results/DE_20_1.0_noexim_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:59:38 2024]
+Finished job 26.
+114 of 547 steps (21%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:59:38 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.25_270_noinv.nc, results/DE_20_1.0_drought_0.25_270_noinvroll.nc
+    jobid: 76
+    reason: Missing output files: results/DE_20_1.0_drought_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:59:49 2024]
+Finished job 54.
+115 of 547 steps (21%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:59:49 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.5_270_noinv.nc, results/DE_20_1.0_pv_0.5_270_noinvroll.nc
+    jobid: 55
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 15:59:50 2024]
+Finished job 83.
+116 of 547 steps (21%) done
+Select jobs to execute...
+
+[Wed Jun 12 15:59:50 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0_180_noinv.nc, results/DE_20_1.0_dispatchcut_0_180_noinvroll.nc
+    jobid: 84
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:00:04 2024]
+Finished job 76.
+117 of 547 steps (21%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:00:04 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.5_270_inv.nc, results/DE_20_1.0_noexim_0.5_270_invroll.nc
+    jobid: 28
+    reason: Missing output files: results/DE_20_1.0_noexim_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:00:04 2024]
+Finished job 27.
+118 of 547 steps (22%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:00:04 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_90_noinv.nc, results/DE_20_1.0_wind_0.25_90_noinvroll.nc
+    jobid: 56
+    reason: Missing output files: results/DE_20_1.0_wind_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:00:15 2024]
+Finished job 55.
+119 of 547 steps (22%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:00:15 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_270_inv.nc, results/DE_20_1.0_wind_0.25_270_invroll.nc
+    jobid: 13
+    reason: Missing output files: results/DE_20_1.0_wind_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:00:16 2024]
+Finished job 84.
+120 of 547 steps (22%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:00:16 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0_270_noinv.nc, results/DE_20_1.0_dispatchcut_0_270_noinvroll.nc
+    jobid: 85
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:00:30 2024]
+Finished job 56.
+121 of 547 steps (22%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:00:30 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.25_90_inv.nc, results/DE_20_1.0_drought_0.25_90_invroll.nc
+    jobid: 29
+    reason: Missing output files: results/DE_20_1.0_drought_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:00:34 2024]
+Finished job 28.
+122 of 547 steps (22%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:00:34 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_180_noinv.nc, results/DE_20_1.0_wind_0.25_180_noinvroll.nc
+    jobid: 57
+    reason: Missing output files: results/DE_20_1.0_wind_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:00:43 2024]
+Finished job 85.
+123 of 547 steps (22%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:00:43 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_90_inv.nc, results/DE_20_1.0_pv_0_90_invroll.nc
+    jobid: 1
+    reason: Missing output files: results/DE_20_1.0_pv_0_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:00:48 2024]
+Finished job 13.
+124 of 547 steps (23%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:00:48 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.25_90_noinv.nc, results/DE_20_1.0_dispatchcut_0.25_90_noinvroll.nc
+    jobid: 86
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:01:02 2024]
+Finished job 57.
+125 of 547 steps (23%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:01:02 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.25_180_inv.nc, results/DE_20_1.0_drought_0.25_180_invroll.nc
+    jobid: 30
+    reason: Missing output files: results/DE_20_1.0_drought_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:01:12 2024]
+Finished job 29.
+126 of 547 steps (23%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:01:12 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_270_noinv.nc, results/DE_20_1.0_wind_0.25_270_noinvroll.nc
+    jobid: 58
+    reason: Missing output files: results/DE_20_1.0_wind_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:01:15 2024]
+Finished job 86.
+127 of 547 steps (23%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:01:15 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_180_inv.nc, results/DE_20_1.0_pv_0_180_invroll.nc
+    jobid: 3
+    reason: Missing output files: results/DE_20_1.0_pv_0_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:01:18 2024]
+Finished job 1.
+128 of 547 steps (23%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:01:18 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.25_180_noinv.nc, results/DE_20_1.0_dispatchcut_0.25_180_noinvroll.nc
+    jobid: 87
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:01:34 2024]
+Finished job 30.
+129 of 547 steps (24%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:01:34 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.25_270_inv.nc, results/DE_20_1.0_drought_0.25_270_invroll.nc
+    jobid: 31
+    reason: Missing output files: results/DE_20_1.0_drought_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:01:40 2024]
+Finished job 58.
+130 of 547 steps (24%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:01:40 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_90_noinv.nc, results/DE_20_1.0_wind_0.5_90_noinvroll.nc
+    jobid: 59
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:01:45 2024]
+Finished job 87.
+131 of 547 steps (24%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:01:45 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.25_270_noinv.nc, results/DE_20_1.0_dispatchcut_0.25_270_noinvroll.nc
+    jobid: 88
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:01:50 2024]
+Finished job 3.
+132 of 547 steps (24%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:01:50 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.5_90_inv.nc, results/DE_20_1.0_drought_0.5_90_invroll.nc
+    jobid: 32
+    reason: Missing output files: results/DE_20_1.0_drought_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:02:05 2024]
+Finished job 31.
+133 of 547 steps (24%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:02:05 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_180_noinv.nc, results/DE_20_1.0_wind_0.5_180_noinvroll.nc
+    jobid: 60
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:02:07 2024]
+Finished job 59.
+134 of 547 steps (24%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:02:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_90_inv.nc, results/DE_20_1.0_wind_0.5_90_invroll.nc
+    jobid: 14
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:02:13 2024]
+Finished job 88.
+135 of 547 steps (25%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:02:13 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.5_90_noinv.nc, results/DE_20_1.0_dispatchcut_0.5_90_noinvroll.nc
+    jobid: 89
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:02:22 2024]
+Finished job 32.
+136 of 547 steps (25%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:02:22 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.5_180_inv.nc, results/DE_20_1.0_drought_0.5_180_invroll.nc
+    jobid: 33
+    reason: Missing output files: results/DE_20_1.0_drought_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:02:33 2024]
+Finished job 60.
+137 of 547 steps (25%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:02:33 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_270_noinv.nc, results/DE_20_1.0_wind_0.5_270_noinvroll.nc
+    jobid: 61
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:02:40 2024]
+Finished job 14.
+138 of 547 steps (25%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:02:40 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_270_inv.nc, results/DE_20_1.0_pv_0_270_invroll.nc
+    jobid: 4
+    reason: Missing output files: results/DE_20_1.0_pv_0_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:02:41 2024]
+Finished job 89.
+139 of 547 steps (25%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:02:41 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.5_180_noinv.nc, results/DE_20_1.0_dispatchcut_0.5_180_noinvroll.nc
+    jobid: 90
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:02:54 2024]
+Finished job 33.
+140 of 547 steps (26%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:02:54 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.5_270_inv.nc, results/DE_20_1.0_drought_0.5_270_invroll.nc
+    jobid: 34
+    reason: Missing output files: results/DE_20_1.0_drought_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:03:01 2024]
+Finished job 61.
+141 of 547 steps (26%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:03:01 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_90_noinv.nc, results/DE_20_1.0_wind_0.75_90_noinvroll.nc
+    jobid: 62
+    reason: Missing output files: results/DE_20_1.0_wind_0.75_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:03:08 2024]
+Finished job 90.
+142 of 547 steps (26%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:03:08 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_90_inv.nc, results/DE_20_1.0_pv_0.25_90_invroll.nc
+    jobid: 5
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:03:13 2024]
+Finished job 4.
+143 of 547 steps (26%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:03:13 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.5_270_noinv.nc, results/DE_20_1.0_dispatchcut_0.5_270_noinvroll.nc
+    jobid: 91
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:03:28 2024]
+Finished job 34.
+144 of 547 steps (26%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:03:28 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.75_90_inv.nc, results/DE_20_1.0_drought_0.75_90_invroll.nc
+    jobid: 35
+    reason: Missing output files: results/DE_20_1.0_drought_0.75_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:03:29 2024]
+Finished job 62.
+145 of 547 steps (27%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:03:29 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_180_noinv.nc, results/DE_20_1.0_wind_0.75_180_noinvroll.nc
+    jobid: 63
+    reason: Missing output files: results/DE_20_1.0_wind_0.75_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:03:39 2024]
+Finished job 91.
+146 of 547 steps (27%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:03:39 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_180_inv.nc, results/DE_20_1.0_wind_0.25_180_invroll.nc
+    jobid: 12
+    reason: Missing output files: results/DE_20_1.0_wind_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:03:43 2024]
+Finished job 5.
+147 of 547 steps (27%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:03:43 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.75_180_inv.nc, results/DE_20_1.0_drought_0.75_180_invroll.nc
+    jobid: 36
+    reason: Missing output files: results/DE_20_1.0_drought_0.75_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:03:57 2024]
+Finished job 63.
+148 of 547 steps (27%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:03:57 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_270_noinv.nc, results/DE_20_1.0_wind_0.75_270_noinvroll.nc
+    jobid: 64
+    reason: Missing output files: results/DE_20_1.0_wind_0.75_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:04:01 2024]
+Finished job 35.
+149 of 547 steps (27%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:04:01 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_270_inv.nc, results/DE_20_1.0_pv_0.25_270_invroll.nc
+    jobid: 7
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:04:15 2024]
+Finished job 12.
+150 of 547 steps (27%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:04:15 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.75_270_inv.nc, results/DE_20_1.0_drought_0.75_270_invroll.nc
+    jobid: 37
+    reason: Missing output files: results/DE_20_1.0_drought_0.75_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:04:19 2024]
+Finished job 36.
+151 of 547 steps (28%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:04:19 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0_90_noinv.nc, results/DE_20_1.0_noexim_0_90_noinvroll.nc
+    jobid: 65
+    reason: Missing output files: results/DE_20_1.0_noexim_0_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:04:28 2024]
+Finished job 64.
+152 of 547 steps (28%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:04:28 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_180_inv.nc, results/DE_20_1.0_pv_0.25_180_invroll.nc
+    jobid: 6
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:04:35 2024]
+Finished job 7.
+153 of 547 steps (28%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:04:35 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0_90_inv.nc, results/DE_20_1.0_dispatchcut_0_90_invroll.nc
+    jobid: 38
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:04:46 2024]
+Finished job 65.
+154 of 547 steps (28%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:04:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0_180_noinv.nc, results/DE_20_1.0_noexim_0_180_noinvroll.nc
+    jobid: 66
+    reason: Missing output files: results/DE_20_1.0_noexim_0_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:04:49 2024]
+Finished job 37.
+155 of 547 steps (28%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:04:49 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0_180_inv.nc, results/DE_20_1.0_dispatchcut_0_180_invroll.nc
+    jobid: 39
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:05:03 2024]
+Finished job 6.
+156 of 547 steps (29%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:05:03 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0_270_noinv.nc, results/DE_20_1.0_noexim_0_270_noinvroll.nc
+    jobid: 67
+    reason: Missing output files: results/DE_20_1.0_noexim_0_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:05:05 2024]
+Finished job 38.
+157 of 547 steps (29%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:05:05 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_90_inv.nc, results/DE_20_1.0_wind_0.25_90_invroll.nc
+    jobid: 11
+    reason: Missing output files: results/DE_20_1.0_wind_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:05:14 2024]
+Finished job 66.
+158 of 547 steps (29%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:05:14 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0_90_inv.nc, results/DE_20_1.0_noexim_0_90_invroll.nc
+    jobid: 20
+    reason: Missing output files: results/DE_20_1.0_noexim_0_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:05:19 2024]
+Finished job 39.
+159 of 547 steps (29%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:05:19 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0_270_inv.nc, results/DE_20_1.0_dispatchcut_0_270_invroll.nc
+    jobid: 40
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:05:30 2024]
+Finished job 67.
+160 of 547 steps (29%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:05:30 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.25_90_noinv.nc, results/DE_20_1.0_noexim_0.25_90_noinvroll.nc
+    jobid: 68
+    reason: Missing output files: results/DE_20_1.0_noexim_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:05:36 2024]
+Finished job 11.
+161 of 547 steps (29%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:05:36 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.5_90_inv.nc, results/DE_20_1.0_pv_0.5_90_invroll.nc
+    jobid: 8
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:05:47 2024]
+Finished job 20.
+162 of 547 steps (30%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:05:47 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.25_90_inv.nc, results/DE_20_1.0_dispatchcut_0.25_90_invroll.nc
+    jobid: 41
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:05:50 2024]
+Finished job 40.
+163 of 547 steps (30%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:05:50 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.25_180_noinv.nc, results/DE_20_1.0_noexim_0.25_180_noinvroll.nc
+    jobid: 69
+    reason: Missing output files: results/DE_20_1.0_noexim_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:06:00 2024]
+Finished job 68.
+164 of 547 steps (30%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:06:00 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.5_180_inv.nc, results/DE_20_1.0_pv_0.5_180_invroll.nc
+    jobid: 9
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:06:08 2024]
+Finished job 8.
+165 of 547 steps (30%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:06:08 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.25_180_inv.nc, results/DE_20_1.0_dispatchcut_0.25_180_invroll.nc
+    jobid: 42
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.25_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:06:18 2024]
+Finished job 41.
+166 of 547 steps (30%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:06:18 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.25_270_noinv.nc, results/DE_20_1.0_noexim_0.25_270_noinvroll.nc
+    jobid: 70
+    reason: Missing output files: results/DE_20_1.0_noexim_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:06:19 2024]
+Finished job 69.
+167 of 547 steps (31%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:06:19 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.5_270_inv.nc, results/DE_20_1.0_pv_0.5_270_invroll.nc
+    jobid: 10
+    reason: Missing output files: results/DE_20_1.0_pv_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:06:33 2024]
+Finished job 9.
+168 of 547 steps (31%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:06:33 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.25_270_inv.nc, results/DE_20_1.0_dispatchcut_0.25_270_invroll.nc
+    jobid: 43
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.25_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:06:39 2024]
+Finished job 42.
+169 of 547 steps (31%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:06:39 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.5_90_noinv.nc, results/DE_20_1.0_noexim_0.5_90_noinvroll.nc
+    jobid: 71
+    reason: Missing output files: results/DE_20_1.0_noexim_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:06:46 2024]
+Finished job 70.
+170 of 547 steps (31%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:06:46 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_180_inv.nc, results/DE_20_1.0_wind_0.5_180_invroll.nc
+    jobid: 15
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:06:51 2024]
+Finished job 10.
+171 of 547 steps (31%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:06:51 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.5_90_inv.nc, results/DE_20_1.0_dispatchcut_0.5_90_invroll.nc
+    jobid: 44
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:07:05 2024]
+Finished job 43.
+172 of 547 steps (31%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:07:05 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.5_180_noinv.nc, results/DE_20_1.0_noexim_0.5_180_noinvroll.nc
+    jobid: 72
+    reason: Missing output files: results/DE_20_1.0_noexim_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:07:07 2024]
+Finished job 71.
+173 of 547 steps (32%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:07:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.5_270_inv.nc, results/DE_20_1.0_wind_0.5_270_invroll.nc
+    jobid: 16
+    reason: Missing output files: results/DE_20_1.0_wind_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:07:19 2024]
+Finished job 15.
+174 of 547 steps (32%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:07:19 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.5_180_inv.nc, results/DE_20_1.0_dispatchcut_0.5_180_invroll.nc
+    jobid: 45
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:07:21 2024]
+Finished job 44.
+175 of 547 steps (32%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:07:21 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.5_270_noinv.nc, results/DE_20_1.0_noexim_0.5_270_noinvroll.nc
+    jobid: 73
+    reason: Missing output files: results/DE_20_1.0_noexim_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:07:32 2024]
+Finished job 72.
+176 of 547 steps (32%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:07:32 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_90_inv.nc, results/DE_20_1.0_wind_0.75_90_invroll.nc
+    jobid: 17
+    reason: Missing output files: results/DE_20_1.0_wind_0.75_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:07:38 2024]
+Finished job 16.
+177 of 547 steps (32%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:07:38 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_dispatchcut_0.5_270_inv.nc, results/DE_20_1.0_dispatchcut_0.5_270_invroll.nc
+    jobid: 46
+    reason: Missing output files: results/DE_20_1.0_dispatchcut_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=dispatchcut, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:07:49 2024]
+Finished job 73.
+178 of 547 steps (33%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:07:49 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.25_90_noinv.nc, results/DE_20_1.0_drought_0.25_90_noinvroll.nc
+    jobid: 74
+    reason: Missing output files: results/DE_20_1.0_drought_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:07:51 2024]
+Finished job 45.
+179 of 547 steps (33%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:07:51 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_180_inv.nc, results/DE_20_1.0_wind_0.75_180_invroll.nc
+    jobid: 18
+    reason: Missing output files: results/DE_20_1.0_wind_0.75_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:06 2024]
+Finished job 17.
+180 of 547 steps (33%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:06 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_90_noinv.nc, results/DE_20_1.0_pv_0_90_noinvroll.nc
+    jobid: 47
+    reason: Missing output files: results/DE_20_1.0_pv_0_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:09 2024]
+Finished job 46.
+181 of 547 steps (33%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:09 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_drought_0.25_180_noinv.nc, results/DE_20_1.0_drought_0.25_180_noinvroll.nc
+    jobid: 75
+    reason: Missing output files: results/DE_20_1.0_drought_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=drought, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:18 2024]
+Finished job 74.
+182 of 547 steps (33%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:18 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.75_270_inv.nc, results/DE_20_1.0_wind_0.75_270_invroll.nc
+    jobid: 19
+    reason: Missing output files: results/DE_20_1.0_wind_0.75_270_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:24 2024]
+Finished job 18.
+183 of 547 steps (33%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:24 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_noexim_0.5_270_inv.nc, results/GB_13_1.5_noexim_0.5_270_invroll.nc
+    jobid: 301
+    reason: Missing output files: results/GB_13_1.5_noexim_0.5_270_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=noexim, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:35 2024]
+Finished job 47.
+184 of 547 steps (34%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:35 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_dispatchcut_0_180_noinv.nc, results/GB_13_1.5_dispatchcut_0_180_noinvroll.nc
+    jobid: 357
+    reason: Missing output files: results/GB_13_1.5_dispatchcut_0_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:36 2024]
+Finished job 75.
+185 of 547 steps (34%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:36 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_wind_0.25_90_noinv.nc, results/GB_13_1.5_wind_0.25_90_noinvroll.nc
+    jobid: 329
+    reason: Missing output files: results/GB_13_1.5_wind_0.25_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:49 2024]
+Finished job 19.
+186 of 547 steps (34%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:49 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_drought_0.25_90_inv.nc, results/GB_13_1.5_drought_0.25_90_invroll.nc
+    jobid: 302
+    reason: Missing output files: results/GB_13_1.5_drought_0.25_90_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:51 2024]
+Finished job 301.
+187 of 547 steps (34%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:51 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_dispatchcut_0_270_noinv.nc, results/GB_13_1.5_dispatchcut_0_270_noinvroll.nc
+    jobid: 358
+    reason: Missing output files: results/GB_13_1.5_dispatchcut_0_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=dispatchcut, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:08:58 2024]
+Finished job 357.
+188 of 547 steps (34%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:08:58 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_90_inv.nc, results/GB_13_1.5_pv_0_90_invroll.nc
+    jobid: 274
+    reason: Missing output files: results/GB_13_1.5_pv_0_90_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:00 2024]
+Finished job 329.
+189 of 547 steps (35%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:00 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_wind_0.25_180_noinv.nc, results/GB_13_1.5_wind_0.25_180_noinvroll.nc
+    jobid: 330
+    reason: Missing output files: results/GB_13_1.5_wind_0.25_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:15 2024]
+Finished job 358.
+190 of 547 steps (35%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:15 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_drought_0.25_180_inv.nc, results/GB_13_1.5_drought_0.25_180_invroll.nc
+    jobid: 303
+    reason: Missing output files: results/GB_13_1.5_drought_0.25_180_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:16 2024]
+Finished job 302.
+191 of 547 steps (35%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:16 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_dispatchcut_0.25_90_noinv.nc, results/GB_13_1.5_dispatchcut_0.25_90_noinvroll.nc
+    jobid: 359
+    reason: Missing output files: results/GB_13_1.5_dispatchcut_0.25_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:24 2024]
+Finished job 330.
+192 of 547 steps (35%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:24 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_180_inv.nc, results/GB_13_1.5_pv_0_180_invroll.nc
+    jobid: 276
+    reason: Missing output files: results/GB_13_1.5_pv_0_180_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:26 2024]
+Finished job 274.
+193 of 547 steps (35%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:26 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_wind_0.25_270_noinv.nc, results/GB_13_1.5_wind_0.25_270_noinvroll.nc
+    jobid: 331
+    reason: Missing output files: results/GB_13_1.5_wind_0.25_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:40 2024]
+Finished job 359.
+194 of 547 steps (35%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:40 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_drought_0.25_270_inv.nc, results/GB_13_1.5_drought_0.25_270_invroll.nc
+    jobid: 304
+    reason: Missing output files: results/GB_13_1.5_drought_0.25_270_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=drought, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:42 2024]
+Finished job 303.
+195 of 547 steps (36%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:42 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_dispatchcut_0.25_180_noinv.nc, results/GB_13_1.5_dispatchcut_0.25_180_noinvroll.nc
+    jobid: 360
+    reason: Missing output files: results/GB_13_1.5_dispatchcut_0.25_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:50 2024]
+Finished job 331.
+196 of 547 steps (36%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:50 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_wind_0.5_90_noinv.nc, results/GB_13_1.5_wind_0.5_90_noinvroll.nc
+    jobid: 332
+    reason: Missing output files: results/GB_13_1.5_wind_0.5_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:09:52 2024]
+Finished job 276.
+197 of 547 steps (36%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:09:52 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_drought_0.5_90_inv.nc, results/GB_13_1.5_drought_0.5_90_invroll.nc
+    jobid: 305
+    reason: Missing output files: results/GB_13_1.5_drought_0.5_90_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:06 2024]
+Finished job 360.
+198 of 547 steps (36%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:06 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_dispatchcut_0.25_270_noinv.nc, results/GB_13_1.5_dispatchcut_0.25_270_noinvroll.nc
+    jobid: 361
+    reason: Missing output files: results/GB_13_1.5_dispatchcut_0.25_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:06 2024]
+Finished job 304.
+199 of 547 steps (36%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:06 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0_270_inv.nc, results/GB_13_1.5_pv_0_270_invroll.nc
+    jobid: 277
+    reason: Missing output files: results/GB_13_1.5_pv_0_270_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:15 2024]
+Finished job 332.
+200 of 547 steps (37%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:15 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_wind_0.5_180_noinv.nc, results/GB_13_1.5_wind_0.5_180_noinvroll.nc
+    jobid: 333
+    reason: Missing output files: results/GB_13_1.5_wind_0.5_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:18 2024]
+Finished job 305.
+201 of 547 steps (37%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:18 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_drought_0.5_180_inv.nc, results/GB_13_1.5_drought_0.5_180_invroll.nc
+    jobid: 306
+    reason: Missing output files: results/GB_13_1.5_drought_0.5_180_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:30 2024]
+Finished job 361.
+202 of 547 steps (37%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:30 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_dispatchcut_0.5_90_noinv.nc, results/GB_13_1.5_dispatchcut_0.5_90_noinvroll.nc
+    jobid: 362
+    reason: Missing output files: results/GB_13_1.5_dispatchcut_0.5_90_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:33 2024]
+Finished job 277.
+203 of 547 steps (37%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:33 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.25_90_inv.nc, results/GB_13_1.5_pv_0.25_90_invroll.nc
+    jobid: 278
+    reason: Missing output files: results/GB_13_1.5_pv_0.25_90_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:40 2024]
+Finished job 333.
+204 of 547 steps (37%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:40 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_wind_0.5_270_noinv.nc, results/GB_13_1.5_wind_0.5_270_noinvroll.nc
+    jobid: 334
+    reason: Missing output files: results/GB_13_1.5_wind_0.5_270_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:46 2024]
+Finished job 306.
+205 of 547 steps (37%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:46 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_dispatchcut_0.5_180_noinv.nc, results/GB_13_1.5_dispatchcut_0.5_180_noinvroll.nc
+    jobid: 363
+    reason: Missing output files: results/GB_13_1.5_dispatchcut_0.5_180_noinvroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=dispatchcut, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:55 2024]
+Finished job 362.
+206 of 547 steps (38%) done
+Select jobs to execute...
+
+[Wed Jun 12 16:10:55 2024]
+rule dynamic_solve:
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_drought_0.5_270_inv.nc, results/GB_13_1.5_drought_0.5_270_invroll.nc
+    jobid: 307
+    reason: Missing output files: results/GB_13_1.5_drought_0.5_270_invroll.nc; Input files updated by another job: resources/GB_13_1.5_base_solved.nc
+    wildcards: country=GB, buses=13, transmission_limit=1.5, contingency=drought, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 16:10:59 2024]
+Error in rule dynamic_solve:
+    jobid: 278
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_pv_0.25_90_inv.nc, results/GB_13_1.5_pv_0.25_90_invroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 144:
+Command 'python scripts/solve_pv.py resources/GB_13_1.5_base_solved.nc resources/GB_13_1.5_pv_0.25_90_inv.nc results/GB_13_1.5_pv_0.25_90_invroll.nc pv 0.25 90 inv 24 GB 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 144, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Terminating processes on user request, this might take some time.
+[Wed Jun 12 16:11:00 2024]
+Error in rule dynamic_solve:
+    jobid: 307
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_drought_0.5_270_inv.nc, results/GB_13_1.5_drought_0.5_270_invroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 168:
+Command 'python scripts/solve_drought.py resources/GB_13_1.5_base_solved.nc resources/GB_13_1.5_drought_0.5_270_inv.nc results/GB_13_1.5_drought_0.5_270_invroll.nc drought 0.5 270 inv 24 GB 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 168, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Wed Jun 12 16:11:00 2024]
+Error in rule dynamic_solve:
+    jobid: 363
+    input: resources/GB_13_1.5_base_solved.nc
+    output: resources/GB_13_1.5_dispatchcut_0.5_180_noinv.nc, results/GB_13_1.5_dispatchcut_0.5_180_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 176:
+Command 'python scripts/solve_dispatchcut.py resources/GB_13_1.5_base_solved.nc resources/GB_13_1.5_dispatchcut_0.5_180_noinv.nc results/GB_13_1.5_dispatchcut_0.5_180_noinvroll.nc dispatchcut 0.5 180 noinv 24 GB 2013-02-01 00:00:00' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 176, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Cancelling snakemake on user request.

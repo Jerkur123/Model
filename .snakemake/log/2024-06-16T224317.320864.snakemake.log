@@ -1,0 +1,124 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve      216
+solve_base           2
+total              219
+
+Select jobs to execute...
+
+[Sun Jun 16 22:43:18 2024]
+rule solve_base:
+    input: resources/DE_20_1.0_base.nc
+    output: resources/DE_20_1.0_base_solved.nc, resources/DE_20_1.0_base_roll_solved.nc
+    jobid: 2
+    reason: Missing output files: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:43:18 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: resources/DE_20_1.5_base_solved.nc, resources/DE_20_1.5_base_roll_solved.nc
+    jobid: 111
+    reason: Missing output files: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:43:47 2024]
+Finished job 2.
+1 of 219 steps (0.5%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:43:47 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_windpv_0_14_inv.nc, results/DE_20_1.0_windpv_0_14_invroll.nc
+    jobid: 48
+    reason: Missing output files: results/DE_20_1.0_windpv_0_14_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=windpv, reductionto=0, duration=14, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:43:47 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_windpv_0.25_7_noinv.nc, results/DE_20_1.0_windpv_0.25_7_noinvroll.nc
+    jobid: 104
+    reason: Missing output files: results/DE_20_1.0_windpv_0.25_7_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=windpv, reductionto=0.25, duration=7, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:43:47 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.25_90_noinv.nc, results/DE_20_1.0_noexim_0.25_90_noinvroll.nc
+    jobid: 77
+    reason: Missing output files: results/DE_20_1.0_noexim_0.25_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=noexim, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:43:48 2024]
+Finished job 111.
+2 of 219 steps (1%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:43:48 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_windpv_0.25_14_inv.nc, results/DE_20_1.5_windpv_0.25_14_invroll.nc
+    jobid: 160
+    reason: Missing output files: results/DE_20_1.5_windpv_0.25_14_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=windpv, reductionto=0.25, duration=14, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:44:00 2024]
+Error in rule dynamic_solve:
+    jobid: 104
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_windpv_0.25_7_noinv.nc, results/DE_20_1.0_windpv_0.25_7_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 210:
+Command 'python scripts/solve_windpv.py resources/DE_20_1.0_base_solved.nc resources/DE_20_1.0_windpv_0.25_7_noinv.nc results/DE_20_1.0_windpv_0.25_7_noinvroll.nc windpv 0.25 7 noinv 52 DE EQ0.95c 1.0' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 210, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 22:44:01 2024]
+Error in rule dynamic_solve:
+    jobid: 77
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_noexim_0.25_90_noinv.nc, results/DE_20_1.0_noexim_0.25_90_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 186:
+Command 'python scripts/solve_noexim.py resources/DE_20_1.0_base_solved.nc resources/DE_20_1.0_noexim_0.25_90_noinv.nc results/DE_20_1.0_noexim_0.25_90_noinvroll.nc noexim 0.25 90 noinv 52 DE EQ0.95c 1.0' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 186, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 22:44:12 2024]
+Error in rule dynamic_solve:
+    jobid: 48
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_windpv_0_14_inv.nc, results/DE_20_1.0_windpv_0_14_invroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 210:
+Command 'python scripts/solve_windpv.py resources/DE_20_1.0_base_solved.nc resources/DE_20_1.0_windpv_0_14_inv.nc results/DE_20_1.0_windpv_0_14_invroll.nc windpv 0 14 inv 52 DE EQ0.95c 1.0' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 210, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 22:44:12 2024]
+Error in rule dynamic_solve:
+    jobid: 160
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_windpv_0.25_14_inv.nc, results/DE_20_1.5_windpv_0.25_14_invroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 210:
+Command 'python scripts/solve_windpv.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_windpv_0.25_14_inv.nc results/DE_20_1.5_windpv_0.25_14_invroll.nc windpv 0.25 14 inv 52 DE EQ0.95c 1.5' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 210, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-16T224317.320864.snakemake.log

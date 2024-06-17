@@ -1,0 +1,64 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+dynamic_solve        36
+gen_table            36
+inst_cap_table       36
+syst_cost            36
+total               145
+
+Select jobs to execute...
+
+[Fri Jun 14 12:24:03 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_windpv_0.25_21_inv.nc, resources/DE_20_1.5_windpv_0.25_21_invroll.nc
+    jobid: 320
+    reason: Missing output files: resources/DE_20_1.5_windpv_0.25_21_inv.nc, resources/DE_20_1.5_windpv_0.25_21_invroll.nc
+    wildcards: country=DE, contingency=windpv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=21, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:24:03 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_windpv_0.5_14_noinv.nc, resources/DE_20_1.5_windpv_0.5_14_noinvroll.nc
+    jobid: 432
+    reason: Missing output files: resources/DE_20_1.5_windpv_0.5_14_noinvroll.nc, resources/DE_20_1.5_windpv_0.5_14_noinv.nc
+    wildcards: country=DE, contingency=windpv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=14, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:24:03 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_windpv_0.5_21_inv.nc, resources/DE_20_1.5_windpv_0.5_21_invroll.nc
+    jobid: 326
+    reason: Missing output files: resources/DE_20_1.5_windpv_0.5_21_inv.nc, resources/DE_20_1.5_windpv_0.5_21_invroll.nc
+    wildcards: country=DE, contingency=windpv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=21, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:24:03 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_windpv_0_7_noinv.nc, resources/DE_20_1.5_windpv_0_7_noinvroll.nc
+    jobid: 418
+    reason: Missing output files: resources/DE_20_1.5_windpv_0_7_noinv.nc, resources/DE_20_1.5_windpv_0_7_noinvroll.nc
+    wildcards: country=DE, contingency=windpv, buses=20, transmission_limit=1.5, reductionto=0, duration=7, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule dynamic_solve in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 176:
+Job 320  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+resources/DE_20_1.5_windpv_0.25_21_inv.nc
+resources/DE_20_1.5_windpv_0.25_21_invroll.nc
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule dynamic_solve in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 176:
+Job 432  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+resources/DE_20_1.5_windpv_0.5_14_noinv.nc
+resources/DE_20_1.5_windpv_0.5_14_noinvroll.nc
+Waiting at most 5 seconds for missing files.
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

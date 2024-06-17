@@ -1,0 +1,90 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+gen_table       72
+total           73
+
+Select jobs to execute...
+
+[Thu Jun 13 11:40:08 2024]
+rule gen_table:
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv
+    jobid: 174
+    reason: Missing output files: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:40:08 2024]
+rule gen_table:
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv
+    jobid: 216
+    reason: Missing output files: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:40:08 2024]
+rule gen_table:
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv
+    jobid: 167
+    reason: Missing output files: results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:40:08 2024]
+rule gen_table:
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv
+    jobid: 160
+    reason: Missing output files: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:40:14 2024]
+Error in rule gen_table:
+    jobid: 216
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv
+
+[Thu Jun 13 11:40:14 2024]
+Error in rule gen_table:
+    jobid: 174
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 206:
+Command 'python scripts/gen_table.py  results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 206, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 206:
+Command 'python scripts/gen_table.py  results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 206, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Thu Jun 13 11:40:15 2024]
+Error in rule gen_table:
+    jobid: 160
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 206:
+Command 'python scripts/gen_table.py  results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 206, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Thu Jun 13 11:40:15 2024]
+Error in rule gen_table:
+    jobid: 167
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 206:
+Command 'python scripts/gen_table.py  results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 206, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-13T114006.813559.snakemake.log

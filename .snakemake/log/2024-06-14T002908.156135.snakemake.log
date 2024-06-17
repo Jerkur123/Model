@@ -1,0 +1,77 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+dynamic_solve       178
+gen_table           180
+inst_cap_base         2
+inst_cap_table      180
+syst_cost           180
+total               721
+
+Select jobs to execute...
+
+[Fri Jun 14 00:29:10 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_270_inv.nc, resources/DE_20_1.5_pv_0_270_invroll.nc
+    jobid: 188
+    reason: Missing output files: resources/DE_20_1.5_pv_0_270_invroll.nc, resources/DE_20_1.5_pv_0_270_inv.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Fri Jun 14 00:29:10 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.75_90_inv.nc, resources/DE_20_1.5_wind_0.75_90_invroll.nc
+    jobid: 214
+    reason: Missing output files: resources/DE_20_1.5_wind_0.75_90_inv.nc, resources/DE_20_1.5_wind_0.75_90_invroll.nc
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Fri Jun 14 00:29:10 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_270_noinv.nc, resources/DE_20_1.5_noexim_0.5_270_noinvroll.nc
+    jobid: 326
+    reason: Missing output files: resources/DE_20_1.5_noexim_0.5_270_noinvroll.nc, resources/DE_20_1.5_noexim_0.5_270_noinv.nc
+    wildcards: country=DE, contingency=noexim, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 00:29:10 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.5_90_inv.nc, resources/DE_20_1.5_drought_0.5_90_invroll.nc
+    jobid: 244
+    reason: Missing output files: resources/DE_20_1.5_drought_0.5_90_invroll.nc, resources/DE_20_1.5_drought_0.5_90_inv.nc; Code has changed since last execution; Params have changed since last execution
+    wildcards: country=DE, contingency=drought, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 00:29:16 2024]
+Error in rule dynamic_solve:
+    jobid: 326
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_270_noinv.nc, resources/DE_20_1.5_noexim_0.5_270_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 219:
+Command 'python scripts/solve_noexim.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_noexim_0.5_270_noinv.nc resources/DE_20_1.5_noexim_0.5_270_noinvroll.nc noexim 0.5 270 noinv 52 DE' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 219, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Fri Jun 14 00:29:38 2024]
+Finished job 214.
+1 of 721 steps (0.1%) done
+[Fri Jun 14 00:29:38 2024]
+Finished job 244.
+2 of 721 steps (0.3%) done
+[Fri Jun 14 00:29:39 2024]
+Finished job 188.
+3 of 721 steps (0.4%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-14T002908.156135.snakemake.log

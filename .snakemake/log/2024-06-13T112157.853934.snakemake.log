@@ -1,0 +1,1098 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+gen_table            72
+inst_cap_table       72
+total               145
+
+Select jobs to execute...
+
+[Thu Jun 13 11:21:59 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.5_270_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_270_inv.csv
+    jobid: 18
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_270_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:21:59 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0_180_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0_180_inv.csv
+    jobid: 4
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0_180_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:21:59 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.25_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_inv.csv
+    jobid: 8
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:21:59 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_inv.csv
+    jobid: 1
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:08 2024]
+Finished job 4.
+1 of 145 steps (1%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:08 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.25_180_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_180_noinv.csv
+    jobid: 131
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_180_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:08 2024]
+Finished job 18.
+2 of 145 steps (1%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:08 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.25_90_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_90_noinv.csv
+    jobid: 117
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_90_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:08 2024]
+Finished job 1.
+3 of 145 steps (2%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:08 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0_270_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0_270_inv.csv
+    jobid: 6
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0_270_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:08 2024]
+Finished job 8.
+4 of 145 steps (3%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:08 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.5_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_90_inv.csv
+    jobid: 14
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:17 2024]
+Finished job 131.
+5 of 145 steps (3%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:17 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0_180_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0_180_inv.csv
+    jobid: 77
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0_180_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:17 2024]
+Finished job 117.
+6 of 145 steps (4%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:17 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.5_180_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_180_noinv.csv
+    jobid: 125
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_180_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:17 2024]
+Finished job 6.
+7 of 145 steps (5%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:17 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.25_180_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_180_inv.csv
+    jobid: 10
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_180_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:17 2024]
+Finished job 14.
+8 of 145 steps (6%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:17 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.25_90_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_90_noinv.csv
+    jobid: 129
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_90_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:25 2024]
+Finished job 77.
+9 of 145 steps (6%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:25 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.25_270_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_270_inv.csv
+    jobid: 24
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_270_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:26 2024]
+Finished job 125.
+10 of 145 steps (7%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:26 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.25_270_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_270_inv.csv
+    jobid: 12
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_270_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:26 2024]
+Finished job 10.
+11 of 145 steps (8%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:26 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.75_90_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_90_inv.csv
+    jobid: 32
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_90_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:26 2024]
+Finished job 129.
+12 of 145 steps (8%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:26 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.75_270_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_270_inv.csv
+    jobid: 36
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_270_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:34 2024]
+Finished job 24.
+13 of 145 steps (9%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:34 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.25_90_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_90_inv.csv
+    jobid: 20
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_90_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:34 2024]
+Finished job 12.
+14 of 145 steps (10%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:34 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.5_180_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_180_inv.csv
+    jobid: 28
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_180_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:35 2024]
+Finished job 32.
+15 of 145 steps (10%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:35 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.5_270_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_270_inv.csv
+    jobid: 30
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_270_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:35 2024]
+Finished job 36.
+16 of 145 steps (11%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:35 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.5_90_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_90_noinv.csv
+    jobid: 135
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_90_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:43 2024]
+Finished job 20.
+17 of 145 steps (12%) done
+[Thu Jun 13 11:22:43 2024]
+Finished job 28.
+18 of 145 steps (12%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:43 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.75_90_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_90_inv.csv
+    jobid: 105
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_90_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:22:43 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.75_180_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_180_inv.csv
+    jobid: 34
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_180_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+Select jobs to execute...
+[Thu Jun 13 11:22:44 2024]
+Finished job 30.
+19 of 145 steps (13%) done
+
+[Thu Jun 13 11:22:44 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.5_90_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_90_noinv.csv
+    jobid: 123
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_90_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:44 2024]
+Finished job 135.
+20 of 145 steps (14%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:44 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.25_180_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_180_inv.csv
+    jobid: 22
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_180_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:52 2024]
+Finished job 34.
+21 of 145 steps (14%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:52 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.75_180_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_180_inv.csv
+    jobid: 107
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_180_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:52 2024]
+Finished job 105.
+22 of 145 steps (15%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:52 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.5_180_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_180_inv.csv
+    jobid: 16
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_180_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:53 2024]
+Finished job 123.
+23 of 145 steps (16%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:53 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0_90_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0_90_noinv.csv
+    jobid: 111
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0_90_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:22:53 2024]
+Finished job 22.
+24 of 145 steps (17%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:22:53 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.25_90_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_90_inv.csv
+    jobid: 93
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_90_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:01 2024]
+Finished job 16.
+25 of 145 steps (17%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:01 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.75_90_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_90_noinv.csv
+    jobid: 141
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_90_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:02 2024]
+Finished job 107.
+26 of 145 steps (18%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:02 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.5_270_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_270_inv.csv
+    jobid: 103
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_270_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:02 2024]
+Finished job 111.
+27 of 145 steps (19%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:02 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.25_180_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_180_inv.csv
+    jobid: 83
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_180_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:03 2024]
+Finished job 93.
+28 of 145 steps (19%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:03 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0_180_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0_180_noinv.csv
+    jobid: 113
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0_180_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:11 2024]
+Finished job 141.
+29 of 145 steps (20%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:11 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0_270_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0_270_inv.csv
+    jobid: 79
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0_270_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:11 2024]
+Finished job 103.
+30 of 145 steps (21%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:11 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.5_270_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_270_noinv.csv
+    jobid: 127
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_270_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:11 2024]
+Finished job 83.
+31 of 145 steps (21%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:11 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.75_270_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_270_inv.csv
+    jobid: 109
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_270_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:12 2024]
+Finished job 113.
+32 of 145 steps (22%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:12 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.25_270_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_270_noinv.csv
+    jobid: 133
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_270_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:20 2024]
+Finished job 79.
+33 of 145 steps (23%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:20 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0_270_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0_270_noinv.csv
+    jobid: 42
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0_270_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:20 2024]
+Finished job 127.
+34 of 145 steps (23%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:20 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.5_270_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_270_inv.csv
+    jobid: 91
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_270_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:20 2024]
+Finished job 109.
+35 of 145 steps (24%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:20 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.5_90_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_90_inv.csv
+    jobid: 26
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_90_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:21 2024]
+Finished job 133.
+36 of 145 steps (25%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:21 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.5_180_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_180_noinv.csv
+    jobid: 137
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_180_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:28 2024]
+Finished job 42.
+37 of 145 steps (26%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:28 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0_90_inv.csv
+    jobid: 74
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:29 2024]
+Finished job 91.
+38 of 145 steps (26%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:29 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.25_270_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_270_inv.csv
+    jobid: 97
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_270_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:29 2024]
+Finished job 26.
+39 of 145 steps (27%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:29 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.5_90_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_90_inv.csv
+    jobid: 99
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_90_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:30 2024]
+Finished job 137.
+40 of 145 steps (28%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:30 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0_180_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0_180_noinv.csv
+    jobid: 40
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0_180_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:37 2024]
+Finished job 97.
+41 of 145 steps (28%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:37 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.25_270_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_270_inv.csv
+    jobid: 85
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_270_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:37 2024]
+Finished job 74.
+42 of 145 steps (29%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:37 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.25_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_90_inv.csv
+    jobid: 81
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:38 2024]
+Finished job 99.
+43 of 145 steps (30%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:38 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.5_180_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_180_inv.csv
+    jobid: 101
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_180_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:39 2024]
+Finished job 40.
+44 of 145 steps (30%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:39 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.5_180_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_180_inv.csv
+    jobid: 89
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_180_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:46 2024]
+Finished job 81.
+45 of 145 steps (31%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:46 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.25_270_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_270_noinv.csv
+    jobid: 48
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_270_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:46 2024]
+Finished job 85.
+46 of 145 steps (32%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:46 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.75_180_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_180_noinv.csv
+    jobid: 143
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_180_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:47 2024]
+Finished job 101.
+47 of 145 steps (32%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:47 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.5_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_90_inv.csv
+    jobid: 87
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.5_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:48 2024]
+Finished job 89.
+48 of 145 steps (33%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:48 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0_270_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0_270_noinv.csv
+    jobid: 115
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0_270_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:55 2024]
+Finished job 143.
+49 of 145 steps (34%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:55 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.25_180_inv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_180_inv.csv
+    jobid: 95
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.25_180_inv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:55 2024]
+Finished job 48.
+50 of 145 steps (34%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:56 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.25_180_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_180_noinv.csv
+    jobid: 119
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_180_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:57 2024]
+Finished job 87.
+51 of 145 steps (35%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:57 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0_90_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_noinv.csv
+    jobid: 38
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:23:57 2024]
+Finished job 115.
+52 of 145 steps (36%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:23:57 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_pv_0.25_270_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_270_noinv.csv
+    jobid: 121
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.5_pv_0.25_270_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.5, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:05 2024]
+Finished job 95.
+53 of 145 steps (37%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:05 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.5_270_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_270_noinv.csv
+    jobid: 139
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.5_270_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:05 2024]
+Finished job 119.
+54 of 145 steps (37%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:05 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_wind_0.75_270_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_270_noinv.csv
+    jobid: 145
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.5_wind_0.75_270_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:06 2024]
+Finished job 38.
+55 of 145 steps (38%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:06 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.75_90_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_90_noinv.csv
+    jobid: 68
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_90_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:07 2024]
+Finished job 121.
+56 of 145 steps (39%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:07 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.25_90_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_noinv.csv
+    jobid: 44
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:14 2024]
+Finished job 145.
+57 of 145 steps (39%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:14 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.5_180_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_180_noinv.csv
+    jobid: 64
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_180_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:14 2024]
+Finished job 139.
+58 of 145 steps (40%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:14 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.25_270_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_270_noinv.csv
+    jobid: 60
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_270_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:15 2024]
+Finished job 68.
+59 of 145 steps (41%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:15 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.5_270_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_270_noinv.csv
+    jobid: 66
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_270_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:15 2024]
+Finished job 44.
+60 of 145 steps (41%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:15 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.25_180_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_180_noinv.csv
+    jobid: 58
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_180_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:22 2024]
+Finished job 60.
+61 of 145 steps (42%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:22 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.75_270_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_270_noinv.csv
+    jobid: 72
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_270_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:22 2024]
+Finished job 64.
+62 of 145 steps (43%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:22 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.75_180_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_180_noinv.csv
+    jobid: 70
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.75_180_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:23 2024]
+Finished job 66.
+63 of 145 steps (43%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:23 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.25_180_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_180_noinv.csv
+    jobid: 46
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_180_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:24 2024]
+Finished job 58.
+64 of 145 steps (44%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:24 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.5_180_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_180_noinv.csv
+    jobid: 52
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_180_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:31 2024]
+Finished job 70.
+65 of 145 steps (45%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:31 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.25_90_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_90_noinv.csv
+    jobid: 56
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.25_90_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:31 2024]
+Finished job 72.
+66 of 145 steps (46%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:31 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.5_90_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_90_noinv.csv
+    jobid: 50
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_90_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:33 2024]
+Finished job 46.
+67 of 145 steps (46%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:33 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_wind_0.5_90_noinv.nc
+    output: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_90_noinv.csv
+    jobid: 62
+    reason: Missing output files: results/data/DE/wind/cap_DE_20_1.0_wind_0.5_90_noinv.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:33 2024]
+Finished job 52.
+68 of 145 steps (47%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:33 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.5_270_noinv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_270_noinv.csv
+    jobid: 54
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.5_270_noinv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:40 2024]
+Finished job 50.
+69 of 145 steps (48%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:40 2024]
+rule gen_table:
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv
+    jobid: 174
+    reason: Missing output files: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv; Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:40 2024]
+Finished job 56.
+70 of 145 steps (48%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:40 2024]
+rule gen_table:
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv
+    jobid: 167
+    reason: Missing output files: results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv; Set of input files has changed since last execution
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:42 2024]
+Finished job 62.
+71 of 145 steps (49%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:42 2024]
+rule gen_table:
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv
+    jobid: 160
+    reason: Missing output files: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv; Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.0, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:42 2024]
+Finished job 54.
+72 of 145 steps (50%) done
+Select jobs to execute...
+
+[Thu Jun 13 11:24:42 2024]
+rule gen_table:
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv
+    jobid: 216
+    reason: Missing output files: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv; Set of input files has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:24:47 2024]
+Error in rule gen_table:
+    jobid: 167
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 206:
+Command 'python scripts/gen_table.py  results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 206, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Thu Jun 13 11:24:47 2024]
+Error in rule gen_table:
+    jobid: 174
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 206:
+Command 'python scripts/gen_table.py  results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 206, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Thu Jun 13 11:24:48 2024]
+Error in rule gen_table:
+    jobid: 160
+    output: results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 206:
+Command 'python scripts/gen_table.py  results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 206, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Thu Jun 13 11:24:49 2024]
+Error in rule gen_table:
+    jobid: 216
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 206:
+Command 'python scripts/gen_table.py  results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 206, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-13T112157.853934.snakemake.log

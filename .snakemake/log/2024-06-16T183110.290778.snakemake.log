@@ -1,0 +1,61 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+dynamic_solve        36
+gen_table            36
+inst_cap_base         2
+inst_cap_table       36
+solve_base            2
+syst_cost            36
+total               149
+
+Select jobs to execute...
+
+[Sun Jun 16 18:31:11 2024]
+rule solve_base:
+    input: resources/DE_20_1.0_base.nc
+    output: resources/DE_20_1.0_base_solved.nc, resources/DE_20_1.0_base_roll_solved.nc
+    jobid: 3
+    reason: Missing output files: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Sun Jun 16 18:31:11 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: resources/DE_20_1.5_base_solved.nc, resources/DE_20_1.5_base_roll_solved.nc
+    jobid: 40
+    reason: Missing output files: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 18:31:33 2024]
+Error in rule solve_base:
+    jobid: 3
+    input: resources/DE_20_1.0_base.nc
+    output: resources/DE_20_1.0_base_solved.nc, resources/DE_20_1.0_base_roll_solved.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 174:
+Command 'python scripts/solve_base.py resources/DE_20_1.0_base.nc resources/DE_20_1.0_base_solved.nc 130 resources/DE_20_1.0_base_roll_solved.nc 52 EQ0.95c DE 20' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 174, in __rule_solve_base
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 18:31:33 2024]
+Error in rule solve_base:
+    jobid: 40
+    input: resources/DE_20_1.5_base.nc
+    output: resources/DE_20_1.5_base_solved.nc, resources/DE_20_1.5_base_roll_solved.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 174:
+Command 'python scripts/solve_base.py resources/DE_20_1.5_base.nc resources/DE_20_1.5_base_solved.nc 130 resources/DE_20_1.5_base_roll_solved.nc 52 EQ0.95c DE 20' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 174, in __rule_solve_base
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-16T183110.290778.snakemake.log

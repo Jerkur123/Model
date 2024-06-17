@@ -1,0 +1,155 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+dynamic_solve       216
+gen_table           216
+inst_cap_table      216
+syst_cost           216
+total               865
+
+Select jobs to execute...
+
+[Fri Jun 14 12:25:23 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_90_inv.nc, resources/DE_20_1.5_wind_0.5_90_invroll.nc
+    jobid: 244
+    reason: Code has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Fri Jun 14 12:25:23 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_windpv_0.5_21_inv.nc, resources/DE_20_1.5_windpv_0.5_21_invroll.nc
+    jobid: 326
+    reason: Missing output files: resources/DE_20_1.5_windpv_0.5_21_inv.nc, resources/DE_20_1.5_windpv_0.5_21_invroll.nc
+    wildcards: country=DE, contingency=windpv, buses=20, transmission_limit=1.5, reductionto=0.5, duration=21, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Fri Jun 14 12:25:23 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_noexim_0.5_180_inv.nc, resources/DE_20_1.5_noexim_0.5_180_invroll.nc
+    jobid: 270
+    reason: Code has changed since last execution
+    wildcards: country=DE, contingency=noexim, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:25:23 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_drought_0.25_90_noinv.nc, resources/DE_20_1.5_drought_0.25_90_noinvroll.nc
+    jobid: 382
+    reason: Code has changed since last execution
+    wildcards: country=DE, contingency=drought, buses=20, transmission_limit=1.5, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:25:51 2024]
+Finished job 382.
+1 of 865 steps (0.1%) done
+Select jobs to execute...
+
+[Fri Jun 14 12:25:51 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.5_90_noinv.nc, resources/DE_20_1.5_dispatchcut_0.5_90_noinvroll.nc
+    jobid: 412
+    reason: Code has changed since last execution
+    wildcards: country=DE, contingency=dispatchcut, buses=20, transmission_limit=1.5, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:25:57 2024]
+Finished job 270.
+2 of 865 steps (0.2%) done
+Select jobs to execute...
+
+[Fri Jun 14 12:25:57 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.5_noexim_0.5_180_inv.nc
+    output: results/data/DE/noexim/cap_DE_20_1.5_noexim_0.5_180_inv.csv
+    jobid: 269
+    reason: Input files updated by another job: resources/DE_20_1.5_noexim_0.5_180_inv.nc
+    wildcards: country=DE, contingency=noexim, buses=20, transmission_limit=1.5, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:25:58 2024]
+Finished job 244.
+3 of 865 steps (0.3%) done
+Select jobs to execute...
+
+[Fri Jun 14 12:25:58 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.25_180_inv.nc, resources/DE_20_1.5_dispatchcut_0.25_180_invroll.nc
+    jobid: 300
+    reason: Code has changed since last execution
+    wildcards: country=DE, contingency=dispatchcut, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:25:59 2024]
+Finished job 326.
+4 of 865 steps (0.5%) done
+Select jobs to execute...
+
+[Fri Jun 14 12:25:59 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_270_noinv.nc, resources/DE_20_1.5_wind_0.5_270_noinvroll.nc
+    jobid: 356
+    reason: Code has changed since last execution
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Fri Jun 14 12:26:03 2024]
+[Fri Jun 14 12:26:03 2024]
+Error in rule dynamic_solve:
+    jobid: 300
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.25_180_inv.nc, resources/DE_20_1.5_dispatchcut_0.25_180_invroll.nc
+
+Error in rule inst_cap_table:
+    jobid: 269
+    input: resources/DE_20_1.5_noexim_0.5_180_inv.nc
+    output: results/data/DE/noexim/cap_DE_20_1.5_noexim_0.5_180_inv.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 235:
+Command 'python scripts/solve_dispatchcut.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_dispatchcut_0.25_180_inv.nc resources/DE_20_1.5_dispatchcut_0.25_180_invroll.nc dispatchcut 0.25 180 inv 52 DE' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 235, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Fri Jun 14 12:26:03 2024]
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 252:
+Command 'python scripts/inst_cap.py resources/DE_20_1.5_noexim_0.5_180_inv.nc results/data/DE/noexim/cap_DE_20_1.5_noexim_0.5_180_inv.csv' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 252, in __rule_inst_cap_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Terminating processes on user request, this might take some time.
+Error in rule dynamic_solve:
+    jobid: 412
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_dispatchcut_0.5_90_noinv.nc, resources/DE_20_1.5_dispatchcut_0.5_90_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 235:
+Command 'python scripts/solve_dispatchcut.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_dispatchcut_0.5_90_noinv.nc resources/DE_20_1.5_dispatchcut_0.5_90_noinvroll.nc dispatchcut 0.5 90 noinv 52 DE' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 235, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Fri Jun 14 12:26:04 2024]
+Error in rule dynamic_solve:
+    jobid: 356
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_wind_0.5_270_noinv.nc, resources/DE_20_1.5_wind_0.5_270_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 211:
+Command 'python scripts/solve_wind.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_wind_0.5_270_noinv.nc resources/DE_20_1.5_wind_0.5_270_noinvroll.nc wind 0.5 270 noinv 52 DE' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 211, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Complete log: .snakemake\log\2024-06-14T122520.932100.snakemake.log

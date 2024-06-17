@@ -1,0 +1,11 @@
+Building DAG of jobs...
+InputFunctionException in rule inv_cap_country in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 230:
+Error:
+  TypeError: list indices must be integers or slices, not str
+Wildcards:
+  country=DE
+  buses=20
+  transmission_limit=1.0
+Traceback:
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 237, in <lambda>
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 237, in <listcomp>

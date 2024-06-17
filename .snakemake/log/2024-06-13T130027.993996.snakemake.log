@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in rule syst_cost in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 264:
+Wildcards in input files cannot be determined from output files:
+'contingency'

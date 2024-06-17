@@ -1,0 +1,83 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count
+--------------  -------
+all                   1
+gen_table            72
+inst_cap_table       72
+total               145
+
+Select jobs to execute...
+
+[Thu Jun 13 11:09:23 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_90_invroll.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_90_invroll.csv
+    jobid: 147
+    reason: Missing output files: results/data/DE/pv/gen_DE_20_1.0_pv_0_90_invroll.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:09:23 2024]
+rule gen_table:
+    input: resources/DE_20_1.5_wind_0.25_180_noinvroll.nc
+    output: results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_noinvroll.csv
+    jobid: 211
+    reason: Missing output files: results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_noinvroll.csv
+    wildcards: country=DE, contingency=wind, buses=20, transmission_limit=1.5, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:09:23 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0.25_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_inv.csv
+    jobid: 8
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 11:09:23 2024]
+rule inst_cap_table:
+    input: resources/DE_20_1.0_pv_0_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_inv.csv
+    jobid: 1
+    reason: Missing output files: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 11:09:30 2024]
+Error in rule inst_cap_table:
+    jobid: 8
+    input: resources/DE_20_1.0_pv_0.25_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_inv.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 196:
+Command 'python scripts/inst_cap.py resources/DE_20_1.0_pv_0.25_90_inv.nc results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_inv.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 196, in __rule_inst_cap_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Thu Jun 13 11:09:30 2024]
+Error in rule inst_cap_table:
+    jobid: 1
+    input: resources/DE_20_1.0_pv_0_90_inv.nc
+    output: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_inv.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 196:
+Command 'python scripts/inst_cap.py resources/DE_20_1.0_pv_0_90_inv.nc results/data/DE/pv/cap_DE_20_1.0_pv_0_90_inv.csv' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 196, in __rule_inst_cap_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Thu Jun 13 11:09:31 2024]
+Finished job 147.
+1 of 145 steps (1%) done
+[Thu Jun 13 11:09:31 2024]
+Finished job 211.
+2 of 145 steps (1%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-13T110922.425876.snakemake.log

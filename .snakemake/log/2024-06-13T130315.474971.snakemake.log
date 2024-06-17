@@ -1,0 +1,1028 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+syst_cost       72
+total           73
+
+Select jobs to execute...
+
+[Thu Jun 13 13:03:17 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.25_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_180_noinvroll_total.csv
+    jobid: 285
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.25_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 13:03:17 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_180_invroll_total.csv
+    jobid: 222
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 13:03:17 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_90_invroll_total.csv
+    jobid: 221
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Thu Jun 13 13:03:17 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.25_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_90_invroll_total.csv
+    jobid: 224
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.25_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:25 2024]
+Finished job 221.
+1 of 73 steps (1%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:25 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.25_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_90_noinvroll_total.csv
+    jobid: 278
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.25_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:25 2024]
+Finished job 222.
+2 of 73 steps (3%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:25 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.75_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.75_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_90_invroll_total.csv
+    jobid: 236
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.75_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:26 2024]
+Finished job 285.
+3 of 73 steps (4%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:26 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.25_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_90_noinvroll_total.csv
+    jobid: 284
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.25_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:26 2024]
+Finished job 224.
+4 of 73 steps (5%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:26 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.5_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_180_invroll_total.csv
+    jobid: 228
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.5_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:35 2024]
+Finished job 284.
+5 of 73 steps (7%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:35 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.5_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_180_noinvroll_total.csv
+    jobid: 282
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.5_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:35 2024]
+Finished job 278.
+6 of 73 steps (8%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:35 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_180_invroll_total.csv
+    jobid: 258
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:35 2024]
+Finished job 236.
+7 of 73 steps (10%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:35 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_90_noinvroll_total.csv
+    jobid: 275
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:35 2024]
+Finished job 228.
+8 of 73 steps (11%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:35 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.5_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_270_noinvroll_total.csv
+    jobid: 283
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.5_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:44 2024]
+Finished job 258.
+9 of 73 steps (12%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:44 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.5_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_90_invroll_total.csv
+    jobid: 227
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.5_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:44 2024]
+Finished job 275.
+10 of 73 steps (14%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:44 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_270_invroll_total.csv
+    jobid: 223
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:45 2024]
+Finished job 282.
+11 of 73 steps (15%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:45 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.25_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_180_invroll_total.csv
+    jobid: 225
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.25_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:45 2024]
+Finished job 283.
+12 of 73 steps (16%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:45 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.5_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_90_noinvroll_total.csv
+    jobid: 281
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.5_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:54 2024]
+Finished job 227.
+13 of 73 steps (18%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:54 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.5_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_270_invroll_total.csv
+    jobid: 229
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.5_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:55 2024]
+Finished job 223.
+14 of 73 steps (19%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:55 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.25_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_90_invroll_total.csv
+    jobid: 230
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.25_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:55 2024]
+Finished job 225.
+15 of 73 steps (21%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:55 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.5_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_270_invroll_total.csv
+    jobid: 235
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.5_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:03:55 2024]
+Finished job 281.
+16 of 73 steps (22%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:03:55 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.5_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_90_noinvroll_total.csv
+    jobid: 287
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.5_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:04 2024]
+Finished job 229.
+17 of 73 steps (23%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:04 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.25_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_270_invroll_total.csv
+    jobid: 232
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.25_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:04 2024]
+Finished job 230.
+18 of 73 steps (25%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:04 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.25_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_180_invroll_total.csv
+    jobid: 231
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.25_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:04 2024]
+Finished job 235.
+19 of 73 steps (26%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:04 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.75_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.75_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_90_noinvroll_total.csv
+    jobid: 290
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.75_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:05 2024]
+Finished job 287.
+20 of 73 steps (27%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:05 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_180_noinvroll_total.csv
+    jobid: 276
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:14 2024]
+Finished job 232.
+21 of 73 steps (29%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:14 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.25_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_270_invroll_total.csv
+    jobid: 226
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.25_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:14 2024]
+Finished job 231.
+22 of 73 steps (30%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:14 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.75_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.75_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_180_invroll_total.csv
+    jobid: 237
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.75_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:14 2024]
+Finished job 290.
+23 of 73 steps (32%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:14 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.25_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_270_noinvroll_total.csv
+    jobid: 286
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.25_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:15 2024]
+Finished job 276.
+24 of 73 steps (33%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:15 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.25_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_180_invroll_total.csv
+    jobid: 261
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.25_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:23 2024]
+Finished job 226.
+25 of 73 steps (34%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:23 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.75_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.75_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_270_invroll_total.csv
+    jobid: 238
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.75_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:23 2024]
+Finished job 237.
+26 of 73 steps (36%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:23 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.5_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_180_noinvroll_total.csv
+    jobid: 288
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.5_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:24 2024]
+Finished job 286.
+27 of 73 steps (37%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:24 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_180_noinvroll_total.csv
+    jobid: 240
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:25 2024]
+Finished job 261.
+28 of 73 steps (38%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:25 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.5_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_180_invroll_total.csv
+    jobid: 234
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.5_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:33 2024]
+Finished job 238.
+29 of 73 steps (40%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:33 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.5_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_90_invroll_total.csv
+    jobid: 233
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.5_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:33 2024]
+Finished job 288.
+30 of 73 steps (41%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:33 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.25_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_270_noinvroll_total.csv
+    jobid: 250
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.25_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:33 2024]
+Finished job 240.
+31 of 73 steps (42%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:33 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.5_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_270_noinvroll_total.csv
+    jobid: 289
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.5_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:34 2024]
+Finished job 234.
+32 of 73 steps (44%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:34 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.25_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_270_noinvroll_total.csv
+    jobid: 244
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.25_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:43 2024]
+Finished job 233.
+33 of 73 steps (45%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:43 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.25_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_180_noinvroll_total.csv
+    jobid: 249
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.25_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:43 2024]
+Finished job 250.
+34 of 73 steps (47%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:43 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_270_noinvroll_total.csv
+    jobid: 241
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:43 2024]
+Finished job 289.
+35 of 73 steps (48%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:43 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_270_invroll_total.csv
+    jobid: 259
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:44 2024]
+Finished job 244.
+36 of 73 steps (49%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:44 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_90_noinvroll_total.csv
+    jobid: 239
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:52 2024]
+Finished job 249.
+37 of 73 steps (51%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:52 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.25_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_270_noinvroll_total.csv
+    jobid: 280
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.25_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:53 2024]
+Finished job 241.
+38 of 73 steps (52%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:53 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.25_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_90_invroll_total.csv
+    jobid: 260
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.25_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:53 2024]
+Finished job 259.
+39 of 73 steps (53%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:53 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.25_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_90_noinvroll_total.csv
+    jobid: 248
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.25_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:04:54 2024]
+Finished job 239.
+40 of 73 steps (55%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:04:54 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.5_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_180_invroll_total.csv
+    jobid: 270
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.5_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:02 2024]
+Finished job 280.
+41 of 73 steps (56%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:02 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_270_noinvroll_total.csv
+    jobid: 277
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:03 2024]
+Finished job 260.
+42 of 73 steps (58%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:03 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.25_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_90_invroll_total.csv
+    jobid: 266
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.25_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:03 2024]
+Finished job 248.
+43 of 73 steps (59%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:03 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.75_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.75_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_270_noinvroll_total.csv
+    jobid: 292
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.75_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:03 2024]
+Finished job 270.
+44 of 73 steps (60%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:03 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.75_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.75_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_180_noinvroll_total.csv
+    jobid: 291
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.75_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:12 2024]
+Finished job 277.
+45 of 73 steps (62%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:12 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.5_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_180_invroll_total.csv
+    jobid: 264
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.5_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:12 2024]
+Finished job 266.
+46 of 73 steps (63%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:12 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.25_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_270_invroll_total.csv
+    jobid: 268
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.25_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:12 2024]
+Finished job 292.
+47 of 73 steps (64%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:12 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.25_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_180_noinvroll_total.csv
+    jobid: 279
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.25_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:13 2024]
+Finished job 291.
+48 of 73 steps (66%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:13 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.75_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.75_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_180_noinvroll_total.csv
+    jobid: 255
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.75_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:22 2024]
+Finished job 279.
+49 of 73 steps (67%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:22 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.75_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.75_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_90_invroll_total.csv
+    jobid: 272
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.75_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:22 2024]
+Finished job 268.
+50 of 73 steps (68%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:22 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.5_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_90_invroll_total.csv
+    jobid: 269
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.5_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:22 2024]
+Finished job 264.
+51 of 73 steps (70%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:22 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.5_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_90_invroll_total.csv
+    jobid: 263
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.5_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:23 2024]
+Finished job 255.
+52 of 73 steps (71%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:23 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0_90_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_90_invroll_total.csv
+    jobid: 257
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0_90_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:31 2024]
+Finished job 269.
+53 of 73 steps (73%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:31 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.5_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_270_invroll_total.csv
+    jobid: 265
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.5_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:31 2024]
+Finished job 272.
+54 of 73 steps (74%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:31 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.75_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.75_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_270_invroll_total.csv
+    jobid: 274
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.75_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:31 2024]
+Finished job 263.
+55 of 73 steps (75%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:32 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.25_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_180_noinvroll_total.csv
+    jobid: 243
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.25_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:33 2024]
+Finished job 257.
+56 of 73 steps (77%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:33 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.5_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_180_noinvroll_total.csv
+    jobid: 246
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.5_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:41 2024]
+Finished job 265.
+57 of 73 steps (78%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:41 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.5_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_270_invroll_total.csv
+    jobid: 271
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.5_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:41 2024]
+Finished job 274.
+58 of 73 steps (79%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:41 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.5_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_90_noinvroll_total.csv
+    jobid: 245
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.5_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:41 2024]
+Finished job 243.
+59 of 73 steps (81%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:41 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.5_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_270_noinvroll_total.csv
+    jobid: 253
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.5_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:43 2024]
+Finished job 246.
+60 of 73 steps (82%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:43 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.25_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_90_noinvroll_total.csv
+    jobid: 242
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.25_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:51 2024]
+Finished job 245.
+61 of 73 steps (84%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:51 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.5_180_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_180_noinvroll_total.csv
+    jobid: 252
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.5_180_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:51 2024]
+Finished job 271.
+62 of 73 steps (85%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:51 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.5_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_90_noinvroll_total.csv
+    jobid: 251
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.5_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:51 2024]
+Finished job 253.
+63 of 73 steps (86%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:51 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_pv_0.5_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_pv_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_270_noinvroll_total.csv
+    jobid: 247
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_pv_0.5_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:05:53 2024]
+Finished job 242.
+64 of 73 steps (88%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:05:53 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.75_90_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.75_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_90_noinvroll_total.csv
+    jobid: 254
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.75_90_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:06:00 2024]
+Finished job 251.
+65 of 73 steps (89%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:06:00 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_pv_0.25_270_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_pv_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_270_invroll_total.csv
+    jobid: 262
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_pv_0.25_270_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:06:00 2024]
+Finished job 252.
+66 of 73 steps (90%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:06:00 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.25_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_180_invroll_total.csv
+    jobid: 267
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.25_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.25, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:06:01 2024]
+Finished job 247.
+67 of 73 steps (92%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:06:01 2024]
+rule syst_cost:
+    input: resources/DE_20_1.0_wind_0.75_270_noinvroll.nc
+    output: results/data/DE/syscost_DE_20_1.0_wind_0.75_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_270_noinvroll_total.csv
+    jobid: 256
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.0_wind_0.75_270_noinvroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.75, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:06:03 2024]
+Finished job 254.
+68 of 73 steps (93%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:06:03 2024]
+rule syst_cost:
+    input: resources/DE_20_1.5_wind_0.75_180_invroll.nc
+    output: results/data/DE/syscost_DE_20_1.5_wind_0.75_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_180_invroll_total.csv
+    jobid: 273
+    reason: Missing output files: results/data/DE/syscost_DE_20_1.5_wind_0.75_180_invroll_country.csv
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=wind, reductionto=0.75, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:06:10 2024]
+Finished job 262.
+69 of 73 steps (95%) done
+[Thu Jun 13 13:06:10 2024]
+Finished job 267.
+70 of 73 steps (96%) done
+[Thu Jun 13 13:06:11 2024]
+Finished job 256.
+71 of 73 steps (97%) done
+[Thu Jun 13 13:06:12 2024]
+Finished job 273.
+72 of 73 steps (99%) done
+Select jobs to execute...
+
+[Thu Jun 13 13:06:12 2024]
+localrule all:
+    input: results/data/DE/pv/cap_DE_20_1.0_pv_0_90_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_180_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_270_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_180_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_270_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_90_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_180_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_270_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_90_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_180_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_270_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_90_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_180_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_270_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_90_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_180_inv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_270_inv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.25_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.0_pv_0.5_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.25_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.5_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.0_wind_0.75_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_90_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_180_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_270_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_90_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_180_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_270_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_90_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_180_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_270_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_90_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_180_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_270_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_90_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_180_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_270_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_90_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_180_inv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_270_inv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.25_270_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_90_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_180_noinv.csv, results/data/DE/pv/cap_DE_20_1.5_pv_0.5_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.25_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.5_270_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_90_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_180_noinv.csv, results/data/DE/wind/cap_DE_20_1.5_wind_0.75_270_noinv.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_90_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_180_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_270_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_180_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_270_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_90_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_180_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_180_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_270_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_90_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_270_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_90_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_180_invroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_270_invroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_90_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_180_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0_270_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_180_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.25_270_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_90_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_180_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_90_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_180_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.25_270_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_90_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_180_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.5_270_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_90_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_180_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.0_wind_0.75_270_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_90_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_180_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_270_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_90_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_180_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_270_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_90_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_180_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_270_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_90_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_270_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_90_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_180_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_270_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_180_invroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_270_invroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_90_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_180_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0_270_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_90_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_180_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.25_270_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_90_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_180_noinvroll.csv, results/data/DE/pv/gen_DE_20_1.5_pv_0.5_270_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_90_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_180_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.25_270_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_90_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_180_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.5_270_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_90_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_180_noinvroll.csv, results/data/DE/wind/gen_DE_20_1.5_wind_0.75_270_noinvroll.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.0_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/cap_DE_20_1.5_base.csv, results/data/DE/syscost_DE_20_1.0_pv_0_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_270_noinvroll_country.csv
+    jobid: 0
+    reason: Input files updated by another job: results/data/DE/syscost_DE_20_1.0_pv_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0.25_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.25_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_pv_0_90_invroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_270_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_270_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_wind_0.75_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.75_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.5_180_invroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0_180_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.5_pv_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.25_90_noinvroll_country.csv, results/data/DE/syscost_DE_20_1.0_wind_0.5_270_noinvroll_country.csv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Thu Jun 13 13:06:12 2024]
+Finished job 0.
+73 of 73 steps (100%) done
+Complete log: .snakemake\log\2024-06-13T130315.474971.snakemake.log

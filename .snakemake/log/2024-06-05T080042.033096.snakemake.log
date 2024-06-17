@@ -1,0 +1,48 @@
+Building DAG of jobs...
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve       69
+total               70
+
+Select jobs to execute...
+
+[Wed Jun  5 08:00:43 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_90_noinv.nc, results/DE_20_1.0_wind_0.25_90_noinvroll.nc
+    jobid: 35
+    reason: Missing output files: results/DE_20_1.0_wind_0.25_90_noinvroll.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=wind, reductionto=0.25, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Wed Jun  5 08:00:43 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.12_270_noinv.nc, results/DE_20_1.0_pv_0.12_270_noinvroll.nc
+    jobid: 28
+    reason: Updated input files: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.12, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun  5 08:00:53 2024]
+Error in rule dynamic_solve:
+    jobid: 35
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_wind_0.25_90_noinv.nc, results/DE_20_1.0_wind_0.25_90_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 161:
+Command 'python scripts/solve_wind.py resources/DE_20_1.0_base_solved.nc resources/DE_20_1.0_wind_0.25_90_noinv.nc results/DE_20_1.0_wind_0.25_90_noinvroll.nc wind 0.25 90 noinv 24 2013-02-01 00:00:00' returned non-zero exit status 1.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 161, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Wed Jun  5 08:09:23 2024]
+Finished job 28.
+1 of 70 steps (1%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-05T080042.033096.snakemake.log

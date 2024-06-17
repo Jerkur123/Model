@@ -1,8 +1,12 @@
 co2_price: 130 # €/t
 
-countries: ['DE']
-
-buses: 20
+countries:
+ - DE:
+   - bus: 20
+# - GB:
+#   - bus: 13
+# - ES:
+#   - bus: 8
 
 transmission_limit:
  - 1.0
@@ -10,28 +14,41 @@ transmission_limit:
 
 contingencies: 
  - pv:
-   - reductionto: 0.25
-   - duration: 180
+   - reductionto: [0.25,0.5,0.75]
+   - duration: [90,180,270]
  - wind:
-   - reductionto: 0.5
-   - duration: 180
+   - reductionto: [0.25,0.5,0.75]
+   - duration: [90,180,270]
+ - noexim:
+   - reductionto: [0,0.25,0.5]
+   - duration: [90,180,270]
+ - drought:
+   - reductionto: [0.25,0.5,0.75]
+   - duration: [90,180,270]
+ - dispatchcut:
+   - reductionto: [0,0.25,0.5]
+   - duration: [90,180,270]
+ - windpv:
+   - reductionto: [0,0.25,0.5]
+   - duration: [7,14,21]
 
-cut_start: '2013-02-01 00:00:00'
+#cut_start: '2013-02-01 00:00:00'
 
 models:
  - inv
  - noinv
 
-horizon: 24 #in number of days*8 because the of the 3H time resolution
+horizon: 52 #buat tes biar cepet makanya 24 walopun time resolution 168h
 
-sens_analysis:
- - enabled: true
- - deviation_reductionto: 0.5 # %
- - deviation_duration: 0.5
+min_equity: 'EQ0.95c'
 
-H2_cost_sens_analysis:
- - enabled: false
- - deviation: 0.2 # %
+#sens_analysis:
+# - enabled: true
+# - deviation_reductionto: 0.25 
+# - deviation_duration: 90
 
+#H2_cost_sens_analysis:
+# - enabled: false
+# - deviation: 0.2 # %
 
 

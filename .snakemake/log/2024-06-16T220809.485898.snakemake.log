@@ -1,0 +1,253 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+dynamic_solve       36
+solve_base           2
+total               39
+
+Select jobs to execute...
+
+[Sun Jun 16 22:08:10 2024]
+rule solve_base:
+    input: resources/DE_20_1.5_base.nc
+    output: resources/DE_20_1.5_base_solved.nc, resources/DE_20_1.5_base_roll_solved.nc
+    jobid: 21
+    reason: Missing output files: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Sun Jun 16 22:08:10 2024]
+rule solve_base:
+    input: resources/DE_20_1.0_base.nc
+    output: resources/DE_20_1.0_base_solved.nc, resources/DE_20_1.0_base_roll_solved.nc
+    jobid: 2
+    reason: Missing output files: resources/DE_20_1.0_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.0
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:08:39 2024]
+Finished job 2.
+1 of 39 steps (3%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:08:39 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_90_inv.nc, results/DE_20_1.0_pv_0.25_90_invroll.nc
+    jobid: 5
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:08:39 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0_180_inv.nc, results/DE_20_1.0_pv_0_180_invroll.nc
+    jobid: 3
+    reason: Missing output files: results/DE_20_1.0_pv_0_180_invroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:08:39 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.0_base_solved.nc
+    output: resources/DE_20_1.0_pv_0.25_180_noinv.nc, results/DE_20_1.0_pv_0.25_180_noinvroll.nc
+    jobid: 15
+    reason: Missing output files: results/DE_20_1.0_pv_0.25_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.0_base_solved.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.0, contingency=pv, reductionto=0.25, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:08:40 2024]
+Finished job 21.
+2 of 39 steps (5%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:08:40 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_270_noinv.nc, results/DE_20_1.5_pv_0.25_270_noinvroll.nc
+    jobid: 35
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:09:07 2024]
+Finished job 15.
+3 of 39 steps (8%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:09:07 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_90_inv.nc, results/DE_20_1.5_pv_0.5_90_invroll.nc
+    jobid: 27
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:09:08 2024]
+Finished job 35.
+4 of 39 steps (10%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:09:08 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_180_inv.nc, results/DE_20_1.5_pv_0_180_invroll.nc
+    jobid: 22
+    reason: Missing output files: results/DE_20_1.5_pv_0_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:09:20 2024]
+Finished job 3.
+5 of 39 steps (13%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:09:20 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_90_noinv.nc, results/DE_20_1.5_pv_0.5_90_noinvroll.nc
+    jobid: 36
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:09:21 2024]
+Finished job 5.
+6 of 39 steps (15%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:09:21 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_180_inv.nc, results/DE_20_1.5_pv_0.5_180_invroll.nc
+    jobid: 28
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_180_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:09:47 2024]
+Finished job 22.
+7 of 39 steps (18%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:09:47 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_180_noinv.nc, results/DE_20_1.5_pv_0.5_180_noinvroll.nc
+    jobid: 37
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_180_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=180, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:09:47 2024]
+Finished job 27.
+8 of 39 steps (21%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:09:47 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_270_inv.nc, results/DE_20_1.5_pv_0.5_270_invroll.nc
+    jobid: 29
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:09:53 2024]
+Finished job 36.
+9 of 39 steps (23%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:09:53 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_270_inv.nc, results/DE_20_1.5_pv_0_270_invroll.nc
+    jobid: 23
+    reason: Missing output files: results/DE_20_1.5_pv_0_270_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:10:06 2024]
+Finished job 28.
+10 of 39 steps (26%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:10:06 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_270_noinv.nc, results/DE_20_1.5_pv_0.5_270_noinvroll.nc
+    jobid: 38
+    reason: Missing output files: results/DE_20_1.5_pv_0.5_270_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.5, duration=270, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:10:17 2024]
+Finished job 37.
+11 of 39 steps (28%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:10:17 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_90_noinv.nc, results/DE_20_1.5_pv_0_90_noinvroll.nc
+    jobid: 30
+    reason: Missing output files: results/DE_20_1.5_pv_0_90_noinvroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0, duration=90, model=noinv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:10:32 2024]
+Finished job 29.
+12 of 39 steps (31%) done
+Select jobs to execute...
+
+[Sun Jun 16 22:10:32 2024]
+rule dynamic_solve:
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_90_inv.nc, results/DE_20_1.5_pv_0.25_90_invroll.nc
+    jobid: 24
+    reason: Missing output files: results/DE_20_1.5_pv_0.25_90_invroll.nc; Input files updated by another job: resources/DE_20_1.5_base_solved.nc; Code has changed since last execution
+    wildcards: country=DE, buses=20, transmission_limit=1.5, contingency=pv, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Sun Jun 16 22:10:33 2024]
+Error in rule dynamic_solve:
+    jobid: 23
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0_270_inv.nc, results/DE_20_1.5_pv_0_270_invroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 170:
+Command 'python scripts/solve_pv.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_pv_0_270_inv.nc results/DE_20_1.5_pv_0_270_invroll.nc pv 0 270 inv 52 DE EQ0.95c 1.5 20' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 170, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Terminating processes on user request, this might take some time.
+[Sun Jun 16 22:10:33 2024]
+Error in rule dynamic_solve:
+    jobid: 24
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.25_90_inv.nc, results/DE_20_1.5_pv_0.25_90_invroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 170:
+Command 'python scripts/solve_pv.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_pv_0.25_90_inv.nc results/DE_20_1.5_pv_0.25_90_invroll.nc pv 0.25 90 inv 52 DE EQ0.95c 1.5 20' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 170, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Sun Jun 16 22:10:33 2024]
+Error in rule dynamic_solve:
+    jobid: 38
+    input: resources/DE_20_1.5_base_solved.nc
+    output: resources/DE_20_1.5_pv_0.5_270_noinv.nc, results/DE_20_1.5_pv_0.5_270_noinvroll.nc
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 170:
+Command 'python scripts/solve_pv.py resources/DE_20_1.5_base_solved.nc resources/DE_20_1.5_pv_0.5_270_noinv.nc results/DE_20_1.5_pv_0.5_270_noinvroll.nc pv 0.5 270 noinv 52 DE EQ0.95c 1.5 20' returned non-zero exit status 3221225786.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 170, in __rule_dynamic_solve
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Cancelling snakemake on user request.

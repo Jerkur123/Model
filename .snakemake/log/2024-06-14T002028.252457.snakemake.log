@@ -1,0 +1,3 @@
+KeyError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 17:
+'cut_start'
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 17, in <module>

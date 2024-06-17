@@ -1,0 +1,98 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+gen_table       72
+total           73
+
+Select jobs to execute...
+
+[Wed Jun 12 20:57:45 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.25_90_inv.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_inv.csv
+    jobid: 150
+    reason: Missing output files: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.25, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Wed Jun 12 20:57:45 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0.5_270_inv.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_inv.csv
+    jobid: 155
+    reason: Missing output files: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0.5, duration=270, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Wed Jun 12 20:57:45 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_180_inv.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_180_inv.csv
+    jobid: 148
+    reason: Missing output files: results/data/DE/pv/gen_DE_20_1.0_pv_0_180_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=180, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+
+[Wed Jun 12 20:57:45 2024]
+rule gen_table:
+    input: resources/DE_20_1.0_pv_0_90_inv.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_90_inv.csv
+    jobid: 147
+    reason: Missing output files: results/data/DE/pv/gen_DE_20_1.0_pv_0_90_inv.csv
+    wildcards: country=DE, contingency=pv, buses=20, transmission_limit=1.0, reductionto=0, duration=90, model=inv
+    resources: tmpdir=C:\Users\Jeremy\AppData\Local\Temp
+
+[Wed Jun 12 20:57:45 2024]
+Error in rule gen_table:
+    jobid: 147
+    input: resources/DE_20_1.0_pv_0_90_inv.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_90_inv.csv
+
+[Wed Jun 12 20:57:45 2024]
+Error in rule gen_table:
+    jobid: 148
+    input: resources/DE_20_1.0_pv_0_180_inv.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0_180_inv.csv
+
+[Wed Jun 12 20:57:45 2024]
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 205:
+Command 'python scripts/gen_table.py resources/DE_20_1.0_pv_0_90_inv.nc results/data/DE/pv/gen_DE_20_1.0_pv_0_90_inv.csv' returned non-zero exit status 2.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 205, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Error in rule gen_table:
+    jobid: 150
+    input: resources/DE_20_1.0_pv_0.25_90_inv.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_inv.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 205:
+Command 'python scripts/gen_table.py resources/DE_20_1.0_pv_0_180_inv.nc results/data/DE/pv/gen_DE_20_1.0_pv_0_180_inv.csv' returned non-zero exit status 2.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 205, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 205:
+Command 'python scripts/gen_table.py resources/DE_20_1.0_pv_0.25_90_inv.nc results/data/DE/pv/gen_DE_20_1.0_pv_0.25_90_inv.csv' returned non-zero exit status 2.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 205, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+[Wed Jun 12 20:57:45 2024]
+Error in rule gen_table:
+    jobid: 155
+    input: resources/DE_20_1.0_pv_0.5_270_inv.nc
+    output: results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_inv.csv
+
+RuleException:
+CalledProcessError in file C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile, line 205:
+Command 'python scripts/gen_table.py resources/DE_20_1.0_pv_0.5_270_inv.nc results/data/DE/pv/gen_DE_20_1.0_pv_0.5_270_inv.csv' returned non-zero exit status 2.
+  File "C:\Users\Jeremy\Documents\MasterThesis\Models\Snakefile", line 205, in __rule_gen_table
+  File "C:\Users\Jeremy\anaconda3\envs\pypsa-eur\Lib\concurrent\futures\thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake\log\2024-06-12T205743.470382.snakemake.log
